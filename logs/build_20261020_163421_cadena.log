@@ -1,0 +1,156 @@
+=== CFRU Builder 1.2.1 | modo: cadena | 2026-10-20 16:34:21 ===
+[OK] Respaldo creado: C:\Users\AM\Desktop\Pokemon\backups\BPRE0_20261020_163421.gba
+[OK] DPE: OFFSET_TO_PUT actualizado a 0x1600000
+[OK] CFRU: OFFSET_TO_PUT actualizado a 0x1000000
+[INFO] Módulo Shelly detectado en: C:\Users\AM\Desktop\Pokemon\Shelly-Module
+[INFO] Instalando Shelly en los repos (es rápido y no se duplica si ya está)...
+[INFO] ╔════════════════════════════════════════════════════════════╗
+[INFO] ║  🏴‍☠️  MÓDULO SHELLY — La Administradora como Pokémon   ║
+[INFO] ╚════════════════════════════════════════════════════════════╝
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 1/8 · Verificando repositorios
+[INFO] ──────────────────────────────────────────────────────────────
+[WARN] [93m[AVISO][0m DPE: NUM_SPECIES no coincide con lo esperado (¿versión distinta del repo?). Se intentará igualmente.
+[INFO] [96m[INFO][0m Shelly ya parece instalada; se omitirán duplicados.
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 2/8 · Parcheando DPE (datos de la especie)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] [96m[INFO][0m species.h: SHELLY ya presente (omitido)
+[INFO] [92m[OK][0m include/sprite_data.h: declaraciones extern de los sprites de Shelly
+[INFO] [96m[INFO][0m Base_Stats.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m Learnsets.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Front_Pic_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Back_Pic_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Palette_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Shiny_Palette_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Icon_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Icon_Palette_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Front_Pic_Coords_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Back_Pic_Coords_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Enemy_Elevation_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Cry_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m src/Cry_Table_2.c: SHELLY ya presente (omitido)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 3/8 · Parcheando DPE (Pokédex, textos y órdenes)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] [96m[INFO][0m Pokedex_Data_Table.c: SHELLY ya presente (omitido)
+[INFO] [96m[INFO][0m Species_To_Pokdex_Table.c: SHELLY ya presente
+[INFO] [96m[INFO][0m Pokedex_Orders.c: SHELLY ya presente
+[INFO] [96m[INFO][0m Pokedex_Data.string: SHELLY ya presente
+[INFO] [96m[INFO][0m Pokemon_Name_Table.string: SHELLY ya presente
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 4/8 · Parcheando DPE (TMs, tutores, sprites, make.py)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] [92m[OK][0m TM compatibilidad: Shelly aprende 0 TMs
+[INFO] [96m[INFO][0m C:\Users\AM\Desktop\Pokemon\DPE/make.py: fix python ya presente
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 5/8 · Parcheando CFRU (límites, learnset, follower)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] [96m[INFO][0m CFRU species.h: SHELLY ya presente
+[INFO] [96m[INFO][0m CFRU config.h: NATIONAL_DEX_COUNT ya es 1027
+[INFO] [96m[INFO][0m CFRU learnsets: SHELLY ya presente
+[INFO] [96m[INFO][0m CFRU follower: SHELLY ya presente
+[INFO] [96m[INFO][0m C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments/make.py: fix python ya presente
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 6/8 · Pasiva Vientre Divino — DPE (ability 317)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] [96m[INFO][0m abilities.h: VIENTRE_DIVINO ya presente (omitido)
+[INFO] [96m[INFO][0m build.py: ya figura en CANONICAL_U16_ABILITIES (omitido)
+[WARN] [93m[AVISO][0m src/Base_Stats.c: «ability1 de Shelly -> VIENTRE_DIVINO» ya aplicado o fuera del bloque (omitido)
+[WARN] [93m[AVISO][0m src/Base_Stats.c: «hiddenAbility de Shelly -> NONE» ya aplicado o fuera del bloque (omitido)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 7/8 · Pasiva Vientre Divino — CFRU (mecánica en el motor)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] [96m[INFO][0m abilities.h: VIENTRE_DIVINO ya presente (omitido)
+[INFO] [92m[OK][0m src/ability_battle_effects.c: extern de BattleScript_WrapEnds retirado (v1.2)
+[INFO] [92m[OK][0m src/ability_battle_effects.c: ShellyBurbujaFinScript reparada (v1.2, sin WrapEnds externo)
+[INFO] [92m[OK][0m src/end_turn.c: fin de burbuja con if/else y macro local (v1.2)
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] 8/8 · Resumen
+[INFO] ──────────────────────────────────────────────────────────────
+[INFO] Archivos modificados : 4
+[INFO] Respaldos creados    : 4 (en .shelly_backup/)
+[INFO] ¡Shelly instalada! 🏴‍☠️
+[INFO] Pasiva «Vientre Divino» integrada (esquiva 65%, refleja 45%,
+[INFO] congelada 25% inmune; burbuja 3-6 turnos y aplanada 3-5).
+[INFO] Siguiente paso: compila con CFRU-Builder (paso DPE → CFRU)
+[INFO] y luego aplica parche_inicial.py a la ROM final.
+[OK] Shelly integrada en los repos (especie 0x5D1 / dex 1026 + pasiva Vientre Divino).
+[INFO] Preparando BPRE0.gba del DPE (16.0 MB)...
+[OK] ROM copiada a C:\Users\AM\Desktop\Pokemon\DPE\BPRE0.gba
+[INFO] Alias 'python' de la Microsoft Store aislado (1 en el PATH) SOLO durante esta compilacion.
+[INFO] devkitARM detectado via disco (C:\devkitPro\devkitARM\bin); se inyectara en el PATH solo para esta compilacion.
+[INFO] Ejecutando en C:\Users\AM\Desktop\Pokemon\DPE:  C:\Users\AM\AppData\Local\Programs\Python\Python313\python.exe -u scripts\make.py
+Warning! Python 3.8 may not be able to build this engine.
+Please downgrade to Python 3.7.4
+Compiling ./src\generated\Base_Stats_Compat.c
+Compiling ./src\generated\Species_Abilities.c
+Built in 0:00:04.341285.
+ROM expanded from 16MB to 32MB.
+Inserting code.
+Inserted in 0:00:00.530642.
+[OK] make.py de DPE termino correctamente (codigo 0).
+[OK] DPE listo: C:\Users\AM\Desktop\Pokemon\DPE\test.gba (32.0 MB)
+[PAUSA] ===============================================
+[PAUSA] Revisa el test.gba del DPE si quieres (emulador).
+[PAUSA] Cuando estes listo, pulsa 'Continuar -> CFRU'.
+[PAUSA] ===============================================
+[INFO] Continuando hacia el CFRU...
+[OK] DPE test.gba copiado a C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\BPRE0.gba
+[INFO] Alias 'python' de la Microsoft Store aislado (1 en el PATH) SOLO durante esta compilacion.
+[INFO] devkitARM detectado via disco (C:\devkitPro\devkitARM\bin); se inyectara en el PATH solo para esta compilacion.
+[INFO] Ejecutando en C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments:  C:\Users\AM\AppData\Local\Programs\Python\Python313\python.exe -u scripts\make.py
+./src\ability_battle_effects.c: In function 'TryRemoveIntimidateAbilityPopUp':
+./src\ability_battle_effects.c:3534:74: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 3534 |                 gBattlescriptCurrInstr = BattleScript_AbilityPopUpRevert - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\ability_battle_effects.c:12:
+./src\../include/new/ability_battle_scripts.h:113:17: note: at offset -5 into object 'BattleScript_AbilityPopUpRevert' of size [0, 2147483647]
+  113 | extern const u8 BattleScript_AbilityPopUpRevert[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\ability_battle_effects.c: In function 'TryHideActiveAbilityPopUps':
+./src\ability_battle_effects.c:3547:82: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 3547 |                         gBattlescriptCurrInstr = BattleScript_AbilityPopUpRevert - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:113:17: note: at offset -5 into object 'BattleScript_AbilityPopUpRevert' of size [0, 2147483647]
+  113 | extern const u8 BattleScript_AbilityPopUpRevert[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\ability_battle_effects.c: In function 'TryReactiveIntimidatePopUp':
+./src\ability_battle_effects.c:3568:68: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 3568 |                 gBattlescriptCurrInstr = BattleScript_AbilityPopUp - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:112:17: note: at offset -5 into object 'BattleScript_AbilityPopUp' of size [0, 2147483647]
+  112 | extern const u8 BattleScript_AbilityPopUp[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+Compiling ./src\ability_battle_effects.c
+Compiling ./src\end_turn.c
+Built in 0:00:07.668662.
+Inserting code.
+Inserting follower-mon overworld sprites at 0x900000.
+Symbol missing: EventScript_PokedexUI
+Inserted in 0:00:04.057722.
+[OK] make.py de CFRU termino correctamente (codigo 0).
+[OK] CFRU listo: C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\test.gba (32.0 MB)
+[OK] ROM final guardada en: C:/Users/AM/Desktop/Pokemon\MiHack_CFRU_20261020_163442.gba (32.0 MB)
+[INFO] El CFRU genero tambien offsets.ini con las direcciones insertadas (C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\offsets.ini).
+[INFO] Parche de inicial: agregando a Shelly al arranque...
+[INFO] ╔════════════════════════════════════════════════════════════╗
+[INFO] ║  🏴‍☠️  PARCHE DE INICIAL — Shelly al arrancar            ║
+[INFO] ╚════════════════════════════════════════════════════════════╝
+[INFO] [96m[INFO][0m ROM: C:/Users/AM/Desktop/Pokemon\MiHack_CFRU_20261020_163442.gba (32.0 MB)
+[INFO] [93m[AVISO][0m El código interno no es BPRE (bytearray(b'POKE')); FireRed en inglés esperado.
+[INFO] [92m[OK][0m Tabla de bancos OK (banco 4 @ 0x03523FC)
+[INFO] [92m[OK][0m Header Casa del Jugador 2F @ 0x0350D88
+[INFO] [92m[OK][0m Identidad confirmada (música 300, tipo 8)
+[INFO] [92m[OK][0m Tabla vanilla @ 0x0168D27: kind 3
+[INFO] [96m[INFO][0m Nuevo bloque @ 0x1F79640 (tabla 0x1F79640, script 0x1F7964C, texto 0x1F79674)
+[INFO] [92m[OK][0m Respaldo: MiHack_CFRU_20261020_163442.gba.respaldo_20261020_163443
+[INFO] [92m[OK][0m Verificación de escritura: correcta
+[INFO] [92m[OK][0m ROM actualizada: C:/Users/AM/Desktop/Pokemon\MiHack_CFRU_20261020_163442.gba
+[INFO] ¡Listo! Al iniciar partida nueva, Shelly (nv. 5) llegará
+[INFO] por PC apenas despiertes en tu cuarto. 🏴‍☠️
+[INFO] (El flujo de Oak se mantiene: podrás elegir inicial además)
+[OK] ROM final con Shelly como inicial. ¡Listísima!
+
+[OK] CADENA COMPLETA FINALIZADA.
+[OK] ROM final lista: C:/Users/AM/Desktop/Pokemon\MiHack_CFRU_20261020_163442.gba

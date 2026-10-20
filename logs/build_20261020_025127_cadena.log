@@ -1,0 +1,12 @@
+=== CFRU Builder 1.0.2 | modo: cadena | 2026-10-20 02:51:27 ===
+[OK] Respaldo creado: C:\Users\AM\Desktop\Pokemon\backups\BPRE0_20261020_025127.gba
+[OK] DPE: OFFSET_TO_PUT actualizado a 0x1600000
+[OK] CFRU: OFFSET_TO_PUT actualizado a 0x1000000
+[INFO] Preparando BPRE0.gba del DPE (16.0 MB)...
+[INFO] El archivo de origen ya estaba en el sitio de destino (C:\Users\AM\Desktop\Pokemon\DPE\BPRE0.gba);
+[INFO] no hace falta copiar nada. Continuando...
+[OK] La ROM ya estaba en su sitio: C:/Users/AM/Desktop/Pokemon/DPE\BPRE0.gba
+[INFO] devkitARM detectado via disco (C:\devkitPro\devkitARM\bin); se inyectara en el PATH solo para esta compilacion.
+[INFO] Ejecutando en C:/Users/AM/Desktop/Pokemon/DPE:  C:\Users\AM\AppData\Local\Programs\Python\Python313\python.exe -u scripts\make.py
+no se encontr� Python; ejecutar sin argumentos para instalar desde el Microsoft Store o deshabilitar este acceso directo desde Configuraci�n > Aplicaciones > Configuraci�n avanzada de aplicaciones > Alias de ejecuci�n de aplicaciones.
+[ERROR] make.py de DPE termino con codigo 1. Revisa las lineas de error arriba.

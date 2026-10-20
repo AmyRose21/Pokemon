@@ -1,0 +1,5 @@
+=== CFRU Builder 1.0.0 | modo: cadena | 2026-10-20 01:59:25 ===
+[OK] Respaldo creado: C:\Users\AM\Desktop\Pokemon\backups\BPRE0_20261020_015925.gba
+[OK] DPE: OFFSET_TO_PUT actualizado a 0x1600000
+[OK] CFRU: OFFSET_TO_PUT actualizado a 0x1000000
+[ERROR] No se pudo copiar la ROM al DPE: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso

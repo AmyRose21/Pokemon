@@ -1,0 +1,182 @@
+[
+  {
+    "ts": "2026-10-20 19:40:13",
+    "mode": "cadena",
+    "duration_s": 41.1,
+    "success": true,
+    "summary": "Cadena completa DPE->CFRU exitosa",
+    "rom_out": "C:/Users/AM/Desktop/Pokemon\\MiHack_CFRU.gba",
+    "log": "build_20261020_193932_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 18:50:26",
+    "mode": "cadena",
+    "duration_s": 24.9,
+    "success": true,
+    "summary": "Cadena completa DPE->CFRU exitosa",
+    "rom_out": "C:/Users/AM/Desktop/Pokemon\\MiHack_CFRU.gba",
+    "log": "build_20261020_185001_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 18:15:51",
+    "mode": "cadena",
+    "duration_s": 21.1,
+    "success": false,
+    "summary": "El parche de inicial de Shelly falló",
+    "rom_out": "",
+    "log": "build_20261020_181530_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 16:34:43",
+    "mode": "cadena",
+    "duration_s": 21.7,
+    "success": true,
+    "summary": "Cadena completa DPE->CFRU exitosa",
+    "rom_out": "C:/Users/AM/Desktop/Pokemon\\MiHack_CFRU_20261020_163442.gba",
+    "log": "build_20261020_163421_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 15:08:27",
+    "mode": "cadena",
+    "duration_s": 26.5,
+    "success": false,
+    "summary": "La compilacion del CFRU fallo",
+    "rom_out": "",
+    "log": "build_20261020_150800_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 14:26:22",
+    "mode": "cadena",
+    "duration_s": 83.7,
+    "success": false,
+    "summary": "La compilacion del CFRU fallo",
+    "rom_out": "",
+    "log": "build_20261020_142458_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 05:00:52",
+    "mode": "cadena",
+    "duration_s": 18.9,
+    "success": true,
+    "summary": "Cadena completa DPE->CFRU exitosa",
+    "rom_out": "C:/Users/AM/Desktop/Pokemon\\MiHack_CFRU.gba",
+    "log": "build_20261020_050033_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 03:54:51",
+    "mode": "cadena",
+    "duration_s": 2202.5,
+    "success": true,
+    "summary": "Cadena completa DPE->CFRU exitosa",
+    "rom_out": "C:/Users/AM/Desktop/Pokemon/DPE\\MiHack_CFRU.gba",
+    "log": "build_20261020_031808_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:52:20",
+    "mode": "actualizar-dpe",
+    "duration_s": 0.7,
+    "success": false,
+    "summary": "La actualizacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_025219_actualizar-dpe.log"
+  },
+  {
+    "ts": "2026-10-20 02:51:27",
+    "mode": "cadena",
+    "duration_s": 0.4,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_025127_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:51:07",
+    "mode": "cadena",
+    "duration_s": 0.5,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_025107_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:50:31",
+    "mode": "cadena",
+    "duration_s": 0.6,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_025031_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:19:31",
+    "mode": "cadena",
+    "duration_s": 0.5,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_021930_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:18:30",
+    "mode": "cadena",
+    "duration_s": 0.6,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_021830_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:17:45",
+    "mode": "cadena",
+    "duration_s": 0.5,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_021745_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:16:52",
+    "mode": "cadena",
+    "duration_s": 0.4,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_021652_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:01:07",
+    "mode": "cadena",
+    "duration_s": 0.5,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_020107_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 02:00:39",
+    "mode": "cadena",
+    "duration_s": 0.4,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_020039_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 01:59:54",
+    "mode": "cadena",
+    "duration_s": 0.6,
+    "success": false,
+    "summary": "La compilacion del DPE fallo",
+    "rom_out": "",
+    "log": "build_20261020_015953_cadena.log"
+  },
+  {
+    "ts": "2026-10-20 01:59:25",
+    "mode": "cadena",
+    "duration_s": 0.1,
+    "success": false,
+    "summary": "No se pudo copiar la ROM al DPE",
+    "rom_out": "",
+    "log": "build_20261020_015925_cadena.log"
+  }
+]

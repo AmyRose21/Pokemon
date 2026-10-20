@@ -1,0 +1,14753 @@
+/*
+Trainer overrides in Pokemon Showdown-compatible syntax.
+
+Only trainers listed here override the existing C tables. A block starts with:
+    === TRAINER_ID ===
+
+Required trainer fields: Name, Class, Pic
+Optional fields: Gender, Music, Items, Double Battle, AI
+
+Pokemon use Showdown export syntax. Example:
+
+=== TRAINER_YOUNGSTER_BEN ===
+Name: BEN
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move
+
+Rattata (M) @ Oran Berry
+Level: 12
+Ability: Random All
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+Tera Type: Normal
+- Tackle
+- Quick Attack
+
+Important CFRU limitation: Ability, Nature, per-stat IVs/EVs and Tera Type
+require explicit moves for every Pokemon in that trainer's party.
+*/
+=== TRAINER_AQUA_LEADER ===
+Name: 
+Class: Aqua Leader
+Pic: Archie
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_AQUA_GRUNT_M ===
+Name: 
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_AQUA_GRUNT_F ===
+Name: 
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_AROMA_LADY ===
+Name: 
+Class: Aroma Lady Rs
+Pic: Aroma Lady Rs
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_RUIN_MANIAC ===
+Name: 
+Class: Ruin Maniac Rs
+Pic: Ruin Maniac Rs
+Gender: Male
+Music: Elite Four
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_INTERVIEWER ===
+Name: 
+Class: Interviewer
+Pic: Camera Duo
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_TUBER_F ===
+Name: 
+Class: Tuber
+Pic: Rs Tuber F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Starmie
+Level: 38
+
+=== TRAINER_RS_TUBER_M ===
+Name: 
+Class: Tuber
+Pic: Rs Tuber M
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Starmie
+Level: 38
+
+=== TRAINER_RS_COOLTRAINER_M ===
+Name: 
+Class: Cooltrainer
+Pic: Rs Cooltrainer M
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move / Semi Smart
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_COOLTRAINER_F ===
+Name: 
+Class: Cooltrainer
+Pic: Rs Cooltrainer F
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move / Semi Smart
+
+Ekans
+Level: 5
+
+=== TRAINER_HEX_MANIAC ===
+Name: 
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_LADY ===
+Name: 
+Class: Lady Rs
+Pic: Rs Lady
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_BEAUTY ===
+Name: 
+Class: Beauty Rs
+Pic: Rs Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RICH_BOY ===
+Name: 
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_POKEMANIAC ===
+Name: 
+Class: Pokemaniac Rs
+Pic: Rs Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_SWIMMER_M ===
+Name: 
+Class: Swimmer M
+Pic: Rs Swimmer M
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_BLACK_BELT ===
+Name: 
+Class: Black Belt Rs
+Pic: Rs Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_GUITARIST ===
+Name: 
+Class: Guitarist Rs
+Pic: Guitarist
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_KINDLER ===
+Name: 
+Class: Kindler
+Pic: Kindler
+Gender: Male
+Music: Elite Four
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_CAMPER ===
+Name: 
+Class: Camper Rs
+Pic: Rs Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BUG_MANIAC ===
+Name: 
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_PSYCHIC_M ===
+Name: 
+Class: Psychic Rs
+Pic: Rs Psychic M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_PSYCHIC_F ===
+Name: 
+Class: Psychic Rs
+Pic: Rs Psychic F
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_GENTLEMAN ===
+Name: 
+Class: Gentleman Rs
+Pic: Rs Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_ELITE_FOUR_SIDNEY ===
+Name: Sidney
+Class: Elite Four Rs
+Pic: Sidney
+Gender: Male
+Music: Elite Four
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_ELITE_FOUR_PHOEBE ===
+Name: Phoebe
+Class: Elite Four Rs
+Pic: Phoebe
+Gender: Male
+Music: Elite Four
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_ROXANNE ===
+Name: Roxanne
+Class: Leader Rs
+Pic: Roxanne
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_BRAWLY ===
+Name: Brawly
+Class: Leader Rs
+Pic: Brawly
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_TATE_LIZA ===
+Name: TateLiza
+Class: Leader Rs
+Pic: Liza And Tate
+Gender: Female
+Music: Female
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_SCHOOL_KID_M ===
+Name: 
+Class: School Kid
+Pic: School Boy
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_SCHOOL_KID_F ===
+Name: 
+Class: School Kid
+Pic: School Girl
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_SR_AND_JR ===
+Name: 
+Class: Sr And Jr
+Pic: Sr And Jr
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_POKEFAN_M ===
+Name: 
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_POKEFAN_F ===
+Name: 
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_EXPERT_M ===
+Name: 
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_EXPERT_F ===
+Name: 
+Class: Expert
+Pic: Expert F
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_YOUNGSTER ===
+Name: 
+Class: Youngster Rs
+Pic: Rs Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_CHAMPION ===
+Name: 
+Class: Champion Rs
+Pic: Steven
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_FISHERMAN ===
+Name: 
+Class: Fisherman Rs
+Pic: Rs Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_CYCLING_TRIATHLETE_M ===
+Name: 
+Class: Triathlete
+Pic: Cycling Triathlete M
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_CYCLING_TRIATHLETE_F ===
+Name: 
+Class: Triathlete
+Pic: Cycling Triathlete F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RUNNING_TRIATHLETE_M ===
+Name: 
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RUNNING_TRIATHLETE_F ===
+Name: 
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_SWIMMING_TRIATHLETE_M ===
+Name: 
+Class: Triathlete
+Pic: Swimming Triathlete M
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_SWIMMING_TRIATHLETE_F ===
+Name: 
+Class: Triathlete
+Pic: Swimming Triathlete F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_DRAGON_TAMER ===
+Name: 
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_BIRD_KEEPER ===
+Name: 
+Class: Bird Keeper Rs
+Pic: Rs Birdkeeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_NINJA_BOY ===
+Name: 
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BATTLE_GIRL ===
+Name: 
+Class: Battle Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_PARASOL_LADY ===
+Name: 
+Class: Parasol Lady
+Pic: Parasol Lady
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_SWIMMER_F ===
+Name: 
+Class: Swimmer F Rs
+Pic: Rs Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_PICNICKER ===
+Name: 
+Class: Picnicker Rs
+Pic: Rs Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_TWINS ===
+Name: 
+Class: Twins Rs
+Pic: Rs Twins
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_SAILOR ===
+Name: 
+Class: Sailor Rs
+Pic: Rs Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BOARDER_M ===
+Name: 
+Class: Boarder
+Pic: Rs Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BOARDER_F ===
+Name: 
+Class: Boarder
+Pic: Rs Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_COLLECTOR ===
+Name: 
+Class: Collector
+Pic: Collector
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_WALLY ===
+Name: 
+Class: Pkmn Trainer 2
+Pic: Rs Wally
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BRENDAN ===
+Name: 
+Class: Pkmn Trainer 2
+Pic: Rs Brendan
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BRENDAN_2 ===
+Name: 
+Class: Pkmn Trainer 2
+Pic: Rs Brendan
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BRENDAN_3 ===
+Name: 
+Class: Pkmn Trainer 2
+Pic: Rs Brendan
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_MAY ===
+Name: 
+Class: Pkmn Trainer 2
+Pic: Rs May
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_MAY_2 ===
+Name: 
+Class: Pkmn Trainer 2
+Pic: Rs May
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_MAY_3 ===
+Name: 
+Class: Pkmn Trainer 2
+Pic: Rs May
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_PKMN_BREEDER_M ===
+Name: 
+Class: Pkmn Breeder Rs
+Pic: Rs Breeder M
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_PKMN_BREEDER_F ===
+Name: 
+Class: Pkmn Breeder Rs
+Pic: Rs Breeder F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_PKMN_RANGER_M ===
+Name: 
+Class: Pkmn Ranger Rs
+Pic: Rs Ranger M
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_PKMN_RANGER_F ===
+Name: 
+Class: Pkmn Ranger Rs
+Pic: Rs Ranger F
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Ekans
+Level: 5
+
+=== TRAINER_MAGMA_LEADER ===
+Name: 
+Class: Magma Leader
+Pic: Maxie
+Gender: Male
+Music: Magma
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_MAGMA_GRUNT_M ===
+Name: 
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_MAMGA_GRUNT_F ===
+Name: 
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: Male
+Music: Magma
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_LASS ===
+Name: 
+Class: Lass Rs
+Pic: Rs Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_BUG_CATCHER ===
+Name: 
+Class: Bug Catcher Rs
+Pic: Rs Bugcatcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_HIKER ===
+Name: 
+Class: Hiker Rs
+Pic: Rs Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_YOUNG_COUPLE ===
+Name: 
+Class: Young Couple Rs
+Pic: Rs Young Couple
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+Ekans
+Level: 5
+
+=== TRAINER_OLD_COUPLE ===
+Name: 
+Class: Old Couple
+Pic: Expert Duo
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_RS_SIS_AND_BRO ===
+Name: 
+Class: Sis And Bro Rs
+Pic: Rs Sis And Bro
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_AQUA_ADMIN_MATT ===
+Name: Matt
+Class: Aqua Admin
+Pic: Matt
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_AQUA_ADMIN_SHELLY ===
+Name: Shelly
+Class: Aqua Admin
+Pic: Shelly
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_MAGMA_ADMIN_TABITHA ===
+Name: Tabitha
+Class: Magma Admin
+Pic: Tabitha
+Gender: Male
+Music: Magma
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_MAGMA_ADMIN_COURTNEY ===
+Name: Courtney
+Class: Magma Admin
+Pic: Courtney
+Gender: Male
+Music: Magma
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_WATTSON ===
+Name: Wattson
+Class: Leader Rs
+Pic: Wattson
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_FLANNERY ===
+Name: Flannery
+Class: Leader Rs
+Pic: Flannery
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_NORMAN ===
+Name: Norman
+Class: Leader Rs
+Pic: Norman
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_WINONA ===
+Name: Winona
+Class: Leader Rs
+Pic: Winona
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_LEADER_WALLACE ===
+Name: Wallace
+Class: Leader Rs
+Pic: Wallace
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_ELITE_FOUR_GLACIA ===
+Name: Glacia
+Class: Elite Four Rs
+Pic: Glacia
+Gender: Male
+Music: Elite Four
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_ELITE_FOUR_DRAKE ===
+Name: Drake
+Class: Elite Four Rs
+Pic: Drake
+Gender: Male
+Music: Elite Four
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_YOUNGSTER_BEN ===
+Name: Ben
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 11
+
+Ekans
+Level: 11
+
+=== TRAINER_YOUNGSTER_CALVIN ===
+Name: Calvin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 14
+
+=== TRAINER_YOUNGSTER_JOSH ===
+Name: Josh
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 10
+
+Rattata
+Level: 10
+
+Zubat
+Level: 10
+
+=== TRAINER_YOUNGSTER_TIMMY ===
+Name: Timmy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandshrew
+Level: 14
+
+Ekans
+Level: 14
+
+=== TRAINER_YOUNGSTER_JOEY ===
+Name: Joey
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 15
+
+Spearow
+Level: 15
+
+=== TRAINER_YOUNGSTER_DAN ===
+Name: Dan
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Slowpoke
+Level: 17
+
+=== TRAINER_YOUNGSTER_CHAD ===
+Name: Chad
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 14
+
+Sandshrew
+Level: 14
+
+=== TRAINER_YOUNGSTER_TYLER ===
+Name: Tyler
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 21
+
+=== TRAINER_YOUNGSTER_EDDIE ===
+Name: Eddie
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 21
+
+=== TRAINER_YOUNGSTER_DILLON ===
+Name: Dillon
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandshrew
+Level: 19
+
+Zubat
+Level: 19
+
+=== TRAINER_YOUNGSTER_YASU ===
+Name: Yasu
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 17
+
+Rattata
+Level: 17
+
+Raticate
+Level: 17
+
+=== TRAINER_YOUNGSTER_DAVE ===
+Name: Dave
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 18
+
+Nidorino
+Level: 18
+
+=== TRAINER_YOUNGSTER_BEN_2 ===
+Name: Ben
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 17
+CFRU IV: 20
+
+Ekans
+Level: 17
+CFRU IV: 20
+
+=== TRAINER_BUG_CATCHER_RICK ===
+Name: Rick
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weedle
+Level: 6
+
+Caterpie
+Level: 6
+
+=== TRAINER_BUG_CATCHER_DOUG ===
+Name: Doug
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weedle
+Level: 7
+
+Kakuna
+Level: 7
+
+Weedle
+Level: 7
+
+=== TRAINER_BUG_CATCHER_SAMMY ===
+Name: Sammy
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weedle
+Level: 9
+
+=== TRAINER_BUG_CATCHER_COLTON ===
+Name: Colton
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Caterpie
+Level: 10
+
+Weedle
+Level: 10
+
+Caterpie
+Level: 10
+
+=== TRAINER_BUG_CATCHER_GREG ===
+Name: Greg
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weedle
+Level: 9
+
+Kakuna
+Level: 9
+
+Caterpie
+Level: 9
+
+Metapod
+Level: 9
+
+=== TRAINER_BUG_CATCHER_JAMES ===
+Name: James
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Caterpie
+Level: 11
+
+Metapod
+Level: 11
+
+=== TRAINER_BUG_CATCHER_KENT ===
+Name: Kent
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weedle
+Level: 11
+
+Kakuna
+Level: 11
+
+=== TRAINER_BUG_CATCHER_ROBBY ===
+Name: Robby
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Caterpie
+Level: 10
+
+Metapod
+Level: 10
+
+Caterpie
+Level: 10
+
+=== TRAINER_BUG_CATCHER_CALE ===
+Name: Cale
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Caterpie
+Level: 10
+
+Weedle
+Level: 10
+
+Metapod
+Level: 10
+
+Kakuna
+Level: 10
+
+=== TRAINER_BUG_CATCHER_KEIGO ===
+Name: Keigo
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weedle
+Level: 16
+
+Caterpie
+Level: 16
+
+Weedle
+Level: 16
+
+=== TRAINER_BUG_CATCHER_ELIJAH ===
+Name: Elijah
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Butterfree
+Level: 20
+
+=== TRAINER_BUG_CATCHER_2 ===
+Name: 
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Metapod
+Level: 18
+
+Caterpie
+Level: 18
+
+Venonat
+Level: 18
+
+=== TRAINER_BUG_CATCHER_BRENT ===
+Name: Brent
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Beedrill
+Level: 19
+
+Beedrill
+Level: 19
+
+=== TRAINER_BUG_CATCHER_CONNER ===
+Name: Conner
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Caterpie
+Level: 20
+
+Weedle
+Level: 20
+
+Venonat
+Level: 20
+
+=== TRAINER_LASS_JANICE ===
+Name: Janice
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 9
+
+Pidgey
+Level: 9
+
+=== TRAINER_LASS_SALLY ===
+Name: Sally
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 10
+
+Nidoran-F
+Level: 10
+
+=== TRAINER_LASS_ROBIN ===
+Name: Robin
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Jigglypuff
+Level: 14
+
+=== TRAINER_LASS_CRISSY ===
+Name: Crissy
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Paras
+Level: 31
+
+Paras
+Level: 31
+
+Parasect
+Level: 31
+
+=== TRAINER_LASS_MIRIAM ===
+Name: Miriam
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Oddish
+Level: 11
+
+Bellsprout
+Level: 11
+
+=== TRAINER_LASS_IRIS ===
+Name: Iris
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Clefairy
+Level: 14
+
+=== TRAINER_LASS_RELI ===
+Name: Reli
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 16
+
+Nidoran-F
+Level: 16
+
+=== TRAINER_LASS_ALI ===
+Name: Ali
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 12
+
+Oddish
+Level: 12
+
+Bellsprout
+Level: 12
+
+=== TRAINER_LASS_2 ===
+Name: 
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 15
+
+Nidoran-F
+Level: 15
+
+=== TRAINER_LASS_HALEY ===
+Name: Haley
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Oddish
+Level: 13
+
+Pidgey
+Level: 13
+
+Oddish
+Level: 13
+
+=== TRAINER_LASS_ANN ===
+Name: Ann
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 18
+
+Nidoran-F
+Level: 18
+
+=== TRAINER_LASS_DAWN ===
+Name: Dawn
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 18
+
+Pikachu
+Level: 18
+
+=== TRAINER_LASS_PAIGE ===
+Name: Paige
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-F
+Level: 23
+
+Nidorina
+Level: 23
+
+=== TRAINER_LASS_ANDREA ===
+Name: Andrea
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Meowth
+Level: 24
+
+Meowth
+Level: 24
+
+Meowth
+Level: 24
+
+=== TRAINER_LASS_MEGAN ===
+Name: Megan
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 19
+
+Rattata
+Level: 19
+
+Nidoran-M
+Level: 19
+
+Meowth
+Level: 19
+
+Pikachu
+Level: 19
+
+=== TRAINER_LASS_JULIA ===
+Name: Julia
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Clefairy
+Level: 22
+
+Clefairy
+Level: 22
+
+=== TRAINER_LASS_KAY ===
+Name: Kay
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bellsprout
+Level: 23
+
+Weepinbell
+Level: 23
+
+=== TRAINER_LASS_LISA ===
+Name: Lisa
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Oddish
+Level: 23
+
+Gloom
+Level: 23
+
+=== TRAINER_SAILOR_EDMOND ===
+Name: Edmond
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 18
+
+Shellder
+Level: 18
+
+=== TRAINER_SAILOR_TREVOR ===
+Name: Trevor
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 17
+
+Tentacool
+Level: 17
+
+=== TRAINER_SAILOR_LEONARD ===
+Name: Leonard
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Shellder
+Level: 21
+
+=== TRAINER_SAILOR_DUNCAN ===
+Name: Duncan
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Horsea
+Level: 17
+
+Shellder
+Level: 17
+
+Tentacool
+Level: 17
+
+=== TRAINER_SAILOR_HUEY ===
+Name: Huey
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 18
+
+Staryu
+Level: 18
+
+=== TRAINER_SAILOR_DYLAN ===
+Name: Dylan
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Horsea
+Level: 17
+
+Horsea
+Level: 17
+
+Horsea
+Level: 17
+
+=== TRAINER_SAILOR_PHILLIP ===
+Name: Phillip
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 20
+
+=== TRAINER_SAILOR_DWAYNE ===
+Name: Dwayne
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 21
+
+Pikachu
+Level: 21
+
+=== TRAINER_CAMPER_LIAM ===
+Name: Liam
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 10
+- Tackle
+- Defense Curl
+
+Sandshrew
+Level: 11
+- Scratch
+- Defense Curl
+- Sand Attack
+
+=== TRAINER_CAMPER_SHANE ===
+Name: Shane
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 14
+
+Ekans
+Level: 14
+
+=== TRAINER_CAMPER_ETHAN ===
+Name: Ethan
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey
+Level: 18
+
+=== TRAINER_CAMPER_RICKY ===
+Name: Ricky
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Squirtle
+Level: 20
+
+=== TRAINER_CAMPER_JEFF ===
+Name: Jeff
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 16
+
+Raticate
+Level: 16
+
+=== TRAINER_CAMPER_2 ===
+Name: 
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_CAMPER_CHRIS ===
+Name: Chris
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 21
+
+Charmander
+Level: 21
+
+=== TRAINER_CAMPER_DREW ===
+Name: Drew
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 19
+
+Sandshrew
+Level: 19
+
+Ekans
+Level: 19
+
+Sandshrew
+Level: 19
+
+=== TRAINER_PICNICKER_DIANA ===
+Name: Diana
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 19
+
+=== TRAINER_PICNICKER_NANCY ===
+Name: Nancy
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 16
+
+Pikachu
+Level: 16
+
+=== TRAINER_PICNICKER_ISABELLE ===
+Name: Isabelle
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 16
+
+Pidgey
+Level: 16
+
+Pidgey
+Level: 16
+
+=== TRAINER_PICNICKER_KELSEY ===
+Name: Kelsey
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 15
+
+Nidoran-F
+Level: 15
+
+=== TRAINER_PICNICKER_ALICIA ===
+Name: Alicia
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Oddish
+Level: 18
+
+Bellsprout
+Level: 18
+
+Oddish
+Level: 18
+
+Bellsprout
+Level: 18
+
+=== TRAINER_PICNICKER_CAITLIN ===
+Name: Caitlin
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Meowth
+Level: 23
+
+=== TRAINER_PICNICKER_HEIDI ===
+Name: Heidi
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 20
+
+Clefairy
+Level: 20
+
+=== TRAINER_PICNICKER_CAROL ===
+Name: Carol
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 21
+
+Pidgeotto
+Level: 21
+
+=== TRAINER_PICNICKER_SOFIA ===
+Name: Sofia
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Jigglypuff
+Level: 21
+
+Pidgey
+Level: 21
+
+Meowth
+Level: 21
+
+=== TRAINER_PICNICKER_MARTHA ===
+Name: Martha
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Oddish
+Level: 22
+
+Bulbasaur
+Level: 22
+
+=== TRAINER_PICNICKER_TINA ===
+Name: Tina
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bulbasaur
+Level: 24
+
+Ivysaur
+Level: 24
+
+=== TRAINER_PICNICKER_HANNAH ===
+Name: Hannah
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 24
+
+Meowth
+Level: 24
+
+Rattata
+Level: 24
+
+Pikachu
+Level: 24
+
+Meowth
+Level: 24
+
+=== TRAINER_POKEMANIAC_MARK ===
+Name: Mark
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rhyhorn
+Level: 29
+CFRU IV: 30
+
+Lickitung
+Level: 29
+CFRU IV: 30
+
+=== TRAINER_POKEMANIAC_HERMAN ===
+Name: Herman
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Cubone
+Level: 20
+CFRU IV: 30
+
+Slowpoke
+Level: 20
+CFRU IV: 30
+
+=== TRAINER_POKEMANIAC_COOPER ===
+Name: Cooper
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Slowpoke
+Level: 20
+CFRU IV: 30
+
+Slowpoke
+Level: 20
+CFRU IV: 30
+
+Slowpoke
+Level: 20
+CFRU IV: 30
+
+=== TRAINER_POKEMANIAC_STEVE ===
+Name: Steve
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Charmander
+Level: 22
+CFRU IV: 30
+
+Cubone
+Level: 22
+CFRU IV: 30
+
+=== TRAINER_POKEMANIAC_WINSTON ===
+Name: Winston
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Slowpoke
+Level: 25
+CFRU IV: 30
+
+=== TRAINER_POKEMANIAC_DAWSON ===
+Name: Dawson
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Charmeleon
+Level: 40
+CFRU IV: 30
+
+Lapras
+Level: 40
+CFRU IV: 30
+
+Lickitung
+Level: 40
+CFRU IV: 30
+
+=== TRAINER_POKEMANIAC_ASHTON ===
+Name: Ashton
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Cubone
+Level: 23
+CFRU IV: 30
+
+Slowpoke
+Level: 23
+CFRU IV: 30
+
+=== TRAINER_SUPER_NERD_JOVAN ===
+Name: Jovan
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 11
+
+Voltorb
+Level: 11
+
+=== TRAINER_SUPER_NERD_MIGUEL ===
+Name: Miguel
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 12
+
+Voltorb
+Level: 12
+
+Koffing
+Level: 12
+
+=== TRAINER_SUPER_NERD_AIDAN ===
+Name: Aidan
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 20
+- Sonic Boom
+- Screech
+- Tackle
+- Charge
+
+Koffing
+Level: 20
+- Sludge
+- Smog
+- Tackle
+- Poison Gas
+
+Voltorb
+Level: 20
+- Sonic Boom
+- Screech
+- Tackle
+- Charge
+
+Magnemite
+Level: 20
+- Sonic Boom
+- Supersonic
+- ThunderShock
+- Tackle
+
+=== TRAINER_SUPER_NERD_GLENN ===
+Name: Glenn
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 22
+
+Muk
+Level: 22
+
+Grimer
+Level: 22
+
+=== TRAINER_SUPER_NERD_LESLIE ===
+Name: Leslie
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 26
+- Sludge
+- Smokescreen
+- Smog
+- Selfdestruct
+
+=== TRAINER_SUPER_NERD_1 ===
+Name: 
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 22
+
+Magnemite
+Level: 22
+
+Weezing
+Level: 22
+
+=== TRAINER_SUPER_NERD_2 ===
+Name: 
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 20
+
+Magnemite
+Level: 20
+
+Koffing
+Level: 20
+
+Magnemite
+Level: 20
+
+=== TRAINER_SUPER_NERD_3 ===
+Name: 
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 24
+
+Voltorb
+Level: 24
+
+=== TRAINER_SUPER_NERD_ERIK ===
+Name: Erik
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Vulpix
+Level: 36
+
+Vulpix
+Level: 36
+
+Ninetales
+Level: 36
+
+=== TRAINER_SUPER_NERD_AVERY ===
+Name: Avery
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ponyta
+Level: 34
+
+Charmander
+Level: 34
+
+Vulpix
+Level: 34
+
+Growlithe
+Level: 34
+
+=== TRAINER_SUPER_NERD_DEREK ===
+Name: Derek
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rapidash
+Level: 41
+
+=== TRAINER_SUPER_NERD_ZAC ===
+Name: Zac
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 37
+
+Vulpix
+Level: 37
+
+=== TRAINER_HIKER_MARCOS ===
+Name: Marcos
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 10
+
+Geodude
+Level: 10
+
+Onix
+Level: 10
+
+=== TRAINER_HIKER_FRANKLIN ===
+Name: Franklin
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 15
+
+Geodude
+Level: 15
+
+=== TRAINER_HIKER_NOB ===
+Name: Nob
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 13
+
+Geodude
+Level: 13
+
+Machop
+Level: 13
+
+Geodude
+Level: 13
+
+=== TRAINER_HIKER_WAYNE ===
+Name: Wayne
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 17
+
+=== TRAINER_HIKER_ALAN ===
+Name: Alan
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 21
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+Onix
+Level: 21
+- Harden
+- Rock Throw
+- Bind
+- Screech
+
+=== TRAINER_HIKER_BRICE ===
+Name: Brice
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 20
+
+Machop
+Level: 20
+
+Geodude
+Level: 20
+
+=== TRAINER_HIKER_CLARK ===
+Name: Clark
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 21
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+Onix
+Level: 21
+- Harden
+- Rock Throw
+- Bind
+- Screech
+
+=== TRAINER_HIKER_TRENT ===
+Name: Trent
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 19
+
+Graveler
+Level: 19
+
+=== TRAINER_HIKER_DUDLEY ===
+Name: Dudley
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 21
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+Geodude
+Level: 21
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+Graveler
+Level: 21
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+=== TRAINER_HIKER_ALLEN ===
+Name: Allen
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 25
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+=== TRAINER_HIKER_ERIC ===
+Name: Eric
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 20
+
+Onix
+Level: 20
+
+=== TRAINER_HIKER_LENNY ===
+Name: Lenny
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 19
+
+Machop
+Level: 19
+
+Geodude
+Level: 19
+
+Geodude
+Level: 19
+
+=== TRAINER_HIKER_OLIVER ===
+Name: Oliver
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 20
+
+Onix
+Level: 20
+
+Geodude
+Level: 20
+
+=== TRAINER_HIKER_LUCAS ===
+Name: Lucas
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 21
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+Graveler
+Level: 21
+- Magnitude
+- Rock Throw
+- Mud Sport
+- Defense Curl
+
+=== TRAINER_BIKER_JARED ===
+Name: Jared
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Poison Gas
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_BIKER_MALIK ===
+Name: Malik
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 29
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Grimer
+Level: 29
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+=== TRAINER_BIKER_ERNEST ===
+Name: Ernest
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Weezing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Grimer
+Level: 25
+- Minimize
+- Sludge
+- Disable
+- Pound
+
+=== TRAINER_BIKER_ALEX ===
+Name: Alex
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Grimer
+Level: 28
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+Weezing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_BIKER_LAO ===
+Name: Lao
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 29
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+Koffing
+Level: 29
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_BIKER_1 ===
+Name: 
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BIKER_HIDEO ===
+Name: Hideo
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weezing
+Level: 33
+
+=== TRAINER_BIKER_RUBEN ===
+Name: Ruben
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weezing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Weezing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_BIKER_BILLY ===
+Name: Billy
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Muk
+Level: 33
+
+=== TRAINER_BIKER_NIKOLAS ===
+Name: Nikolas
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 29
+- Spark
+- Sonic Boom
+- Screech
+- Charge
+
+Voltorb
+Level: 29
+- Spark
+- Sonic Boom
+- Screech
+- Charge
+
+=== TRAINER_BIKER_JAXON ===
+Name: Jaxon
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weezing
+Level: 29
+- Sludge
+- Smokescreen
+- Smog
+- Tackle
+
+Muk
+Level: 29
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+=== TRAINER_BIKER_WILLIAM ===
+Name: William
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Weezing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Weezing
+Level: 25
+- Smokescreen
+- Sludge
+- Selfdestruct
+- Tackle
+
+=== TRAINER_BIKER_LUKAS ===
+Name: Lukas
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Grimer
+Level: 26
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+Koffing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_BIKER_ISAAC ===
+Name: Isaac
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 28
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+Grimer
+Level: 28
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_BIKER_GERALD ===
+Name: Gerald
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 29
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Muk
+Level: 29
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+=== TRAINER_BURGLAR_1 ===
+Name: 
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 29
+
+Vulpix
+Level: 29
+
+=== TRAINER_BURGLAR_2 ===
+Name: 
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 33
+
+=== TRAINER_BURGLAR_3 ===
+Name: 
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Vulpix
+Level: 28
+
+Charmander
+Level: 28
+
+Ponyta
+Level: 28
+
+=== TRAINER_BURGLAR_QUINN ===
+Name: Quinn
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 36
+
+Vulpix
+Level: 36
+
+Ninetales
+Level: 36
+
+=== TRAINER_BURGLAR_RAMON ===
+Name: Ramon
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ponyta
+Level: 41
+
+=== TRAINER_BURGLAR_DUSTY ===
+Name: Dusty
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Vulpix
+Level: 37
+
+Growlithe
+Level: 37
+
+=== TRAINER_BURGLAR_ARNIE ===
+Name: Arnie
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Charmander
+Level: 34
+
+Charmeleon
+Level: 34
+
+=== TRAINER_BURGLAR_4 ===
+Name: 
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Charmander
+Level: 34
+
+Charmeleon
+Level: 34
+
+=== TRAINER_BURGLAR_SIMON ===
+Name: Simon
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ninetales
+Level: 38
+
+=== TRAINER_BURGLAR_LEWIS ===
+Name: Lewis
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 34
+
+Ponyta
+Level: 34
+
+=== TRAINER_ENGINEER_BAILY ===
+Name: Baily
+Class: Engineer
+Pic: Worker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 21
+
+Magnemite
+Level: 21
+
+=== TRAINER_ENGINEER_BRAXTON ===
+Name: Braxton
+Class: Engineer
+Pic: Worker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 21
+
+=== TRAINER_ENGINEER_BERNIE ===
+Name: Bernie
+Class: Engineer
+Pic: Worker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 18
+
+Magnemite
+Level: 18
+
+Magneton
+Level: 18
+
+=== TRAINER_FISHERMAN_DALE ===
+Name: Dale
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 17
+
+Tentacool
+Level: 17
+
+Goldeen
+Level: 17
+
+=== TRAINER_FISHERMAN_BARNY ===
+Name: Barny
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 17
+
+Staryu
+Level: 17
+
+Shellder
+Level: 17
+
+=== TRAINER_FISHERMAN_NED ===
+Name: Ned
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 22
+
+Poliwag
+Level: 22
+
+Goldeen
+Level: 22
+
+=== TRAINER_FISHERMAN_CHIP ===
+Name: Chip
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 24
+
+Goldeen
+Level: 24
+
+=== TRAINER_FISHERMAN_HANK ===
+Name: Hank
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 27
+
+=== TRAINER_FISHERMAN_ELLIOT ===
+Name: Elliot
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 21
+
+Shellder
+Level: 21
+
+Goldeen
+Level: 21
+
+Horsea
+Level: 21
+
+=== TRAINER_FISHERMAN_RONALD ===
+Name: Ronald
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seaking
+Level: 28
+
+Goldeen
+Level: 28
+
+Seaking
+Level: 28
+
+Seaking
+Level: 28
+
+=== TRAINER_FISHERMAN_CLAUDE ===
+Name: Claude
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Shellder
+Level: 31
+
+Cloyster
+Level: 31
+
+=== TRAINER_FISHERMAN_WADE ===
+Name: Wade
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magikarp
+Level: 27
+
+Magikarp
+Level: 27
+
+Magikarp
+Level: 27
+
+Magikarp
+Level: 27
+
+Magikarp
+Level: 27
+
+Magikarp
+Level: 27
+
+=== TRAINER_FISHERMAN_NOLAN ===
+Name: Nolan
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seaking
+Level: 33
+
+Goldeen
+Level: 33
+
+=== TRAINER_FISHERMAN_ANDREW ===
+Name: Andrew
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magikarp
+Level: 24
+
+Magikarp
+Level: 24
+
+=== TRAINER_SWIMMER_MALE_LUIS ===
+Name: Luis
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Horsea
+Level: 16
+
+Shellder
+Level: 16
+
+=== TRAINER_SWIMMER_MALE_RICHARD ===
+Name: Richard
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 30
+
+Shellder
+Level: 30
+
+=== TRAINER_SWIMMER_MALE_REECE ===
+Name: Reece
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 29
+
+Horsea
+Level: 29
+
+Staryu
+Level: 29
+
+=== TRAINER_SWIMMER_MALE_MATTHEW ===
+Name: Matthew
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 30
+
+Poliwhirl
+Level: 30
+
+=== TRAINER_SWIMMER_MALE_DOUGLAS ===
+Name: Douglas
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Horsea
+Level: 27
+
+Tentacool
+Level: 27
+
+Tentacool
+Level: 27
+
+Goldeen
+Level: 27
+
+=== TRAINER_SWIMMER_MALE_DAVID ===
+Name: David
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 29
+
+Shellder
+Level: 29
+
+Seaking
+Level: 29
+
+=== TRAINER_SWIMMER_MALE_TONY ===
+Name: Tony
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Horsea
+Level: 30
+
+Horsea
+Level: 30
+
+=== TRAINER_SWIMMER_MALE_AXLE ===
+Name: Axle
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 27
+
+Tentacool
+Level: 27
+
+Staryu
+Level: 27
+
+Horsea
+Level: 27
+
+Tentacruel
+Level: 27
+
+=== TRAINER_SWIMMER_MALE_BARRY ===
+Name: Barry
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Shellder
+Level: 31
+
+Cloyster
+Level: 31
+
+=== TRAINER_SWIMMER_MALE_DEAN ===
+Name: Dean
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Staryu
+Level: 35
+
+=== TRAINER_SWIMMER_MALE_DARRIN ===
+Name: Darrin
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Horsea
+Level: 28
+
+Horsea
+Level: 28
+
+Seadra
+Level: 28
+
+Horsea
+Level: 28
+
+=== TRAINER_SWIMMER_MALE_SPENCER ===
+Name: Spencer
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seadra
+Level: 33
+
+Tentacruel
+Level: 33
+
+=== TRAINER_SWIMMER_MALE_JACK ===
+Name: Jack
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Starmie
+Level: 37
+
+=== TRAINER_SWIMMER_MALE_JEROME ===
+Name: Jerome
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Staryu
+Level: 33
+
+Wartortle
+Level: 33
+
+=== TRAINER_SWIMMER_MALE_ROLAND ===
+Name: Roland
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwhirl
+Level: 32
+
+Tentacool
+Level: 32
+
+Seadra
+Level: 32
+
+=== TRAINER_CUE_BALL_KOJI ===
+Name: Koji
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 28
+
+Mankey
+Level: 28
+
+Machop
+Level: 28
+
+=== TRAINER_CUE_BALL_LUKE ===
+Name: Luke
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey
+Level: 29
+
+Machop
+Level: 29
+
+=== TRAINER_CUE_BALL_CAMRON ===
+Name: Camron
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey
+Level: 29
+
+Machop
+Level: 29
+
+=== TRAINER_CUE_BALL_RAUL ===
+Name: Raul
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey
+Level: 29
+
+Primeape
+Level: 29
+
+=== TRAINER_CUE_BALL_ISAIAH ===
+Name: Isaiah
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 29
+
+Machamp
+Level: 29
+
+=== TRAINER_CUE_BALL_ZEEK ===
+Name: Zeek
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke
+Level: 33
+
+=== TRAINER_CUE_BALL_JAMAL ===
+Name: Jamal
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey
+Level: 26
+
+Mankey
+Level: 26
+
+Machamp
+Level: 26
+
+Machop
+Level: 26
+
+=== TRAINER_GAMER_STAN ===
+Name: Stan
+Class: Gamer
+Pic: Gamer
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 22
+
+Poliwag
+Level: 22
+
+Poliwhirl
+Level: 22
+
+=== TRAINER_GAMER_1 ===
+Name: 
+Class: Gamer
+Pic: Gamer
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_GAMER_RICH ===
+Name: Rich
+Class: Gamer
+Pic: Gamer
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 24
+
+Vulpix
+Level: 24
+
+=== TRAINER_BEAUTY_BRIDGET ===
+Name: Bridget
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Oddish
+Level: 21
+
+Bellsprout
+Level: 21
+
+Oddish
+Level: 21
+
+Bellsprout
+Level: 21
+
+=== TRAINER_BEAUTY_TAMIA ===
+Name: Tamia
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bellsprout
+Level: 24
+
+Bellsprout
+Level: 24
+
+=== TRAINER_BEAUTY_LORI ===
+Name: Lori
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Exeggcute
+Level: 24
+
+=== TRAINER_BEAUTY_LOLA ===
+Name: Lola
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 27
+
+Pikachu
+Level: 27
+
+Rattata
+Level: 27
+
+=== TRAINER_BEAUTY_SHEILA ===
+Name: Sheila
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Clefairy
+Level: 29
+
+Meowth
+Level: 29
+
+=== TRAINER_SWIMMER_FEMALE_TIFFANY ===
+Name: Tiffany
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seaking
+Level: 35
+
+=== TRAINER_SWIMMER_FEMALE_NORA ===
+Name: Nora
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Shellder
+Level: 30
+
+Shellder
+Level: 30
+
+Cloyster
+Level: 30
+
+=== TRAINER_SWIMMER_FEMALE_MELISSA ===
+Name: Melissa
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 31
+
+Seaking
+Level: 31
+
+=== TRAINER_BEAUTY_GRACE ===
+Name: Grace
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 29
+
+Wigglytuff
+Level: 29
+
+=== TRAINER_BEAUTY_OLIVIA ===
+Name: Olivia
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bulbasaur
+Level: 29
+
+Ivysaur
+Level: 29
+
+=== TRAINER_BEAUTY_LAUREN ===
+Name: Lauren
+Class: Beauty
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weepinbell
+Level: 33
+
+Bellsprout
+Level: 33
+
+Weepinbell
+Level: 33
+
+=== TRAINER_SWIMMER_FEMALE_ANYA ===
+Name: Anya
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 27
+
+Goldeen
+Level: 27
+
+Seaking
+Level: 27
+
+Goldeen
+Level: 27
+
+Poliwag
+Level: 27
+
+=== TRAINER_SWIMMER_FEMALE_ALICE ===
+Name: Alice
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 30
+
+Seaking
+Level: 30
+
+=== TRAINER_SWIMMER_FEMALE_CONNIE ===
+Name: Connie
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Staryu
+Level: 29
+
+Staryu
+Level: 29
+
+Staryu
+Level: 29
+
+=== TRAINER_SWIMMER_FEMALE_SHIRLEY ===
+Name: Shirley
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seadra
+Level: 30
+
+Horsea
+Level: 30
+
+Seadra
+Level: 30
+
+=== TRAINER_PSYCHIC_JOHAN ===
+Name: Johan
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Kadabra
+Level: 31
+CFRU IV: 50
+
+Slowpoke
+Level: 31
+CFRU IV: 50
+
+Mr. Mime
+Level: 31
+CFRU IV: 50
+
+Kadabra
+Level: 31
+CFRU IV: 50
+
+=== TRAINER_PSYCHIC_TYRON ===
+Name: Tyron
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mr. Mime
+Level: 34
+CFRU IV: 50
+
+Kadabra
+Level: 34
+CFRU IV: 50
+
+=== TRAINER_PSYCHIC_CAMERON ===
+Name: Cameron
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Slowpoke
+Level: 33
+CFRU IV: 50
+
+Slowpoke
+Level: 33
+CFRU IV: 50
+
+Slowbro
+Level: 33
+CFRU IV: 50
+
+=== TRAINER_PSYCHIC_PRESTON ===
+Name: Preston
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Slowbro
+Level: 38
+CFRU IV: 50
+
+=== TRAINER_ROCKER_RANDALL ===
+Name: Randall
+Class: Rocker
+Pic: Rocker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 20
+
+Magnemite
+Level: 20
+
+Voltorb
+Level: 20
+
+=== TRAINER_ROCKER_LUCA ===
+Name: Luca
+Class: Rocker
+Pic: Rocker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 29
+
+Electrode
+Level: 29
+
+=== TRAINER_JUGGLER_DALTON ===
+Name: Dalton
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Kadabra
+Level: 29
+
+Mr. Mime
+Level: 29
+
+=== TRAINER_JUGGLER_NELSON ===
+Name: Nelson
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 41
+
+Hypno
+Level: 41
+
+Kadabra
+Level: 41
+
+Kadabra
+Level: 41
+
+=== TRAINER_JUGGLER_KIRK ===
+Name: Kirk
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 31
+
+Drowzee
+Level: 31
+
+Kadabra
+Level: 31
+
+Drowzee
+Level: 31
+
+=== TRAINER_JUGGLER_SHAWN ===
+Name: Shawn
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 34
+
+Hypno
+Level: 34
+
+=== TRAINER_JUGGLER_GREGORY ===
+Name: Gregory
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mr. Mime
+Level: 48
+- Psychic
+- Role Play
+- Double Slap
+- Encore
+
+=== TRAINER_JUGGLER_EDWARD ===
+Name: Edward
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 46
+- Swift
+- Light Screen
+- Spark
+- Sonic Boom
+
+Voltorb
+Level: 46
+- Swift
+- Light Screen
+- Spark
+- Sonic Boom
+
+Electrode
+Level: 47
+- Swift
+- Spark
+- Selfdestruct
+- Sonic Boom
+
+Mr. Mime
+Level: 48
+- Psychic
+- Role Play
+- Reflect
+- Encore
+
+=== TRAINER_JUGGLER_KAYDEN ===
+Name: Kayden
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hypno
+Level: 38
+
+=== TRAINER_JUGGLER_NATE ===
+Name: Nate
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 34
+
+Kadabra
+Level: 34
+
+=== TRAINER_TAMER_PHIL ===
+Name: Phil
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandslash
+Level: 34
+CFRU IV: 40
+
+Arbok
+Level: 34
+CFRU IV: 40
+
+=== TRAINER_TAMER_EDGAR ===
+Name: Edgar
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Arbok
+Level: 33
+CFRU IV: 40
+
+Sandslash
+Level: 33
+CFRU IV: 40
+
+Arbok
+Level: 33
+CFRU IV: 40
+
+=== TRAINER_TAMER_JASON ===
+Name: Jason
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rhyhorn
+Level: 43
+CFRU IV: 40
+
+=== TRAINER_TAMER_COLE ===
+Name: Cole
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Arbok
+Level: 39
+CFRU IV: 40
+
+Tauros
+Level: 39
+CFRU IV: 40
+
+=== TRAINER_TAMER_VINCENT ===
+Name: Vincent
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Persian
+Level: 44
+CFRU IV: 40
+
+Golduck
+Level: 44
+CFRU IV: 40
+
+=== TRAINER_TAMER_JOHN ===
+Name: John
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rhyhorn
+Level: 42
+CFRU IV: 40
+
+Primeape
+Level: 42
+CFRU IV: 40
+
+Arbok
+Level: 42
+CFRU IV: 40
+
+Tauros
+Level: 42
+CFRU IV: 40
+
+=== TRAINER_BIRD_KEEPER_SEBASTIAN ===
+Name: Sebastian
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 29
+
+Pidgeotto
+Level: 29
+
+=== TRAINER_BIRD_KEEPER_PERRY ===
+Name: Perry
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 25
+
+Pidgey
+Level: 25
+
+Pidgey
+Level: 25
+
+Spearow
+Level: 25
+
+Spearow
+Level: 25
+
+=== TRAINER_BIRD_KEEPER_ROBERT ===
+Name: Robert
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 26
+
+Pidgeotto
+Level: 26
+
+Spearow
+Level: 26
+
+Fearow
+Level: 26
+
+=== TRAINER_BIRD_KEEPER_DONALD ===
+Name: Donald
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Farfetch'd
+Level: 33
+
+=== TRAINER_BIRD_KEEPER_BENNY ===
+Name: Benny
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 29
+
+Fearow
+Level: 29
+
+=== TRAINER_BIRD_KEEPER_EDWIN ===
+Name: Edwin
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 26
+
+Farfetch'd
+Level: 26
+
+Doduo
+Level: 26
+
+Pidgey
+Level: 26
+
+=== TRAINER_BIRD_KEEPER_CHESTER ===
+Name: Chester
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Dodrio
+Level: 28
+
+Doduo
+Level: 28
+
+Doduo
+Level: 28
+
+=== TRAINER_BIRD_KEEPER_WILTON ===
+Name: Wilton
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 29
+
+Fearow
+Level: 29
+
+=== TRAINER_BIRD_KEEPER_RAMIRO ===
+Name: Ramiro
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Dodrio
+Level: 34
+
+=== TRAINER_BIRD_KEEPER_JACOB ===
+Name: Jacob
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 26
+
+Spearow
+Level: 26
+
+Fearow
+Level: 26
+
+Spearow
+Level: 26
+
+=== TRAINER_BIRD_KEEPER_ROGER ===
+Name: Roger
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 30
+
+Fearow
+Level: 30
+
+Pidgeotto
+Level: 30
+
+=== TRAINER_BIRD_KEEPER_REED ===
+Name: Reed
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 39
+
+Pidgeotto
+Level: 39
+
+Pidgey
+Level: 39
+
+Pidgeotto
+Level: 39
+
+=== TRAINER_BIRD_KEEPER_KEITH ===
+Name: Keith
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Farfetch'd
+Level: 39
+
+Fearow
+Level: 39
+
+=== TRAINER_BIRD_KEEPER_CARTER ===
+Name: Carter
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 28
+
+Doduo
+Level: 28
+
+Pidgeotto
+Level: 28
+
+=== TRAINER_BIRD_KEEPER_MITCH ===
+Name: Mitch
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 26
+
+Spearow
+Level: 26
+
+Pidgey
+Level: 26
+
+Fearow
+Level: 26
+
+=== TRAINER_BIRD_KEEPER_BECK ===
+Name: Beck
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 29
+
+Fearow
+Level: 29
+
+=== TRAINER_BIRD_KEEPER_MARLON ===
+Name: Marlon
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 28
+
+Doduo
+Level: 28
+
+Fearow
+Level: 28
+
+=== TRAINER_BLACK_BELT_KOICHI ===
+Name: Koichi
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hitmonlee @ Black Belt
+Level: 37
+CFRU IV: 100
+
+Hitmonchan @ Black Belt
+Level: 37
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_MIKE ===
+Name: Mike
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey @ Black Belt
+Level: 31
+CFRU IV: 100
+
+Mankey @ Black Belt
+Level: 31
+CFRU IV: 100
+
+Primeape @ Black Belt
+Level: 31
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_HIDEKI ===
+Name: Hideki
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop @ Black Belt
+Level: 32
+CFRU IV: 100
+
+Machoke @ Black Belt
+Level: 32
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_AARON ===
+Name: Aaron
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Primeape @ Black Belt
+Level: 36
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_HITOSHI ===
+Name: Hitoshi
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop @ Black Belt
+Level: 31
+CFRU IV: 100
+
+Mankey @ Black Belt
+Level: 31
+CFRU IV: 100
+
+Primeape @ Black Belt
+Level: 31
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_ATSUSHI ===
+Name: Atsushi
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop @ Black Belt
+Level: 40
+CFRU IV: 100
+
+Machoke @ Black Belt
+Level: 40
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_KIYO ===
+Name: Kiyo
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 43
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_TAKASHI ===
+Name: Takashi
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 38
+CFRU IV: 100
+
+Machop @ Black Belt
+Level: 38
+CFRU IV: 100
+
+Machoke @ Black Belt
+Level: 38
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_DAISUKE ===
+Name: Daisuke
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 43
+CFRU IV: 100
+
+Machop @ Black Belt
+Level: 43
+CFRU IV: 100
+
+Machoke @ Black Belt
+Level: 43
+CFRU IV: 100
+
+=== TRAINER_RIVAL_OAKS_LAB_SQUIRTLE ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Squirtle
+Level: 5
+
+=== TRAINER_RIVAL_OAKS_LAB_BULBASAUR ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Bulbasaur
+Level: 5
+
+=== TRAINER_RIVAL_OAKS_LAB_CHARMANDER ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Charmander
+Level: 5
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Semi Smart / Check Good Move
+
+Pidgey
+Level: 9
+CFRU IV: 50
+- Tackle
+- Sand Attack
+
+Squirtle
+Level: 9
+CFRU IV: 50
+- Tackle
+- Tail Whip
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgey
+Level: 9
+CFRU IV: 50
+- Tackle
+- Sand Attack
+
+Bulbasaur
+Level: 9
+CFRU IV: 50
+- Tackle
+- Growl
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgey
+Level: 9
+CFRU IV: 50
+- Tackle
+- Sand Attack
+
+Charmander
+Level: 9
+CFRU IV: 50
+- Scratch
+- Growl
+
+=== TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 17
+CFRU IV: 50
+- Tackle
+- Sand Attack
+- Gust
+- Quick Attack
+
+Abra
+Level: 16
+CFRU IV: 50
+- Teleport
+
+Rattata
+Level: 15
+CFRU IV: 50
+- Tackle
+- Tail Whip
+- Quick Attack
+
+Squirtle
+Level: 18
+CFRU IV: 100
+- Tackle
+- Tail Whip
+- Withdraw
+- Water Gun
+
+=== TRAINER_RIVAL_CERULEAN_BULBASAUR ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 17
+CFRU IV: 50
+- Tackle
+- Sand Attack
+- Gust
+- Quick Attack
+
+Abra
+Level: 16
+CFRU IV: 50
+- Teleport
+
+Rattata
+Level: 15
+CFRU IV: 50
+- Tackle
+- Tail Whip
+- Quick Attack
+
+Bulbasaur
+Level: 18
+CFRU IV: 100
+- Sleep Powder
+- PoisonPowder
+- Vine Whip
+- Leech Seed
+
+=== TRAINER_RIVAL_CERULEAN_CHARMANDER ===
+Name: Terry
+Class: Rival
+Pic: Blue
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 17
+CFRU IV: 50
+- Tackle
+- Sand Attack
+- Gust
+- Quick Attack
+
+Abra
+Level: 16
+CFRU IV: 50
+- Teleport
+
+Rattata
+Level: 15
+CFRU IV: 50
+- Tackle
+- Tail Whip
+- Quick Attack
+
+Charmander
+Level: 18
+CFRU IV: 100
+- Metal Claw
+- Ember
+- Growl
+- Scratch
+
+=== TRAINER_SCIENTIST_TED ===
+Name: Ted
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Electrode
+Level: 29
+
+Weezing
+Level: 29
+
+=== TRAINER_SCIENTIST_CONNOR ===
+Name: Connor
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 26
+- Screech
+- Minimize
+- Sludge
+- Disable
+
+Weezing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Selfdestruct
+
+Weezing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_SCIENTIST_JERRY ===
+Name: Jerry
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 28
+
+Voltorb
+Level: 28
+
+Magneton
+Level: 28
+
+=== TRAINER_SCIENTIST_JOSE ===
+Name: Jose
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Electrode
+Level: 29
+- Spark
+- Sonic Boom
+- Screech
+- Tackle
+
+Weezing
+Level: 29
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_SCIENTIST_RODNEY ===
+Name: Rodney
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Electrode
+Level: 33
+
+=== TRAINER_SCIENTIST_BEAU ===
+Name: Beau
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magneton
+Level: 26
+- Spark
+- Thunder Wave
+- Sonic Boom
+- Supersonic
+
+Koffing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Weezing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Magnemite
+Level: 26
+- Spark
+- Thunder Wave
+- Sonic Boom
+- Supersonic
+
+=== TRAINER_SCIENTIST_TAYLOR ===
+Name: Taylor
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 25
+- Spark
+- Sonic Boom
+- Screech
+- Tackle
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Magneton
+Level: 25
+- Thunder Wave
+- Sonic Boom
+- Supersonic
+- ThunderShock
+
+Magnemite
+Level: 25
+- Thunder Wave
+- Sonic Boom
+- Supersonic
+- ThunderShock
+
+Koffing
+Level: 25
+- Smokescreen
+- Sludge
+- Smog
+- Selfdestruct
+
+=== TRAINER_SCIENTIST_JOSHUA ===
+Name: Joshua
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Electrode
+Level: 29
+
+Muk
+Level: 29
+
+=== TRAINER_SCIENTIST_PARKER ===
+Name: Parker
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 29
+
+Electrode
+Level: 29
+
+=== TRAINER_SCIENTIST_ED ===
+Name: Ed
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 28
+- Spark
+- Sonic Boom
+- Screech
+- Tackle
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Tackle
+- Smog
+
+Magneton
+Level: 28
+- Spark
+- Thunder Wave
+- Sonic Boom
+- Supersonic
+
+=== TRAINER_SCIENTIST_TRAVIS ===
+Name: Travis
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 29
+
+Koffing
+Level: 29
+
+=== TRAINER_SCIENTIST_BRAYDON ===
+Name: Braydon
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 33
+
+Magneton
+Level: 33
+
+Voltorb
+Level: 33
+
+=== TRAINER_SCIENTIST_IVAN ===
+Name: Ivan
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magnemite
+Level: 34
+
+Electrode
+Level: 34
+
+=== TRAINER_BOSS_GIOVANNI ===
+Name: Giovanni
+Class: Boss
+Pic: Giovanni
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 25
+
+Rhyhorn
+Level: 24
+
+Kangaskhan
+Level: 29
+
+=== TRAINER_BOSS_GIOVANNI_2 ===
+Name: Giovanni
+Class: Boss
+Pic: Giovanni
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidorino
+Level: 37
+
+Kangaskhan
+Level: 35
+
+Rhyhorn
+Level: 37
+
+Nidoqueen
+Level: 41
+
+=== TRAINER_LEADER_GIOVANNI ===
+Name: Giovanni
+Class: Leader
+Pic: Giovanni
+Gender: Male
+Music: Aqua
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Rhyhorn
+Level: 45
+- Take Down
+- Rock Blast
+- Scary Face
+- Earthquake
+
+Dugtrio
+Level: 42
+- Slash
+- Sand Tomb
+- Mud-Slap
+- Earthquake
+
+Nidoqueen
+Level: 44
+- Body Slam
+- Double Kick
+- Poison Sting
+- Earthquake
+
+Nidoking
+Level: 45
+- Thrash
+- Double Kick
+- Poison Sting
+- Earthquake
+
+Rhyhorn
+Level: 50
+- Take Down
+- Rock Blast
+- Scary Face
+- Earthquake
+
+=== TRAINER_TEAM_ROCKET_GRUNT ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 13
+
+Zubat
+Level: 13
+
+=== TRAINER_TEAM_ROCKET_GRUNT_2 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandshrew
+Level: 11
+
+Rattata
+Level: 11
+
+Zubat
+Level: 11
+
+=== TRAINER_TEAM_ROCKET_GRUNT_3 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 11
+
+Ekans
+Level: 11
+
+=== TRAINER_TEAM_ROCKET_GRUNT_4 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 13
+
+Sandshrew
+Level: 13
+
+=== TRAINER_TEAM_ROCKET_GRUNT_5 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 17
+
+Drowzee
+Level: 17
+
+=== TRAINER_TEAM_ROCKET_GRUNT_6 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 15
+
+Zubat
+Level: 15
+
+=== TRAINER_TEAM_ROCKET_GRUNT_7 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 20
+
+Zubat
+Level: 20
+
+=== TRAINER_TEAM_ROCKET_GRUNT_8 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 21
+
+Machop
+Level: 21
+
+=== TRAINER_TEAM_ROCKET_GRUNT_9 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 21
+
+Raticate
+Level: 21
+
+=== TRAINER_TEAM_ROCKET_GRUNT_10 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 20
+- Minimize
+- Sludge
+- Disable
+- Harden
+
+Koffing
+Level: 20
+- Smog
+- Tackle
+- Poison Gas
+
+Koffing
+Level: 20
+- Smog
+- Tackle
+- Poison Gas
+
+=== TRAINER_TEAM_ROCKET_GRUNT_11 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 19
+
+Raticate
+Level: 19
+
+Raticate
+Level: 19
+
+Rattata
+Level: 19
+
+=== TRAINER_TEAM_ROCKET_GRUNT_12 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 22
+- Minimize
+- Sludge
+- Disable
+- Harden
+
+Koffing
+Level: 22
+- Sludge
+- Smog
+- Tackle
+- Poison Gas
+
+=== TRAINER_TEAM_ROCKET_GRUNT_13 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 17
+- Bite
+- Astonish
+- Supersonic
+- Leech Life
+
+Koffing
+Level: 17
+- Smog
+- Tackle
+- Poison Gas
+
+Grimer
+Level: 17
+- Sludge
+- Disable
+- Harden
+- Pound
+
+Zubat
+Level: 17
+- Bite
+- Astonish
+- Supersonic
+- Leech Life
+
+Raticate
+Level: 17
+- Hyper Fang
+- Quick Attack
+- Tail Whip
+- Tackle
+
+=== TRAINER_TEAM_ROCKET_GRUNT_14 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 20
+
+Raticate
+Level: 20
+
+Drowzee
+Level: 20
+
+=== TRAINER_TEAM_ROCKET_GRUNT_15 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 21
+
+Machop
+Level: 21
+
+=== TRAINER_TEAM_ROCKET_GRUNT_16 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandshrew
+Level: 23
+
+Ekans
+Level: 23
+
+Sandslash
+Level: 23
+
+=== TRAINER_TEAM_ROCKET_GRUNT_17 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 23
+
+Sandshrew
+Level: 23
+
+Arbok
+Level: 23
+
+=== TRAINER_TEAM_ROCKET_GRUNT_18 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 21
+
+Zubat
+Level: 21
+
+=== TRAINER_TEAM_ROCKET_GRUNT_19 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 25
+
+Zubat
+Level: 25
+
+Golbat
+Level: 25
+
+=== TRAINER_TEAM_ROCKET_GRUNT_20 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 26
+
+Drowzee
+Level: 26
+
+=== TRAINER_TEAM_ROCKET_GRUNT_21 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 23
+
+Rattata
+Level: 23
+
+Raticate
+Level: 23
+
+Zubat
+Level: 23
+
+=== TRAINER_TEAM_ROCKET_GRUNT_22 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 26
+
+Koffing
+Level: 26
+
+=== TRAINER_TEAM_ROCKET_GRUNT_23 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Cubone
+Level: 29
+
+Zubat
+Level: 29
+
+=== TRAINER_TEAM_ROCKET_GRUNT_24 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Golbat
+Level: 25
+
+Zubat
+Level: 25
+
+Zubat
+Level: 25
+
+Raticate
+Level: 25
+
+Zubat
+Level: 25
+
+=== TRAINER_TEAM_ROCKET_GRUNT_25 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 28
+
+Hypno
+Level: 28
+
+Raticate
+Level: 28
+
+=== TRAINER_TEAM_ROCKET_GRUNT_26 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 29
+
+Drowzee
+Level: 29
+
+=== TRAINER_TEAM_ROCKET_GRUNT_27 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 28
+
+Zubat
+Level: 28
+
+Cubone
+Level: 28
+
+=== TRAINER_TEAM_ROCKET_GRUNT_28 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Arbok
+Level: 33
+
+=== TRAINER_TEAM_ROCKET_GRUNT_29 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hypno
+Level: 33
+
+=== TRAINER_TEAM_ROCKET_GRUNT_30 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 29
+
+Machoke
+Level: 29
+
+=== TRAINER_TEAM_ROCKET_GRUNT_31 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 28
+
+Zubat
+Level: 28
+
+Golbat
+Level: 28
+
+=== TRAINER_TEAM_ROCKET_GRUNT_32 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 26
+- Scary Face
+- Hyper Fang
+- Quick Attack
+- Tail Whip
+
+Arbok
+Level: 26
+- Glare
+- Bite
+- Poison Sting
+- Leer
+
+Koffing
+Level: 26
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Golbat
+Level: 26
+- Wing Attack
+- Bite
+- Astonish
+- Supersonic
+
+=== TRAINER_TEAM_ROCKET_GRUNT_33 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Cubone
+Level: 29
+
+Cubone
+Level: 29
+
+=== TRAINER_TEAM_ROCKET_GRUNT_34 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandshrew
+Level: 29
+
+Sandslash
+Level: 29
+
+=== TRAINER_TEAM_ROCKET_GRUNT_35 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 26
+
+Zubat
+Level: 26
+
+Golbat
+Level: 26
+
+Rattata
+Level: 26
+
+=== TRAINER_TEAM_ROCKET_GRUNT_36 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weezing
+Level: 28
+
+Golbat
+Level: 28
+
+Koffing
+Level: 28
+
+=== TRAINER_TEAM_ROCKET_GRUNT_37 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 28
+
+Grimer
+Level: 28
+
+Machop
+Level: 28
+
+=== TRAINER_TEAM_ROCKET_GRUNT_38 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Golbat
+Level: 28
+
+Drowzee
+Level: 28
+
+Hypno
+Level: 28
+
+=== TRAINER_TEAM_ROCKET_GRUNT_39 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke
+Level: 33
+
+=== TRAINER_TEAM_ROCKET_GRUNT_40 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 25
+
+Rattata
+Level: 25
+
+Zubat
+Level: 25
+
+Rattata
+Level: 25
+
+Ekans
+Level: 25
+
+=== TRAINER_COOLTRAINER_BERKE ===
+Name: Berke
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Seel
+Level: 42
+CFRU IV: 100
+- Take Down
+- Aurora Beam
+- Icy Wind
+- Growl
+
+Graveler
+Level: 42
+CFRU IV: 100
+- Rock Blast
+- Magnitude
+- Rock Throw
+- Mud Sport
+
+Kingler
+Level: 42
+CFRU IV: 100
+- Guillotine
+- Stomp
+- Mud Shot
+- Bubble
+
+Onix
+Level: 42
+CFRU IV: 100
+- Slam
+- Sandstorm
+- DragonBreath
+- Rock Throw
+
+Cloyster
+Level: 42
+CFRU IV: 100
+- Spike Cannon
+- Aurora Beam
+- Supersonic
+- Protect
+
+=== TRAINER_COOLTRAINER_YUJI ===
+Name: Yuji
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Sandslash
+Level: 38
+CFRU IV: 100
+- Slash
+- Swift
+- Sand Attack
+- Poison Sting
+
+Graveler
+Level: 38
+CFRU IV: 100
+- Rock Blast
+- Magnitude
+- Mud Sport
+- Defense Curl
+
+Onix
+Level: 38
+CFRU IV: 100
+- DragonBreath
+- Sandstorm
+- Rock Throw
+- Bind
+
+Graveler
+Level: 38
+CFRU IV: 100
+- Rock Blast
+- Magnitude
+- Rollout
+- Defense Curl
+
+Marowak
+Level: 38
+CFRU IV: 100
+- Bonemerang
+- Headbutt
+- Leer
+- Growl
+
+=== TRAINER_COOLTRAINER_WARREN ===
+Name: Warren
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Marowak
+Level: 37
+CFRU IV: 100
+- Bonemerang
+- Headbutt
+- Leer
+- Growl
+
+Marowak
+Level: 37
+CFRU IV: 100
+- Bonemerang
+- Headbutt
+- Leer
+- Growl
+
+Rhyhorn
+Level: 38
+CFRU IV: 100
+- Take Down
+- Rock Blast
+- Fury Attack
+- Scary Face
+
+Nidorina
+Level: 39
+CFRU IV: 100
+- Fury Swipes
+- Bite
+- Poison Sting
+- Double Kick
+
+Nidoqueen
+Level: 39
+CFRU IV: 100
+- Body Slam
+- Bite
+- Poison Sting
+- Double Kick
+
+=== TRAINER_COOLTRAINER_MARY ===
+Name: Mary
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Bellsprout
+Level: 22
+CFRU IV: 100
+- Wrap
+- Stun Spore
+- PoisonPowder
+- Growth
+
+Oddish
+Level: 22
+CFRU IV: 100
+- PoisonPowder
+- Stun Spore
+- Absorb
+- Sweet Scent
+
+Weepinbell
+Level: 22
+CFRU IV: 100
+- Vine Whip
+- Stun Spore
+- PoisonPowder
+- Growth
+
+Gloom
+Level: 22
+CFRU IV: 100
+- Absorb
+- Stun Spore
+- PoisonPowder
+- Sweet Scent
+
+Ivysaur
+Level: 22
+CFRU IV: 100
+- Razor Leaf
+- Sleep Powder
+- Vine Whip
+- Leech Seed
+
+=== TRAINER_COOLTRAINER_CAROLINE ===
+Name: Caroline
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Bellsprout
+Level: 42
+CFRU IV: 100
+- Razor Leaf
+- Acid
+- Stun Spore
+- PoisonPowder
+
+Weepinbell
+Level: 42
+CFRU IV: 100
+- Razor Leaf
+- Acid
+- Sleep Powder
+- PoisonPowder
+
+Victreebel
+Level: 42
+CFRU IV: 100
+- Razor Leaf
+- Acid
+- Stun Spore
+- Sleep Powder
+
+Paras
+Level: 42
+CFRU IV: 100
+- Growth
+- Slash
+- Leech Life
+- Stun Spore
+
+Parasect
+Level: 42
+CFRU IV: 100
+- Spore
+- Slash
+- Leech Life
+- PoisonPowder
+
+=== TRAINER_COOLTRAINER_ALEXA ===
+Name: Alexa
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Clefairy
+Level: 42
+CFRU IV: 100
+- Light Screen
+- Cosmic Power
+- Double Slap
+- Encore
+
+Jigglypuff
+Level: 42
+CFRU IV: 100
+- Sing
+- Body Slam
+- Rollout
+- Disable
+
+Persian
+Level: 42
+CFRU IV: 100
+- Pay Day
+- Feint Attack
+- Bite
+- Screech
+
+Dewgong
+Level: 42
+CFRU IV: 100
+- Sheer Cold
+- Take Down
+- Rest
+- Aurora Beam
+
+Chansey
+Level: 42
+CFRU IV: 100
+- Sing
+- Egg Bomb
+- Soft-Boiled
+- Minimize
+
+=== TRAINER_COOLTRAINER_SHANNON ===
+Name: Shannon
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Beedrill
+Level: 42
+CFRU IV: 100
+- Pin Missile
+- Twineedle
+- Agility
+- Pursuit
+
+Butterfree
+Level: 42
+CFRU IV: 100
+- Safeguard
+- Psybeam
+- Gust
+- Supersonic
+
+Parasect
+Level: 42
+CFRU IV: 100
+- Spore
+- Leech Life
+- Slash
+- Growth
+
+Venonat
+Level: 42
+CFRU IV: 100
+- Psybeam
+- Stun Spore
+- Leech Life
+- Disable
+
+Venomoth
+Level: 42
+CFRU IV: 100
+- Psybeam
+- Gust
+- Supersonic
+- Leech Life
+
+=== TRAINER_COOLTRAINER_NAOMI ===
+Name: Naomi
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Persian
+Level: 42
+CFRU IV: 100
+- Fury Swipes
+- Screech
+- Feint Attack
+- Pay Day
+
+Ponyta
+Level: 42
+CFRU IV: 100
+- Agility
+- Take Down
+- Fire Spin
+- Stomp
+
+Rapidash
+Level: 42
+CFRU IV: 100
+- Fury Attack
+- Fire Spin
+- Stomp
+- Growl
+
+Vulpix
+Level: 42
+CFRU IV: 100
+- Flamethrower
+- Confuse Ray
+- Quick Attack
+- Imprison
+
+Ninetales
+Level: 42
+CFRU IV: 100
+- Safeguard
+- Will-O-Wisp
+- Confuse Ray
+- Fire Spin
+
+=== TRAINER_COOLTRAINER_BROOKE ===
+Name: Brooke
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Tangela
+Level: 42
+CFRU IV: 100
+- Slam
+- Bind
+- Mega Drain
+- Ingrain
+
+Gloom
+Level: 42
+CFRU IV: 100
+- Acid
+- Moonlight
+- Sleep Powder
+- Stun Spore
+
+Vileplume
+Level: 42
+CFRU IV: 100
+- Mega Drain
+- Acid
+- Stun Spore
+- Aromatherapy
+
+Ivysaur
+Level: 42
+CFRU IV: 100
+- Razor Leaf
+- Sweet Scent
+- Growl
+- Leech Seed
+
+Venusaur
+Level: 42
+CFRU IV: 100
+- Razor Leaf
+- Growth
+- Sleep Powder
+- PoisonPowder
+
+=== TRAINER_COOLTRAINER_AUSTINA ===
+Name: Austina
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Rhyhorn
+Level: 42
+CFRU IV: 100
+- Horn Drill
+- Rock Blast
+- Scary Face
+- Stomp
+
+Nidorina
+Level: 42
+CFRU IV: 100
+- Double Kick
+- Fury Swipes
+- Bite
+- Flatter
+
+Nidoqueen
+Level: 42
+CFRU IV: 100
+- Body Slam
+- Double Kick
+- Bite
+- Growl
+
+Nidorino
+Level: 42
+CFRU IV: 100
+- Horn Attack
+- Poison Sting
+- Focus Energy
+- Leer
+
+Nidoking
+Level: 42
+CFRU IV: 100
+- Thrash
+- Double Kick
+- Poison Sting
+- Peck
+
+=== TRAINER_COOLTRAINER_JULIE ===
+Name: Julie
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Persian
+Level: 42
+CFRU IV: 100
+- Fury Swipes
+- Bite
+- Screech
+- Feint Attack
+
+Ninetales
+Level: 42
+CFRU IV: 100
+- Flamethrower
+- Will-O-Wisp
+- Confuse Ray
+- Grudge
+
+Rapidash
+Level: 42
+CFRU IV: 100
+- Fury Attack
+- Fire Spin
+- Take Down
+- Agility
+
+Pikachu
+Level: 42
+CFRU IV: 100
+- Thunderbolt
+- Thunder Wave
+- Double Team
+- Quick Attack
+
+Raichu
+Level: 42
+CFRU IV: 100
+- Thunder
+- Thunder Wave
+- Slam
+- Double Team
+
+=== TRAINER_ELITE_FOUR_LORELEI ===
+Name: Lorelei
+Class: Elite Four
+Pic: Lorelei
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Dewgong
+Level: 52
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Ice
+- Ice Beam
+- Surf
+- Hail
+- Safeguard
+
+Cloyster
+Level: 51
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Bold
+Tera Type: Ice
+- Spikes
+- Protect
+- Hail
+- Dive
+
+Slowbro
+Level: 52
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Calm
+Tera Type: Ice
+- Ice Beam
+- Surf
+- Amnesia
+- Yawn
+
+Jynx
+Level: 54
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Timid
+Tera Type: Ice
+- Ice Punch
+- Double Slap
+- Lovely Kiss
+- Attract
+
+Lapras @ Sitrus Berry
+Level: 54
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Ice
+- Confuse Ray
+- Ice Beam
+- Surf
+- Body Slam
+
+=== TRAINER_ELITE_FOUR_BRUNO ===
+Name: Bruno
+Class: Elite Four
+Pic: Bruno
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Onix
+Level: 51
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Impish
+Tera Type: Fighting
+- Earthquake
+- Rock Tomb
+- Iron Tail
+- Roar
+
+Hitmonchan
+Level: 53
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Careful
+Tera Type: Fighting
+- Sky Uppercut
+- Mach Punch
+- Rock Tomb
+- Counter
+
+Hitmonlee
+Level: 53
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fighting
+- Mega Kick
+- Foresight
+- Brick Break
+- Facade
+
+Onix
+Level: 54
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Impish
+Tera Type: Fighting
+- Double-Edge
+- Earthquake
+- Iron Tail
+- Sand Tomb
+
+Machamp @ Sitrus Berry
+Level: 56
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fighting
+- Cross Chop
+- Bulk Up
+- Scary Face
+- Rock Tomb
+
+=== TRAINER_ELITE_FOUR_AGATHA ===
+Name: Agatha
+Class: Elite Four
+Pic: Agatha
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Gengar
+Level: 54
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Timid
+Tera Type: Ghost
+- Shadow Punch
+- Confuse Ray
+- Toxic
+- Double Team
+
+Golbat
+Level: 54
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Ghost
+- Confuse Ray
+- Poison Fang
+- Air Cutter
+- Bite
+
+Haunter
+Level: 53
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Timid
+Tera Type: Ghost
+- Hypnosis
+- Dream Eater
+- Curse
+- Mean Look
+
+Arbok
+Level: 56
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Ghost
+- Sludge Bomb
+- Screech
+- Iron Tail
+- Bite
+
+Gengar @ Sitrus Berry
+Level: 58
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Timid
+Tera Type: Ghost
+- Shadow Ball
+- Sludge Bomb
+- Hypnosis
+- Nightmare
+
+=== TRAINER_ELITE_FOUR_LANCE ===
+Name: Lance
+Class: Elite Four
+Pic: Lance
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Gyarados
+Level: 56
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Dragon
+- Hyper Beam
+- Dragon Rage
+- Twister
+- Bite
+
+Dragonair
+Level: 54
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Calm
+Tera Type: Dragon
+- Hyper Beam
+- Safeguard
+- Dragon Rage
+- Outrage
+
+Dragonair
+Level: 54
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Calm
+Tera Type: Dragon
+- Hyper Beam
+- Safeguard
+- Thunder Wave
+- Outrage
+
+Aerodactyl
+Level: 58
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Dragon
+- Hyper Beam
+- AncientPower
+- Wing Attack
+- Scary Face
+
+Dragonite @ Sitrus Berry
+Level: 60
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Dragon
+- Hyper Beam
+- Safeguard
+- Outrage
+- Wing Attack
+
+=== TRAINER_LEADER_BROCK ===
+Name: Brock
+Class: Leader
+Pic: Brock
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Geodude
+Level: 12
+- Tackle
+- Defense Curl
+
+Onix
+Level: 14
+- Tackle
+- Bind
+- Rock Tomb
+
+=== TRAINER_LEADER_MISTY ===
+Name: Misty
+Class: Leader
+Pic: Misty
+Gender: Female
+Music: Female
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Staryu
+Level: 18
+- Tackle
+- Harden
+- Recover
+- Water Pulse
+
+Starmie
+Level: 21
+- Swift
+- Recover
+- Rapid Spin
+- Water Pulse
+
+=== TRAINER_LEADER_LT_SURGE ===
+Name: Lt. Surge
+Class: Leader
+Pic: Lt Surge
+Gender: Male
+Music: Male
+Items: Super Potion / Full Heal
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Voltorb
+Level: 21
+- Sonic Boom
+- Tackle
+- Screech
+- Shock Wave
+
+Pikachu
+Level: 18
+- Quick Attack
+- Thunder Wave
+- Double Team
+- Shock Wave
+
+Raichu
+Level: 24
+- Quick Attack
+- Thunder Wave
+- Double Team
+- Shock Wave
+
+=== TRAINER_LEADER_ERIKA ===
+Name: Erika
+Class: Leader
+Pic: Erika
+Gender: Female
+Music: Female
+Items: Hyper Potion / Full Heal
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Victreebel
+Level: 29
+- Stun Spore
+- Acid
+- PoisonPowder
+- Giga Drain
+
+Tangela
+Level: 24
+- PoisonPowder
+- Constrict
+- Ingrain
+- Giga Drain
+
+Vileplume
+Level: 29
+- Sleep Powder
+- Acid
+- Stun Spore
+- Giga Drain
+
+=== TRAINER_LEADER_KOGA ===
+Name: Koga
+Class: Leader
+Pic: Koga
+Gender: Male
+Music: Male
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Koffing
+Level: 37
+- Selfdestruct
+- Sludge
+- Smokescreen
+- Toxic
+
+Muk
+Level: 39
+- Minimize
+- Sludge
+- Acid Armor
+- Toxic
+
+Koffing
+Level: 37
+- Selfdestruct
+- Sludge
+- Smokescreen
+- Toxic
+
+Weezing
+Level: 43
+- Tackle
+- Sludge
+- Smokescreen
+- Toxic
+
+=== TRAINER_LEADER_BLAINE ===
+Name: Blaine
+Class: Leader
+Pic: Blaine
+Gender: Male
+Music: Male
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Growlithe
+Level: 42
+- Bite
+- Roar
+- Take Down
+- Fire Blast
+
+Ponyta
+Level: 40
+- Stomp
+- Bounce
+- Fire Spin
+- Fire Blast
+
+Rapidash
+Level: 42
+- Stomp
+- Bounce
+- Fire Spin
+- Fire Blast
+
+Arcanine
+Level: 47
+- Bite
+- Roar
+- Take Down
+- Fire Blast
+
+=== TRAINER_LEADER_SABRINA ===
+Name: Sabrina
+Class: Leader
+Pic: Sabrina
+Gender: Female
+Music: Female
+Items: Hyper Potion / Hyper Potion / Full Heal
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Kadabra
+Level: 38
+- Psybeam
+- Reflect
+- Future Sight
+- Calm Mind
+
+Mr. Mime
+Level: 37
+- Barrier
+- Psybeam
+- Baton Pass
+- Calm Mind
+
+Venomoth
+Level: 38
+- Psybeam
+- Gust
+- Leech Life
+- Supersonic
+
+Alakazam
+Level: 43
+- Psychic
+- Recover
+- Future Sight
+- Calm Mind
+
+=== TRAINER_GENTLEMAN_THOMAS ===
+Name: Thomas
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 18
+
+Growlithe
+Level: 18
+
+=== TRAINER_GENTLEMAN_ARTHUR ===
+Name: Arthur
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 19
+
+Nidoran-F
+Level: 19
+
+=== TRAINER_GENTLEMAN_TUCKER ===
+Name: Tucker
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 23
+
+=== TRAINER_GENTLEMAN_NORTON ===
+Name: Norton
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Persian
+Level: 48
+
+=== TRAINER_GENTLEMAN_WALTER ===
+Name: Walter
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 17
+
+Ponyta
+Level: 17
+
+=== TRAINER_RIVAL_SS_ANNE_SQUIRTLE ===
+Name: Terry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 19
+CFRU IV: 50
+
+Raticate
+Level: 16
+CFRU IV: 50
+
+Kadabra
+Level: 18
+CFRU IV: 50
+
+Wartortle
+Level: 20
+CFRU IV: 100
+
+=== TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
+Name: Terrry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 19
+CFRU IV: 50
+
+Raticate
+Level: 16
+CFRU IV: 50
+
+Kadabra
+Level: 18
+CFRU IV: 50
+
+Ivysaur
+Level: 20
+CFRU IV: 100
+
+=== TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
+Name: Terry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 19
+CFRU IV: 50
+
+Raticate
+Level: 16
+CFRU IV: 50
+
+Kadabra
+Level: 18
+CFRU IV: 50
+
+Charmeleon
+Level: 20
+CFRU IV: 100
+
+=== TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
+Name: Terry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 25
+CFRU IV: 100
+
+Growlithe
+Level: 23
+CFRU IV: 100
+
+Exeggcute
+Level: 22
+CFRU IV: 100
+
+Kadabra
+Level: 20
+CFRU IV: 100
+
+Wartortle
+Level: 25
+CFRU IV: 100
+
+=== TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
+Name: Terry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeotto
+Level: 25
+CFRU IV: 100
+
+Gyarados
+Level: 23
+CFRU IV: 100
+
+Growlithe
+Level: 22
+CFRU IV: 100
+
+Kadabra
+Level: 20
+CFRU IV: 100
+
+Ivysaur
+Level: 25
+CFRU IV: 100
+
+=== TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
+Name: Terry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeot
+Level: 47
+CFRU IV: 150
+- FeatherDance
+- Wing Attack
+- Gust
+- Quick Attack
+
+Rhyhorn
+Level: 45
+CFRU IV: 150
+- Take Down
+- Horn Drill
+- Rock Blast
+- Fury Attack
+
+Growlithe
+Level: 45
+CFRU IV: 150
+- Flame Wheel
+- Take Down
+- Leer
+- Agility
+
+Exeggcute
+Level: 45
+CFRU IV: 150
+- Solar Beam
+- Sleep Powder
+- PoisonPowder
+- Stun Spore
+
+Alakazam
+Level: 47
+CFRU IV: 150
+- Psychic
+- Calm Mind
+- Future Sight
+- Disable
+
+Blastoise
+Level: 53
+- Water Gun
+- Rain Dance
+- Bite
+- Rapid Spin
+
+=== TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
+Name: Terry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeot
+Level: 47
+CFRU IV: 150
+- FeatherDance
+- Wing Attack
+- Gust
+- Quick Attack
+
+Rhyhorn
+Level: 45
+CFRU IV: 150
+- Take Down
+- Horn Drill
+- Rock Blast
+- Fury Attack
+
+Gyarados
+Level: 45
+CFRU IV: 150
+- Hydro Pump
+- Twister
+- Leer
+- Rain Dance
+
+Growlithe
+Level: 45
+CFRU IV: 150
+- Flame Wheel
+- Take Down
+- Leer
+- Agility
+
+Alakazam
+Level: 47
+CFRU IV: 150
+- Psychic
+- Calm Mind
+- Future Sight
+- Disable
+
+Venusaur
+Level: 53
+- Razor Leaf
+- Sweet Scent
+- Growth
+- Synthesis
+
+=== TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
+Name: Terry
+Class: Rival 2
+Pic: Blue 2
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Semi Smart / Check Good Move
+
+Pidgeot
+Level: 47
+CFRU IV: 150
+- FeatherDance
+- Wing Attack
+- Gust
+- Quick Attack
+
+Rhyhorn
+Level: 45
+CFRU IV: 150
+- Take Down
+- Horn Drill
+- Rock Blast
+- Fury Attack
+
+Exeggcute
+Level: 45
+CFRU IV: 150
+- Solar Beam
+- Sleep Powder
+- PoisonPowder
+- Stun Spore
+
+Gyarados
+Level: 45
+CFRU IV: 150
+- Hydro Pump
+- Twister
+- Leer
+- Rain Dance
+
+Alakazam
+Level: 47
+CFRU IV: 150
+- Psychic
+- Calm Mind
+- Future Sight
+- Disable
+
+Charizard
+Level: 53
+- Flamethrower
+- Wing Attack
+- Slash
+- Scary Face
+
+=== TRAINER_CHAMPION_FIRST_SQUIRTLE ===
+Name: Terry
+Class: Champion
+Pic: Blue 3
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeot
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Normal
+- Aerial Ace
+- FeatherDance
+- Sand Attack
+- Whirlwind
+
+Alakazam
+Level: 57
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Timid
+Tera Type: Psychic
+- Psychic
+- Future Sight
+- Recover
+- Reflect
+
+Rhydon
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Ground
+- Take Down
+- Earthquake
+- Rock Tomb
+- Scary Face
+
+Arcanine
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fire
+- ExtremeSpeed
+- Flamethrower
+- Roar
+- Bite
+
+Exeggutor
+Level: 61
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Grass
+- Giga Drain
+- Egg Bomb
+- Sleep Powder
+- Light Screen
+
+Blastoise @ Sitrus Berry
+Level: 63
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Bold
+Tera Type: Water
+- Hydro Pump
+- Rain Dance
+- Skull Bash
+- Bite
+
+=== TRAINER_CHAMPION_FIRST_BULBASAUR ===
+Name: Terry
+Class: Champion
+Pic: Blue 3
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Semi Smart / Check Good Move
+
+Pidgeot
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Normal
+- Aerial Ace
+- FeatherDance
+- Sand Attack
+- Whirlwind
+
+Alakazam
+Level: 57
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Timid
+Tera Type: Psychic
+- Psychic
+- Future Sight
+- Recover
+- Reflect
+
+Rhydon
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Ground
+- Take Down
+- Earthquake
+- Rock Tomb
+- Scary Face
+
+Gyarados
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Water
+- Hydro Pump
+- Dragon Rage
+- Bite
+- Thrash
+
+Arcanine
+Level: 61
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fire
+- ExtremeSpeed
+- Flamethrower
+- Roar
+- Bite
+
+Venusaur @ Sitrus Berry
+Level: 63
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Grass
+- Solar Beam
+- Synthesis
+- Sunny Day
+- Growth
+
+=== TRAINER_CHAMPION_FIRST_CHARMANDER ===
+Name: Terry
+Class: Champion
+Pic: Blue 3
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Pidgeot
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Normal
+- Aerial Ace
+- FeatherDance
+- Sand Attack
+- Whirlwind
+
+Alakazam
+Level: 57
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Timid
+Tera Type: Psychic
+- Psychic
+- Future Sight
+- Recover
+- Reflect
+
+Rhydon
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Ground
+- Take Down
+- Earthquake
+- Rock Tomb
+- Scary Face
+
+Exeggutor
+Level: 59
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Grass
+- Giga Drain
+- Egg Bomb
+- Sleep Powder
+- Light Screen
+
+Gyarados
+Level: 61
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Water
+- Hydro Pump
+- Dragon Rage
+- Bite
+- Thrash
+
+Charizard @ Sitrus Berry
+Level: 63
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Fire
+- Fire Blast
+- Aerial Ace
+- Slash
+- Fire Spin
+
+=== TRAINER_CHANNELER_PATRICIA ===
+Name: Patricia
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+
+=== TRAINER_CHANNELER_CARLY ===
+Name: Carly
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_HOPE ===
+Name: Hope
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 23
+
+=== TRAINER_CHANNELER_PAULA ===
+Name: Paula
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_LAUREL ===
+Name: Laurel
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 23
+
+Gastly
+Level: 23
+
+=== TRAINER_CHANNELER_JODY ===
+Name: Jody
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+
+=== TRAINER_CHANNELER_TAMMY ===
+Name: Tammy
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Haunter
+Level: 23
+
+=== TRAINER_CHANNELER_RUTH ===
+Name: Ruth
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+
+=== TRAINER_CHANNELER_KARINA ===
+Name: Karina
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_JANAE ===
+Name: Janae
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+
+=== TRAINER_CHANNELER_ANGELICA ===
+Name: Angelica
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+
+Gastly
+Level: 22
+
+Gastly
+Level: 22
+
+=== TRAINER_CHANNELER_EMILIA ===
+Name: Emilia
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_JENNIFER ===
+Name: Jennifer
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_1 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Haunter
+Level: 23
+
+=== TRAINER_CHANNELER_2 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_3 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+
+=== TRAINER_CHANNELER_4 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_5 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Haunter
+Level: 22
+
+=== TRAINER_CHANNELER_6 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+
+Gastly
+Level: 22
+
+Gastly
+Level: 22
+
+=== TRAINER_CHANNELER_7 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_8 ===
+Name: 
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+
+=== TRAINER_CHANNELER_AMANDA ===
+Name: Amanda
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 34
+
+Haunter
+Level: 34
+
+=== TRAINER_CHANNELER_STACY ===
+Name: Stacy
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Haunter
+Level: 38
+
+=== TRAINER_CHANNELER_TASHA ===
+Name: Tasha
+Class: Channeler
+Pic: Channeler
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 33
+
+Gastly
+Level: 33
+
+Haunter
+Level: 33
+
+=== TRAINER_HIKER_JEREMY ===
+Name: Jeremy
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 20
+
+Onix
+Level: 20
+
+=== TRAINER_PICNICKER_ALMA ===
+Name: Alma
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 28
+
+Poliwag
+Level: 28
+
+Horsea
+Level: 28
+
+=== TRAINER_PICNICKER_SUSIE ===
+Name: Susie
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 24
+
+Meowth
+Level: 24
+
+Rattata
+Level: 24
+
+Pikachu
+Level: 24
+
+Meowth
+Level: 24
+
+=== TRAINER_PICNICKER_VALERIE ===
+Name: Valerie
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 30
+
+Poliwag
+Level: 30
+
+=== TRAINER_PICNICKER_GWEN ===
+Name: Gwen
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 27
+
+Meowth
+Level: 27
+
+Pidgey
+Level: 27
+
+Pidgeotto
+Level: 27
+
+=== TRAINER_BIKER_VIRGIL ===
+Name: Virgil
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weezing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Koffing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+Weezing
+Level: 28
+- Smokescreen
+- Sludge
+- Smog
+- Tackle
+
+=== TRAINER_CAMPER_FLINT ===
+Name: Flint
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 14
+
+Ekans
+Level: 14
+
+=== TRAINER_PICNICKER_MISSY ===
+Name: Missy
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 31
+
+Seaking
+Level: 31
+
+=== TRAINER_PICNICKER_IRENE ===
+Name: Irene
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 30
+
+Horsea
+Level: 30
+
+Seel
+Level: 30
+
+=== TRAINER_PICNICKER_DANA ===
+Name: Dana
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Meowth
+Level: 20
+
+Oddish
+Level: 20
+
+Pidgey
+Level: 20
+
+=== TRAINER_PICNICKER_ARIANA ===
+Name: Ariana
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 19
+
+Rattata
+Level: 19
+
+Rattata
+Level: 19
+
+Bellsprout
+Level: 19
+
+=== TRAINER_PICNICKER_LEAH ===
+Name: Leah
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bellsprout
+Level: 22
+
+Clefairy
+Level: 22
+
+=== TRAINER_CAMPER_JUSTIN ===
+Name: Justin
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 29
+
+Nidorino
+Level: 29
+
+=== TRAINER_PICNICKER_YAZMIN ===
+Name: Yazmin
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bellsprout
+Level: 29
+
+Oddish
+Level: 29
+
+Tangela
+Level: 29
+
+=== TRAINER_PICNICKER_KINDRA ===
+Name: Kindra
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gloom
+Level: 28
+
+Oddish
+Level: 28
+
+Oddish
+Level: 28
+
+=== TRAINER_PICNICKER_BECKY ===
+Name: Becky
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 29
+
+Raichu
+Level: 29
+
+=== TRAINER_PICNICKER_CELIA ===
+Name: Celia
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Clefairy
+Level: 33
+
+=== TRAINER_GENTLEMAN_BROOKS ===
+Name: Brooks
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 23
+
+=== TRAINER_GENTLEMAN_LAMAR ===
+Name: Lamar
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 17
+
+Ponyta
+Level: 17
+
+=== TRAINER_TWINS_ELI_ANNE ===
+Name: Eli  Anne
+Class: Twins
+Pic: Twins
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Clefairy
+Level: 22
+
+Jigglypuff
+Level: 22
+
+=== TRAINER_COOL_COUPLE_RAY_TYRA ===
+Name: Ray  Tyra
+Class: Cool Couple
+Pic: Cool Couple
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: Yes
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Nidoqueen
+Level: 45
+CFRU IV: 100
+- Superpower
+- Body Slam
+- Double Kick
+- Poison Sting
+
+Nidoking
+Level: 45
+CFRU IV: 100
+- Megahorn
+- Thrash
+- Double Kick
+- Poison Sting
+
+=== TRAINER_YOUNG_COUPLE_GIA_JES ===
+Name: Gia  Jes
+Class: Young Couple
+Pic: Young Couple
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Nidoran-M
+Level: 24
+
+Nidoran-F
+Level: 24
+
+=== TRAINER_TWINS_KIRI_JAN ===
+Name: Kiri  Jan
+Class: Twins
+Pic: Twins
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Charmander
+Level: 29
+
+Squirtle
+Level: 29
+
+=== TRAINER_CRUSH_KIN_RON_MYA ===
+Name: Ron  Mya
+Class: Crush Kin
+Pic: Crush Kin
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Hitmonchan @ Black Belt
+Level: 29
+CFRU IV: 50
+
+Hitmonlee @ Black Belt
+Level: 29
+CFRU IV: 50
+
+=== TRAINER_YOUNG_COUPLE_LEA_JED ===
+Name: Lea  Jed
+Class: Young Couple
+Pic: Young Couple
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Rapidash
+Level: 29
+
+Ninetales
+Level: 29
+
+=== TRAINER_SIS_AND_BRO_LIA_LUC ===
+Name: Lia  Luc
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Goldeen
+Level: 30
+
+Seaking
+Level: 30
+
+=== TRAINER_SIS_AND_BRO_LIL_IAN ===
+Name: Lil  Ian
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Seadra
+Level: 33
+
+Starmie
+Level: 33
+
+=== TRAINER_BUG_CATCHER_3 ===
+Name: 
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BUG_CATCHER_4 ===
+Name: 
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BUG_CATCHER_5 ===
+Name: 
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BUG_CATCHER_6 ===
+Name: 
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BUG_CATCHER_7 ===
+Name: 
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BUG_CATCHER_8 ===
+Name: 
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_YOUNGSTER_BEN_3 ===
+Name: Ben
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 28
+CFRU IV: 60
+
+Ekans
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_YOUNGSTER_BEN_4 ===
+Name: Ben
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 48
+CFRU IV: 120
+
+Arbok
+Level: 48
+CFRU IV: 120
+
+=== TRAINER_YOUNGSTER_CHAD_2 ===
+Name: Chad
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 20
+CFRU IV: 20
+
+Sandshrew
+Level: 20
+CFRU IV: 20
+
+=== TRAINER_LASS_RELI_2 ===
+Name: Reli
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 20
+CFRU IV: 20
+
+Nidoran-F
+Level: 20
+CFRU IV: 20
+
+=== TRAINER_LASS_RELI_3 ===
+Name: Reli
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 28
+CFRU IV: 60
+
+Nidorina
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_YOUNGSTER_TIMMY_2 ===
+Name: Timmy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 19
+CFRU IV: 20
+
+Ekans
+Level: 19
+CFRU IV: 20
+
+Zubat
+Level: 19
+CFRU IV: 20
+
+=== TRAINER_YOUNGSTER_TIMMY_3 ===
+Name: Timmy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 27
+CFRU IV: 60
+
+Ekans
+Level: 27
+CFRU IV: 60
+
+Golbat
+Level: 27
+CFRU IV: 60
+
+=== TRAINER_YOUNGSTER_TIMMY_4 ===
+Name: Timmy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 52
+CFRU IV: 120
+
+Arbok
+Level: 52
+CFRU IV: 120
+
+Golbat
+Level: 52
+CFRU IV: 120
+
+=== TRAINER_YOUNGSTER_CHAD_3 ===
+Name: Chad
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Arbok
+Level: 28
+CFRU IV: 60
+
+Sandshrew
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_LASS_JANICE_2 ===
+Name: Janice
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 20
+CFRU IV: 20
+
+Pidgeotto
+Level: 20
+CFRU IV: 20
+
+=== TRAINER_LASS_JANICE_3 ===
+Name: Janice
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 28
+CFRU IV: 60
+
+Pidgeotto
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_YOUNGSTER_CHAD_4 ===
+Name: Chad
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Arbok
+Level: 48
+CFRU IV: 80
+
+Sandslash
+Level: 48
+CFRU IV: 80
+
+=== TRAINER_HIKER_FRANKLIN_2 ===
+Name: Franklin
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke
+Level: 25
+CFRU IV: 40
+
+Graveler
+Level: 25
+CFRU IV: 40
+
+=== TRAINER_PKMN_PROF_PROF_OAK ===
+Name: Prof. Oak
+Class: Pkmn Prof
+Pic: Prof Oak
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_PLAYER_BRENDAN ===
+Name: Brendan
+Class: Player
+Pic: Brendan
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_PLAYER_MAY ===
+Name: May
+Class: Player
+Pic: May
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_PLAYER_RED ===
+Name: Red
+Class: Player
+Pic: Player M
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_PLAYER_LEAF ===
+Name: Leaf
+Class: Player
+Pic: Player F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_TEAM_ROCKET_GRUNT_42 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt F
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Houndour
+Level: 49
+
+Houndour
+Level: 49
+
+=== TRAINER_PSYCHIC_JACLYN ===
+Name: Jaclyn
+Class: Psychic
+Pic: Psychic F
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Natu
+Level: 48
+CFRU IV: 100
+- Night Shade
+- Confuse Ray
+- Future Sight
+- Wish
+
+Slowbro
+Level: 48
+CFRU IV: 100
+- Psychic
+- Headbutt
+- Amnesia
+- Yawn
+
+Kadabra
+Level: 49
+CFRU IV: 100
+- Psychic
+- Future Sight
+- Recover
+- Reflect
+
+=== TRAINER_CRUSH_GIRL_SHARON ===
+Name: Sharon
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey @ Black Belt
+Level: 37
+CFRU IV: 50
+
+Primeape @ Black Belt
+Level: 37
+CFRU IV: 50
+
+=== TRAINER_TUBER_AMIRA ===
+Name: Amira
+Class: Tuber
+Pic: Tuber F
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwag
+Level: 34
+
+Poliwhirl
+Level: 35
+
+Poliwag
+Level: 34
+
+=== TRAINER_PKMN_BREEDER_ALIZE ===
+Name: Alize
+Class: Pkmn Breeder
+Pic: Pkmn Breeder F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 48
+CFRU IV: 30
+
+Clefairy
+Level: 48
+CFRU IV: 30
+
+Marill
+Level: 48
+CFRU IV: 30
+
+=== TRAINER_PKMN_RANGER_NICOLAS ===
+Name: Nicolas
+Class: Pkmn Ranger
+Pic: Pkmn Ranger M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Weepinbell
+Level: 51
+CFRU IV: 100
+- Razor Leaf
+- Acid
+- Sweet Scent
+- Wrap
+
+Victreebel
+Level: 51
+CFRU IV: 100
+- Razor Leaf
+- Acid
+- Sleep Powder
+- Stun Spore
+
+=== TRAINER_PKMN_RANGER_MADELINE ===
+Name: Madeline
+Class: Pkmn Ranger
+Pic: Pkmn Ranger F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Gloom
+Level: 51
+CFRU IV: 100
+- Petal Dance
+- Acid
+- Sweet Scent
+- PoisonPowder
+
+Vileplume
+Level: 51
+CFRU IV: 100
+- Petal Dance
+- Moonlight
+- Acid
+- Stun Spore
+
+=== TRAINER_AROMA_LADY_NIKKI ===
+Name: Nikki
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bellsprout
+Level: 37
+
+Weepinbell
+Level: 37
+
+=== TRAINER_RUIN_MANIAC_STANLY ===
+Name: Stanly
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Graveler
+Level: 48
+
+Onix
+Level: 48
+
+Graveler
+Level: 48
+
+=== TRAINER_LADY_JACKI ===
+Name: Jacki
+Class: Lady
+Pic: Selphy
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+Hoppip @ Stardust
+Level: 48
+
+Skiploom @ Stardust
+Level: 50
+
+=== TRAINER_PAINTER_DAISY ===
+Name: Daisy
+Class: Painter
+Pic: Painter
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Smeargle
+Level: 50
+CFRU IV: 50
+- DynamicPunch
+- Dizzy Punch
+- Focus Punch
+- Mega Punch
+
+=== TRAINER_BIKER_GOON ===
+Name: Goon
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 37
+- Haze
+- Smokescreen
+- Sludge
+- Tackle
+
+Grimer
+Level: 37
+- Acid Armor
+- Screech
+- Minimize
+- Sludge
+
+=== TRAINER_BIKER_GOON_2 ===
+Name: Goon
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 38
+- Haze
+- Smokescreen
+- Sludge
+- Tackle
+
+=== TRAINER_BIKER_GOON_3 ===
+Name: Goon
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 38
+
+=== TRAINER_BIKER_2 ===
+Name: 
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+
+=== TRAINER_BUG_CATCHER_ANTHONY ===
+Name: Anthony
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Caterpie
+Level: 7
+
+Caterpie
+Level: 8
+
+=== TRAINER_BUG_CATCHER_CHARLIE ===
+Name: Charlie
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Metapod
+Level: 7
+
+Caterpie
+Level: 7
+
+Metapod
+Level: 7
+
+=== TRAINER_TWINS_ELI_ANNE_2 ===
+Name: Eli  Anne
+Class: Twins
+Pic: Twins
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Clefairy
+Level: 28
+CFRU IV: 60
+
+Jigglypuff
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_YOUNGSTER_JOHNSON ===
+Name: Johnson
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 33
+
+Ekans
+Level: 33
+
+Raticate
+Level: 34
+
+=== TRAINER_BIKER_RICARDO ===
+Name: Ricardo
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 22
+- Sludge
+- Smog
+- Tackle
+- Poison Gas
+
+Koffing
+Level: 22
+- Sludge
+- Smog
+- Tackle
+- Poison Gas
+
+Grimer
+Level: 23
+- Minimize
+- Sludge
+- Disable
+- Pound
+
+=== TRAINER_BIKER_JAREN ===
+Name: Jaren
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Grimer
+Level: 24
+
+Grimer
+Level: 24
+
+=== TRAINER_TEAM_ROCKET_GRUNT_43 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Cubone
+Level: 37
+
+Marowak
+Level: 37
+
+=== TRAINER_TEAM_ROCKET_GRUNT_44 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 35
+
+Raticate
+Level: 35
+
+Sandshrew
+Level: 35
+
+Sandslash
+Level: 35
+
+=== TRAINER_TEAM_ROCKET_GRUNT_45 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 38
+
+Zubat
+Level: 38
+
+Golbat
+Level: 38
+
+=== TRAINER_TEAM_ROCKET_GRUNT_46 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Muk
+Level: 48
+
+Golbat
+Level: 48
+
+Raticate
+Level: 48
+
+=== TRAINER_TEAM_ROCKET_GRUNT_47 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 48
+
+Machop
+Level: 48
+
+Machoke
+Level: 48
+
+=== TRAINER_TEAM_ROCKET_GRUNT_48 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hypno
+Level: 49
+
+Hypno
+Level: 49
+
+=== TRAINER_TEAM_ROCKET_ADMIN ===
+Name: Admin
+Class: Team Rocket
+Pic: Rocket Grunt F
+Gender: Male
+Music: Aqua
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Muk
+Level: 52
+CFRU IV: 150
+- Sludge Bomb
+- Screech
+- Minimize
+- Rock Tomb
+
+Arbok
+Level: 53
+CFRU IV: 150
+- Sludge Bomb
+- Bite
+- Earthquake
+- Iron Tail
+
+Vileplume
+Level: 54
+CFRU IV: 150
+- Sludge Bomb
+- Giga Drain
+- Sleep Powder
+- Stun Spore
+
+=== TRAINER_TEAM_ROCKET_ADMIN_2 ===
+Name: Admin
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Golbat
+Level: 53
+CFRU IV: 200
+- Confuse Ray
+- Sludge Bomb
+- Air Cutter
+- Shadow Ball
+
+Weezing
+Level: 54
+CFRU IV: 200
+- Sludge Bomb
+- Thunderbolt
+- Explosion
+- Shadow Ball
+
+Houndoom
+Level: 55
+CFRU IV: 200
+- Flamethrower
+- Crunch
+- Iron Tail
+- Shadow Ball
+
+=== TRAINER_SCIENTIST_GIDEON ===
+Name: Gideon
+Class: Scientist
+Pic: Scientist M
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 46
+- Swift
+- Screech
+- Spark
+- Sonic Boom
+
+Electrode
+Level: 46
+- Spark
+- Sonic Boom
+- Screech
+- Charge
+
+Magnemite
+Level: 46
+- Screech
+- Swift
+- Spark
+- Thunder Wave
+
+Magneton
+Level: 46
+- Tri Attack
+- Spark
+- Thunder Wave
+- Sonic Boom
+
+Porygon
+Level: 46
+- Tri Attack
+- Conversion
+- Recover
+- Psybeam
+
+=== TRAINER_SWIMMER_FEMALE_AMARA ===
+Name: Amara
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seel
+Level: 36
+
+Seel
+Level: 36
+
+Dewgong
+Level: 36
+
+=== TRAINER_SWIMMER_FEMALE_MARIA ===
+Name: Maria
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seadra
+Level: 37
+
+Seadra
+Level: 37
+
+=== TRAINER_SWIMMER_FEMALE_ABIGAIL ===
+Name: Abigail
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Psyduck
+Level: 35
+
+Psyduck
+Level: 36
+
+Golduck
+Level: 37
+
+=== TRAINER_SWIMMER_MALE_FINN ===
+Name: Finn
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Starmie
+Level: 38
+
+=== TRAINER_SWIMMER_MALE_GARRETT ===
+Name: Garrett
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Shellder
+Level: 35
+
+Cloyster
+Level: 35
+
+Wartortle
+Level: 38
+
+=== TRAINER_FISHERMAN_TOMMY ===
+Name: Tommy
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 33
+
+Goldeen
+Level: 33
+
+Seaking
+Level: 35
+
+Seaking
+Level: 35
+
+Seaking
+Level: 35
+
+=== TRAINER_CRUSH_GIRL_TANYA ===
+Name: Tanya
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hitmonlee @ Black Belt
+Level: 38
+CFRU IV: 50
+
+Hitmonchan @ Black Belt
+Level: 38
+CFRU IV: 50
+
+=== TRAINER_BLACK_BELT_SHEA ===
+Name: Shea
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop @ Black Belt
+Level: 38
+CFRU IV: 100
+
+Machoke @ Black Belt
+Level: 38
+CFRU IV: 100
+
+=== TRAINER_BLACK_BELT_HUGH ===
+Name: Hugh
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machop @ Black Belt
+Level: 37
+CFRU IV: 100
+
+Machoke @ Black Belt
+Level: 37
+CFRU IV: 100
+
+=== TRAINER_CAMPER_BRYCE ===
+Name: Bryce
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidorino
+Level: 36
+
+Raticate
+Level: 36
+
+Sandslash
+Level: 36
+
+=== TRAINER_PICNICKER_CLAIRE ===
+Name: Claire
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Meowth
+Level: 35
+
+Meowth
+Level: 35
+
+Pikachu
+Level: 35
+
+Clefairy
+Level: 35
+
+=== TRAINER_CRUSH_KIN_MIK_KIA ===
+Name: Mik  Kia
+Class: Crush Kin
+Pic: Crush Kin
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 39
+CFRU IV: 50
+
+Primeape @ Black Belt
+Level: 39
+CFRU IV: 50
+
+=== TRAINER_AROMA_LADY_VIOLET ===
+Name: Violet
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bulbasaur
+Level: 36
+
+Ivysaur
+Level: 36
+
+Ivysaur
+Level: 36
+
+=== TRAINER_TUBER_ALEXIS ===
+Name: Alexis
+Class: Tuber
+Pic: Tuber F
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Staryu
+Level: 34
+
+Staryu
+Level: 34
+
+Krabby
+Level: 34
+
+Krabby
+Level: 34
+
+=== TRAINER_TWINS_JOY_MEG ===
+Name: Joy  Meg
+Class: Twins
+Pic: Twins
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Clefairy
+Level: 37
+
+Clefairy
+Level: 37
+
+=== TRAINER_SWIMMER_FEMALE_TISHA ===
+Name: Tisha
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Kingler
+Level: 38
+
+=== TRAINER_PAINTER_CELINA ===
+Name: Celina
+Class: Painter
+Pic: Painter
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Smeargle
+Level: 50
+CFRU IV: 50
+- Fly
+- Dig
+- Dive
+- Bounce
+
+=== TRAINER_PAINTER_RAYNA ===
+Name: Rayna
+Class: Painter
+Pic: Painter
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Smeargle
+Level: 50
+CFRU IV: 50
+- Cross Chop
+- Megahorn
+- Double-Edge
+- Selfdestruct
+
+=== TRAINER_LADY_GILLIAN ===
+Name: Gillian
+Class: Lady
+Pic: Selphy
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+Mareep @ Stardust
+Level: 47
+
+Mareep @ Stardust
+Level: 48
+
+Flaaffy @ Nugget
+Level: 49
+
+=== TRAINER_YOUNGSTER_DESTIN ===
+Name: Destin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 48
+
+Pidgeotto
+Level: 48
+
+=== TRAINER_SWIMMER_MALE_TOBY ===
+Name: Toby
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwhirl
+Level: 48
+
+Tentacool
+Level: 48
+
+Tentacruel
+Level: 48
+
+=== TRAINER_TEAM_ROCKET_GRUNT_49 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 48
+
+Grimer
+Level: 48
+
+Muk
+Level: 48
+
+=== TRAINER_TEAM_ROCKET_GRUNT_50 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 49
+- Memento
+- Haze
+- Smokescreen
+- Sludge
+
+Weezing
+Level: 49
+- Haze
+- Smokescreen
+- Sludge
+- Selfdestruct
+
+=== TRAINER_TEAM_ROCKET_GRUNT_51 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt F
+Gender: Male
+Music: Aqua
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 48
+CFRU IV: 50
+
+Gloom
+Level: 48
+CFRU IV: 50
+
+Gloom
+Level: 48
+CFRU IV: 50
+
+=== TRAINER_BIRD_KEEPER_MILO ===
+Name: Milo
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 47
+
+Pidgeotto
+Level: 49
+
+=== TRAINER_BIRD_KEEPER_CHAZ ===
+Name: Chaz
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 47
+
+Fearow
+Level: 49
+
+=== TRAINER_BIRD_KEEPER_HAROLD ===
+Name: Harold
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hoothoot
+Level: 47
+
+Noctowl
+Level: 49
+
+=== TRAINER_FISHERMAN_TYLOR ===
+Name: Tylor
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Qwilfish
+Level: 49
+
+Qwilfish
+Level: 49
+
+=== TRAINER_SWIMMER_MALE_MYMO ===
+Name: Mymo
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Kingler
+Level: 49
+
+Wartortle
+Level: 49
+
+=== TRAINER_SWIMMER_FEMALE_NICOLE ===
+Name: Nicole
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Marill
+Level: 50
+
+=== TRAINER_SIS_AND_BRO_AVA_GEB ===
+Name: Ava  Geb
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Poliwhirl
+Level: 50
+
+Starmie
+Level: 50
+
+=== TRAINER_AROMA_LADY_ROSE ===
+Name: Rose
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sunkern
+Level: 49
+
+Sunflora
+Level: 49
+
+=== TRAINER_SWIMMER_MALE_SAMIR ===
+Name: Samir
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gyarados
+Level: 50
+
+=== TRAINER_SWIMMER_FEMALE_DENISE ===
+Name: Denise
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Chinchou
+Level: 49
+
+Lanturn
+Level: 49
+
+=== TRAINER_TWINS_MIU_MIA ===
+Name: Miu  Mia
+Class: Twins
+Pic: Twins
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Pikachu
+Level: 50
+
+Pikachu
+Level: 50
+
+=== TRAINER_HIKER_EARL ===
+Name: Earl
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 49
+
+Machoke
+Level: 49
+
+=== TRAINER_RUIN_MANIAC_FOSTER ===
+Name: Foster
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Golem
+Level: 50
+
+=== TRAINER_RUIN_MANIAC_LARRY ===
+Name: Larry
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke
+Level: 49
+
+Machoke
+Level: 49
+
+=== TRAINER_HIKER_DARYL ===
+Name: Daryl
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sudowoodo
+Level: 50
+
+=== TRAINER_POKEMANIAC_HECTOR ===
+Name: Hector
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rhyhorn
+Level: 49
+CFRU IV: 30
+
+Kangaskhan
+Level: 49
+CFRU IV: 30
+
+=== TRAINER_PSYCHIC_DARIO ===
+Name: Dario
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Girafarig
+Level: 52
+CFRU IV: 100
+- Crunch
+- Psybeam
+- Odor Sleuth
+- Agility
+
+=== TRAINER_PSYCHIC_RODETTE ===
+Name: Rodette
+Class: Psychic
+Pic: Psychic F
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Natu
+Level: 48
+CFRU IV: 100
+- Night Shade
+- Confuse Ray
+- Wish
+- Future Sight
+
+Drowzee
+Level: 48
+CFRU IV: 100
+- Psychic
+- Disable
+- Psych Up
+- Future Sight
+
+Hypno
+Level: 50
+CFRU IV: 100
+- Psychic
+- Hypnosis
+- Psych Up
+- Future Sight
+
+=== TRAINER_AROMA_LADY_MIAH ===
+Name: Miah
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Bellossom
+Level: 50
+
+Bellossom
+Level: 50
+
+=== TRAINER_YOUNG_COUPLE_EVE_JON ===
+Name: Eve  Jon
+Class: Young Couple
+Pic: Young Couple
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Golduck
+Level: 50
+
+Psyduck
+Level: 50
+
+=== TRAINER_JUGGLER_MASON ===
+Name: Mason
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Voltorb
+Level: 47
+- Swift
+- Light Screen
+- Spark
+- Sonic Boom
+
+Pineco
+Level: 47
+- Spikes
+- Bide
+- Rapid Spin
+- Take Down
+
+Voltorb
+Level: 47
+- Swift
+- Light Screen
+- Spark
+- Sonic Boom
+
+Pineco
+Level: 47
+- Spikes
+- Bide
+- Rapid Spin
+- Explosion
+
+=== TRAINER_CRUSH_GIRL_CYNDY ===
+Name: Cyndy
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Primeape @ Black Belt
+Level: 48
+CFRU IV: 50
+
+Hitmontop @ Black Belt
+Level: 48
+CFRU IV: 50
+
+Machoke @ Black Belt
+Level: 48
+CFRU IV: 50
+
+=== TRAINER_CRUSH_GIRL_JOCELYN ===
+Name: Jocelyn
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hitmonchan @ Black Belt
+Level: 38
+CFRU IV: 50
+
+Hitmonchan @ Black Belt
+Level: 38
+CFRU IV: 50
+
+=== TRAINER_TAMER_EVAN ===
+Name: Evan
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandslash
+Level: 48
+CFRU IV: 40
+
+Lickitung
+Level: 48
+CFRU IV: 40
+
+Ursaring
+Level: 49
+CFRU IV: 40
+
+=== TRAINER_POKEMANIAC_MARK_2 ===
+Name: Mark
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rhyhorn
+Level: 33
+CFRU IV: 90
+
+Lickitung
+Level: 33
+CFRU IV: 90
+
+=== TRAINER_PKMN_RANGER_LOGAN ===
+Name: Logan
+Class: Pkmn Ranger
+Pic: Pkmn Ranger M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Exeggcute
+Level: 37
+CFRU IV: 100
+- Sleep Powder
+- PoisonPowder
+- Stun Spore
+- Confusion
+
+Exeggutor
+Level: 40
+CFRU IV: 100
+- Egg Bomb
+- Stomp
+- Confusion
+- Hypnosis
+
+=== TRAINER_PKMN_RANGER_JACKSON ===
+Name: Jackson
+Class: Pkmn Ranger
+Pic: Pkmn Ranger M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Tangela
+Level: 49
+CFRU IV: 100
+- Slam
+- Mega Drain
+- Bind
+- Ingrain
+
+Exeggcute
+Level: 49
+CFRU IV: 100
+- Confusion
+- PoisonPowder
+- Barrage
+- Reflect
+
+Exeggutor
+Level: 49
+CFRU IV: 100
+- Confusion
+- Egg Bomb
+- Sleep Powder
+- Stomp
+
+=== TRAINER_PKMN_RANGER_BETH ===
+Name: Beth
+Class: Pkmn Ranger
+Pic: Pkmn Ranger F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Bellsprout
+Level: 38
+CFRU IV: 100
+
+Gloom
+Level: 38
+CFRU IV: 100
+
+Gloom
+Level: 38
+CFRU IV: 100
+
+=== TRAINER_PKMN_RANGER_KATELYN ===
+Name: Katelyn
+Class: Pkmn Ranger
+Pic: Pkmn Ranger F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Chansey
+Level: 52
+CFRU IV: 100
+- Egg Bomb
+- Defense Curl
+- Minimize
+- Soft-Boiled
+
+=== TRAINER_COOLTRAINER_LEROY ===
+Name: Leroy
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Rhydon
+Level: 47
+CFRU IV: 100
+- Take Down
+- Horn Drill
+- Rock Blast
+- Scary Face
+
+Slowbro
+Level: 48
+CFRU IV: 100
+- Psychic
+- Headbutt
+- Amnesia
+- Disable
+
+Kangaskhan
+Level: 47
+CFRU IV: 100
+- Dizzy Punch
+- Bite
+- Endure
+- Reversal
+
+Machoke
+Level: 48
+CFRU IV: 100
+- Cross Chop
+- Vital Throw
+- Revenge
+- Seismic Toss
+
+Ursaring
+Level: 50
+CFRU IV: 100
+- Slash
+- Feint Attack
+- Snore
+- Rest
+
+=== TRAINER_COOLTRAINER_MICHELLE ===
+Name: Michelle
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Persian
+Level: 47
+CFRU IV: 100
+- Slash
+- Screech
+- Feint Attack
+- Bite
+
+Dewgong
+Level: 47
+CFRU IV: 100
+- Ice Beam
+- Take Down
+- Icy Wind
+- Growl
+
+Ninetales
+Level: 48
+CFRU IV: 100
+- Flamethrower
+- Confuse Ray
+- Will-O-Wisp
+- Grudge
+
+Rapidash
+Level: 48
+CFRU IV: 100
+- Bounce
+- Agility
+- Fire Spin
+- Take Down
+
+Girafarig
+Level: 50
+CFRU IV: 100
+- Crunch
+- Psybeam
+- Stomp
+- Odor Sleuth
+
+=== TRAINER_COOL_COUPLE_LEX_NYA ===
+Name: Lex  Nya
+Class: Cool Couple
+Pic: Cool Couple
+Gender: Male
+Music: Cool
+Items: Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Miltank
+Level: 52
+CFRU IV: 100
+- Body Slam
+- Milk Drink
+- Growl
+- Defense Curl
+
+Tauros
+Level: 52
+CFRU IV: 100
+- Thrash
+- Horn Attack
+- Pursuit
+- Swagger
+
+=== TRAINER_RUIN_MANIAC_BRANDON ===
+Name: Brandon
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 50
+
+=== TRAINER_RUIN_MANIAC_BENJAMIN ===
+Name: Benjamin
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 48
+- Earthquake
+- Rock Blast
+- Rollout
+- Selfdestruct
+
+Graveler
+Level: 48
+- Earthquake
+- Rock Blast
+- Rock Throw
+- Selfdestruct
+
+Graveler
+Level: 48
+- Earthquake
+- Rock Blast
+- Rock Throw
+- Selfdestruct
+
+=== TRAINER_PAINTER_EDNA ===
+Name: Edna
+Class: Painter
+Pic: Painter
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Smeargle
+Level: 50
+CFRU IV: 50
+- Fake Out
+- ExtremeSpeed
+- Protect
+- Quick Attack
+
+=== TRAINER_GENTLEMAN_CLIFFORD ===
+Name: Clifford
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Marowak
+Level: 49
+
+Golduck
+Level: 49
+
+=== TRAINER_LADY_SELPHY ===
+Name: Selphy
+Class: Lady
+Pic: Selphy
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move
+
+Persian @ Nugget
+Level: 49
+Ability: Random All
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant
+Tera Type: Normal
+- Pay Day
+- Bite
+- Taunt
+- Torment
+
+Persian @ Nugget
+Level: 49
+Ability: Random All
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant
+Tera Type: Normal
+- Pay Day
+- Scratch
+- Torment
+- Taunt
+
+=== TRAINER_RUIN_MANIAC_LAWSON ===
+Name: Lawson
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 47
+
+Graveler
+Level: 48
+
+Marowak
+Level: 49
+
+=== TRAINER_PSYCHIC_LAURA ===
+Name: Laura
+Class: Psychic
+Pic: Psychic F
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Natu
+Level: 48
+CFRU IV: 100
+
+Natu
+Level: 48
+CFRU IV: 100
+
+Xatu
+Level: 49
+CFRU IV: 100
+
+=== TRAINER_PKMN_BREEDER_BETHANY ===
+Name: Bethany
+Class: Pkmn Breeder
+Pic: Pkmn Breeder F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Chansey
+Level: 50
+CFRU IV: 30
+
+=== TRAINER_PKMN_BREEDER_ALLISON ===
+Name: Allison
+Class: Pkmn Breeder
+Pic: Pkmn Breeder F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Clefairy
+Level: 48
+CFRU IV: 30
+
+Clefairy
+Level: 48
+CFRU IV: 30
+
+Clefable
+Level: 48
+CFRU IV: 30
+
+=== TRAINER_BUG_CATCHER_GARRET ===
+Name: Garret
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Heracross
+Level: 49
+
+=== TRAINER_BUG_CATCHER_JONAH ===
+Name: Jonah
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Yanma
+Level: 45
+
+Beedrill
+Level: 45
+
+Yanma
+Level: 46
+
+Beedrill
+Level: 47
+
+=== TRAINER_BUG_CATCHER_VANCE ===
+Name: Vance
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Venonat
+Level: 48
+
+Venomoth
+Level: 48
+
+=== TRAINER_YOUNGSTER_NASH ===
+Name: Nash
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weepinbell
+Level: 47
+
+Weepinbell
+Level: 47
+
+Victreebel
+Level: 49
+
+=== TRAINER_YOUNGSTER_CORDELL ===
+Name: Cordell
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Farfetch'd
+Level: 48
+
+Farfetch'd
+Level: 48
+
+=== TRAINER_LASS_DALIA ===
+Name: Dalia
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hoppip
+Level: 46
+
+Hoppip
+Level: 47
+
+Skiploom
+Level: 47
+
+Skiploom
+Level: 48
+
+=== TRAINER_LASS_JOANA ===
+Name: Joana
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Snubbull
+Level: 49
+
+=== TRAINER_CAMPER_RILEY ===
+Name: Riley
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pinsir
+Level: 49
+
+Heracross
+Level: 50
+
+=== TRAINER_PICNICKER_MARCY ===
+Name: Marcy
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Paras
+Level: 48
+
+Paras
+Level: 48
+
+Parasect
+Level: 49
+
+=== TRAINER_RUIN_MANIAC_LAYTON ===
+Name: Layton
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandslash
+Level: 48
+
+Onix
+Level: 48
+
+Sandslash
+Level: 48
+
+=== TRAINER_PICNICKER_KELSEY_2 ===
+Name: Kelsey
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidoran-M
+Level: 21
+CFRU IV: 20
+
+Nidoran-F
+Level: 21
+CFRU IV: 20
+
+=== TRAINER_PICNICKER_KELSEY_3 ===
+Name: Kelsey
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidorino
+Level: 29
+CFRU IV: 60
+
+Nidorina
+Level: 29
+CFRU IV: 60
+
+=== TRAINER_PICNICKER_KELSEY_4 ===
+Name: Kelsey
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Nidorino
+Level: 49
+CFRU IV: 80
+
+Nidorina
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_CAMPER_RICKY_2 ===
+Name: Ricky
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Squirtle
+Level: 22
+CFRU IV: 20
+
+=== TRAINER_CAMPER_RICKY_3 ===
+Name: Ricky
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Wartortle
+Level: 30
+CFRU IV: 60
+
+=== TRAINER_CAMPER_RICKY_4 ===
+Name: Ricky
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Wartortle
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_CAMPER_JEFF_2 ===
+Name: Jeff
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Spearow
+Level: 21
+CFRU IV: 20
+
+Raticate
+Level: 21
+CFRU IV: 20
+
+=== TRAINER_CAMPER_JEFF_3 ===
+Name: Jeff
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 29
+CFRU IV: 60
+
+Raticate
+Level: 29
+CFRU IV: 60
+
+=== TRAINER_CAMPER_JEFF_4 ===
+Name: Jeff
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 54
+CFRU IV: 120
+
+Raticate
+Level: 54
+CFRU IV: 120
+
+=== TRAINER_PICNICKER_ISABELLE_2 ===
+Name: Isabelle
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 21
+CFRU IV: 20
+
+Pidgeotto
+Level: 21
+CFRU IV: 20
+
+Pidgey
+Level: 18
+CFRU IV: 20
+
+=== TRAINER_PICNICKER_ISABELLE_3 ===
+Name: Isabelle
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 29
+CFRU IV: 60
+
+Pidgeotto
+Level: 29
+CFRU IV: 60
+
+Pidgeotto
+Level: 26
+CFRU IV: 60
+
+=== TRAINER_PICNICKER_ISABELLE_4 ===
+Name: Isabelle
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 47
+CFRU IV: 80
+
+Pidgeotto
+Level: 47
+CFRU IV: 80
+
+Pidgeot
+Level: 50
+CFRU IV: 80
+
+=== TRAINER_YOUNGSTER_YASU_2 ===
+Name: Yasu
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rattata
+Level: 22
+CFRU IV: 40
+
+Raticate
+Level: 22
+CFRU IV: 40
+
+Raticate
+Level: 22
+CFRU IV: 40
+
+=== TRAINER_YOUNGSTER_YASU_3 ===
+Name: Yasu
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 47
+CFRU IV: 80
+
+Raticate
+Level: 47
+CFRU IV: 80
+
+Raticate
+Level: 47
+CFRU IV: 80
+
+=== TRAINER_ENGINEER_BERNIE_2 ===
+Name: Bernie
+Class: Engineer
+Pic: Worker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magneton
+Level: 28
+CFRU IV: 60
+
+Magneton
+Level: 28
+CFRU IV: 60
+
+Magneton
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_GAMER_DARIAN_2 ===
+Name: Darian
+Class: Gamer
+Pic: Gamer
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 29
+CFRU IV: 60
+
+Vulpix
+Level: 29
+CFRU IV: 60
+
+=== TRAINER_CAMPER_CHRIS_2 ===
+Name: Chris
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 24
+CFRU IV: 40
+
+Charmander
+Level: 24
+CFRU IV: 40
+
+=== TRAINER_CAMPER_CHRIS_3 ===
+Name: Chris
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 29
+CFRU IV: 60
+
+Charmeleon
+Level: 29
+CFRU IV: 60
+
+=== TRAINER_CAMPER_CHRIS_4 ===
+Name: Chris
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Arcanine
+Level: 54
+CFRU IV: 120
+
+Charmeleon
+Level: 54
+CFRU IV: 120
+
+=== TRAINER_PICNICKER_ALICIA_2 ===
+Name: Alicia
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Meowth
+Level: 25
+CFRU IV: 40
+
+=== TRAINER_PICNICKER_ALICIA_3 ===
+Name: Alicia
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Persian
+Level: 30
+CFRU IV: 60
+
+=== TRAINER_PICNICKER_ALICIA_4 ===
+Name: Alicia
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Persian
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_HIKER_JEREMY_2 ===
+Name: Jeremy
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke
+Level: 30
+CFRU IV: 60
+
+Onix
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_POKEMANIAC_MARK_3 ===
+Name: Mark
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rhydon
+Level: 54
+CFRU IV: 150
+
+Lickitung
+Level: 54
+CFRU IV: 150
+
+=== TRAINER_POKEMANIAC_HERMAN_2 ===
+Name: Herman
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Marowak
+Level: 29
+CFRU IV: 90
+
+Slowbro
+Level: 29
+CFRU IV: 90
+
+=== TRAINER_POKEMANIAC_HERMAN_3 ===
+Name: Herman
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Marowak
+Level: 54
+CFRU IV: 150
+
+Slowbro
+Level: 54
+CFRU IV: 150
+
+=== TRAINER_HIKER_TRENT_2 ===
+Name: Trent
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 31
+CFRU IV: 60
+
+Graveler
+Level: 31
+CFRU IV: 60
+
+=== TRAINER_LASS_MEGAN_2 ===
+Name: Megan
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 22
+CFRU IV: 40
+
+Raticate
+Level: 22
+CFRU IV: 40
+
+Nidoran-M
+Level: 23
+CFRU IV: 40
+
+Meowth
+Level: 21
+CFRU IV: 40
+
+Pikachu
+Level: 22
+CFRU IV: 40
+
+=== TRAINER_LASS_MEGAN_3 ===
+Name: Megan
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeot
+Level: 46
+CFRU IV: 80
+
+Raticate
+Level: 47
+CFRU IV: 80
+
+Nidorino
+Level: 47
+CFRU IV: 80
+
+Persian
+Level: 47
+CFRU IV: 80
+
+Raichu
+Level: 48
+CFRU IV: 80
+
+=== TRAINER_SUPER_NERD_GLENN_2 ===
+Name: Glenn
+Class: Super Nerd
+Pic: Super Nerd
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Muk
+Level: 28
+CFRU IV: 60
+
+Muk
+Level: 28
+CFRU IV: 60
+
+Muk
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_GAMER_RICH_2 ===
+Name: Rich
+Class: Gamer
+Pic: Gamer
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 30
+CFRU IV: 60
+
+Vulpix
+Level: 30
+CFRU IV: 60
+
+=== TRAINER_BIKER_JAREN_2 ===
+Name: Jaren
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Muk
+Level: 28
+CFRU IV: 60
+
+Muk
+Level: 30
+CFRU IV: 60
+
+=== TRAINER_FISHERMAN_ELLIOT_2 ===
+Name: Elliot
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwhirl
+Level: 28
+CFRU IV: 60
+
+Cloyster
+Level: 28
+CFRU IV: 60
+
+Seaking
+Level: 28
+CFRU IV: 60
+
+Seadra
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_ROCKER_LUCA_2 ===
+Name: Luca
+Class: Rocker
+Pic: Rocker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Electrode
+Level: 33
+CFRU IV: 60
+
+Electrode
+Level: 33
+CFRU IV: 60
+
+=== TRAINER_BEAUTY_SHEILA_2 ===
+Name: Sheila
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Clefairy
+Level: 49
+CFRU IV: 80
+
+Persian
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_BIRD_KEEPER_ROBERT_2 ===
+Name: Robert
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 28
+CFRU IV: 60
+
+Pidgeotto
+Level: 28
+CFRU IV: 60
+
+Fearow
+Level: 28
+CFRU IV: 60
+
+Fearow
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_BIRD_KEEPER_ROBERT_3 ===
+Name: Robert
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeot
+Level: 47
+CFRU IV: 80
+
+Pidgeot
+Level: 47
+CFRU IV: 80
+
+Fearow
+Level: 47
+CFRU IV: 80
+
+Fearow
+Level: 47
+CFRU IV: 80
+
+=== TRAINER_PICNICKER_SUSIE_2 ===
+Name: Susie
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 27
+CFRU IV: 60
+
+Meowth
+Level: 27
+CFRU IV: 60
+
+Raticate
+Level: 27
+CFRU IV: 60
+
+Pikachu
+Level: 27
+CFRU IV: 60
+
+Meowth
+Level: 27
+CFRU IV: 60
+
+=== TRAINER_PICNICKER_SUSIE_3 ===
+Name: Susie
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 47
+CFRU IV: 80
+
+Persian
+Level: 47
+CFRU IV: 80
+
+Raticate
+Level: 47
+CFRU IV: 80
+
+Pikachu
+Level: 47
+CFRU IV: 80
+
+Persian
+Level: 47
+CFRU IV: 80
+
+=== TRAINER_PICNICKER_SUSIE_4 ===
+Name: Susie
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeot
+Level: 52
+CFRU IV: 120
+
+Persian
+Level: 52
+CFRU IV: 120
+
+Raticate
+Level: 52
+CFRU IV: 120
+
+Raichu
+Level: 52
+CFRU IV: 120
+
+Persian
+Level: 52
+CFRU IV: 120
+
+=== TRAINER_BIKER_LUKAS_2 ===
+Name: Lukas
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Koffing
+Level: 47
+CFRU IV: 80
+
+Koffing
+Level: 47
+CFRU IV: 80
+
+Muk
+Level: 47
+CFRU IV: 80
+
+Weezing
+Level: 47
+CFRU IV: 80
+
+=== TRAINER_BIRD_KEEPER_BENNY_2 ===
+Name: Benny
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 32
+CFRU IV: 60
+
+Fearow
+Level: 32
+CFRU IV: 60
+
+=== TRAINER_BIRD_KEEPER_BENNY_3 ===
+Name: Benny
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 49
+CFRU IV: 80
+
+Fearow
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_BIRD_KEEPER_MARLON_2 ===
+Name: Marlon
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 30
+CFRU IV: 60
+
+Doduo
+Level: 30
+CFRU IV: 60
+
+Fearow
+Level: 30
+CFRU IV: 60
+
+=== TRAINER_BIRD_KEEPER_MARLON_3 ===
+Name: Marlon
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 48
+CFRU IV: 80
+
+Dodrio
+Level: 48
+CFRU IV: 80
+
+Fearow
+Level: 48
+CFRU IV: 80
+
+=== TRAINER_BEAUTY_GRACE_2 ===
+Name: Grace
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeot
+Level: 49
+CFRU IV: 80
+
+Wigglytuff
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_BIRD_KEEPER_CHESTER_2 ===
+Name: Chester
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Dodrio
+Level: 30
+CFRU IV: 60
+
+Dodrio
+Level: 30
+CFRU IV: 60
+
+Doduo
+Level: 30
+CFRU IV: 60
+
+=== TRAINER_BIRD_KEEPER_CHESTER_3 ===
+Name: Chester
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Dodrio
+Level: 48
+CFRU IV: 80
+
+Dodrio
+Level: 48
+CFRU IV: 80
+
+Dodrio
+Level: 48
+CFRU IV: 80
+
+=== TRAINER_PICNICKER_BECKY_2 ===
+Name: Becky
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 32
+CFRU IV: 60
+
+Raichu
+Level: 32
+CFRU IV: 60
+
+=== TRAINER_PICNICKER_BECKY_3 ===
+Name: Becky
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 49
+CFRU IV: 80
+
+Raichu
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_PICNICKER_BECKY_4 ===
+Name: Becky
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raichu
+Level: 54
+CFRU IV: 120
+
+Raichu
+Level: 54
+CFRU IV: 120
+
+=== TRAINER_CRUSH_KIN_RON_MYA_2 ===
+Name: Ron  Mya
+Class: Crush Kin
+Pic: Crush Kin
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Hitmonchan @ Black Belt
+Level: 33
+CFRU IV: 110
+
+Hitmonlee @ Black Belt
+Level: 33
+CFRU IV: 110
+
+=== TRAINER_CRUSH_KIN_RON_MYA_3 ===
+Name: Ron  Mya
+Class: Crush Kin
+Pic: Crush Kin
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Hitmonchan @ Black Belt
+Level: 51
+CFRU IV: 130
+
+Hitmonlee @ Black Belt
+Level: 51
+CFRU IV: 130
+
+=== TRAINER_CRUSH_KIN_RON_MYA_4 ===
+Name: Ron  Mya
+Class: Crush Kin
+Pic: Crush Kin
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Hitmonchan @ Black Belt
+Level: 56
+CFRU IV: 170
+
+Hitmonlee @ Black Belt
+Level: 56
+CFRU IV: 170
+
+=== TRAINER_BIKER_RUBEN_2 ===
+Name: Ruben
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weezing
+Level: 48
+CFRU IV: 80
+
+Weezing
+Level: 48
+CFRU IV: 80
+
+Weezing
+Level: 48
+CFRU IV: 80
+
+=== TRAINER_CUE_BALL_CAMRON_2 ===
+Name: Camron
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Primeape
+Level: 49
+CFRU IV: 80
+
+Machoke
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_BIKER_JAXON_2 ===
+Name: Jaxon
+Class: Biker
+Pic: Biker
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Weezing
+Level: 49
+CFRU IV: 80
+
+Muk
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_CUE_BALL_ISAIAH_2 ===
+Name: Isaiah
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke
+Level: 49
+CFRU IV: 80
+
+Machamp
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_CUE_BALL_COREY_2 ===
+Name: Corey
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Primeape
+Level: 49
+CFRU IV: 80
+
+Machamp
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_BIRD_KEEPER_JACOB_2 ===
+Name: Jacob
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 28
+CFRU IV: 60
+
+Spearow
+Level: 28
+CFRU IV: 60
+
+Fearow
+Level: 28
+CFRU IV: 60
+
+Spearow
+Level: 28
+CFRU IV: 60
+
+=== TRAINER_BIRD_KEEPER_JACOB_3 ===
+Name: Jacob
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 47
+CFRU IV: 80
+
+Fearow
+Level: 47
+CFRU IV: 80
+
+Fearow
+Level: 47
+CFRU IV: 80
+
+Fearow
+Level: 47
+CFRU IV: 80
+
+=== TRAINER_SWIMMER_FEMALE_ALICE_2 ===
+Name: Alice
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seaking
+Level: 49
+CFRU IV: 80
+
+Seaking
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_SWIMMER_MALE_DARRIN_2 ===
+Name: Darrin
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seadra
+Level: 52
+CFRU IV: 120
+
+Seadra
+Level: 52
+CFRU IV: 120
+
+Seadra
+Level: 52
+CFRU IV: 120
+
+Seadra
+Level: 52
+CFRU IV: 120
+
+=== TRAINER_PICNICKER_MISSY_2 ===
+Name: Missy
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seaking
+Level: 49
+CFRU IV: 80
+
+Seaking
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_PICNICKER_MISSY_3 ===
+Name: Missy
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seaking
+Level: 54
+CFRU IV: 120
+
+Seaking
+Level: 54
+CFRU IV: 120
+
+=== TRAINER_FISHERMAN_WADE_2 ===
+Name: Wade
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Magikarp
+Level: 47
+CFRU IV: 80
+
+Magikarp
+Level: 47
+CFRU IV: 80
+
+Magikarp
+Level: 47
+CFRU IV: 80
+
+Magikarp
+Level: 47
+CFRU IV: 80
+
+Magikarp
+Level: 47
+CFRU IV: 80
+
+Magikarp
+Level: 47
+CFRU IV: 80
+
+=== TRAINER_SWIMMER_MALE_JACK_2 ===
+Name: Jack
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Starmie
+Level: 50
+CFRU IV: 80
+
+=== TRAINER_SIS_AND_BRO_LIL_IAN_2 ===
+Name: Lil  Ian
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Seadra
+Level: 50
+CFRU IV: 80
+
+Starmie
+Level: 50
+CFRU IV: 80
+
+=== TRAINER_SIS_AND_BRO_LIL_IAN_3 ===
+Name: Lil  Ian
+Class: Sis And Bro
+Pic: Sis And Bro
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Seadra
+Level: 55
+CFRU IV: 120
+
+Starmie
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_SWIMMER_MALE_FINN_2 ===
+Name: Finn
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Starmie
+Level: 50
+CFRU IV: 80
+
+=== TRAINER_CRUSH_GIRL_SHARON_2 ===
+Name: Sharon
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Mankey @ Black Belt
+Level: 50
+CFRU IV: 130
+
+Primeape @ Black Belt
+Level: 50
+CFRU IV: 130
+
+=== TRAINER_CRUSH_GIRL_SHARON_3 ===
+Name: Sharon
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Primeape @ Black Belt
+Level: 55
+CFRU IV: 170
+
+Primeape @ Black Belt
+Level: 55
+CFRU IV: 170
+
+=== TRAINER_CRUSH_GIRL_TANYA_2 ===
+Name: Tanya
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hitmonlee @ Black Belt
+Level: 50
+CFRU IV: 130
+
+Hitmonchan @ Black Belt
+Level: 50
+CFRU IV: 130
+
+=== TRAINER_CRUSH_GIRL_TANYA_3 ===
+Name: Tanya
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Hitmonlee @ Black Belt
+Level: 55
+CFRU IV: 170
+
+Hitmonchan @ Black Belt
+Level: 55
+CFRU IV: 170
+
+=== TRAINER_BLACK_BELT_SHEA_2 ===
+Name: Shea
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 50
+CFRU IV: 180
+
+Machoke @ Black Belt
+Level: 50
+CFRU IV: 180
+
+=== TRAINER_BLACK_BELT_SHEA_3 ===
+Name: Shea
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 55
+CFRU IV: 220
+
+Machamp @ Black Belt
+Level: 55
+CFRU IV: 220
+
+=== TRAINER_BLACK_BELT_HUGH_2 ===
+Name: Hugh
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 50
+CFRU IV: 180
+
+Machoke @ Black Belt
+Level: 50
+CFRU IV: 180
+
+=== TRAINER_BLACK_BELT_HUGH_3 ===
+Name: Hugh
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 55
+CFRU IV: 220
+
+Machamp @ Black Belt
+Level: 55
+CFRU IV: 220
+
+=== TRAINER_CRUSH_KIN_MIK_KIA_2 ===
+Name: Mik  Kia
+Class: Crush Kin
+Pic: Crush Kin
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Machoke @ Black Belt
+Level: 51
+CFRU IV: 130
+
+Primeape @ Black Belt
+Level: 51
+CFRU IV: 130
+
+=== TRAINER_CRUSH_KIN_MIK_KIA_3 ===
+Name: Mik  Kia
+Class: Crush Kin
+Pic: Crush Kin
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Machamp @ Black Belt
+Level: 56
+CFRU IV: 170
+
+Primeape @ Black Belt
+Level: 56
+CFRU IV: 170
+
+=== TRAINER_TUBER_AMIRA_2 ===
+Name: Amira
+Class: Tuber
+Pic: Tuber F
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwhirl
+Level: 47
+CFRU IV: 80
+
+Poliwhirl
+Level: 47
+CFRU IV: 80
+
+Poliwhirl
+Level: 47
+CFRU IV: 80
+
+=== TRAINER_TWINS_JOY_MEG_2 ===
+Name: Joy  Meg
+Class: Twins
+Pic: Twins
+Gender: Male
+Music: Twins
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Clefairy
+Level: 49
+CFRU IV: 80
+
+Clefairy
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_PAINTER_RAYNA_2 ===
+Name: Rayna
+Class: Painter
+Pic: Painter
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Smeargle
+Level: 54
+CFRU IV: 120
+- Cross Chop
+- Megahorn
+- Double-Edge
+- Selfdestruct
+
+=== TRAINER_YOUNGSTER_DESTIN_2 ===
+Name: Destin
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Raticate
+Level: 53
+CFRU IV: 120
+
+Pidgeot
+Level: 53
+CFRU IV: 120
+
+=== TRAINER_PKMN_BREEDER_ALIZE_2 ===
+Name: Alize
+Class: Pkmn Breeder
+Pic: Pkmn Breeder F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pikachu
+Level: 53
+CFRU IV: 150
+
+Clefairy
+Level: 53
+CFRU IV: 150
+
+Marill
+Level: 53
+CFRU IV: 150
+
+=== TRAINER_YOUNG_COUPLE_GIA_JES_2 ===
+Name: Gia  Jes
+Class: Young Couple
+Pic: Young Couple
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Nidorina
+Level: 30
+CFRU IV: 60
+
+Nidorino
+Level: 30
+CFRU IV: 60
+
+=== TRAINER_YOUNG_COUPLE_GIA_JES_3 ===
+Name: Gia  Jes
+Class: Young Couple
+Pic: Young Couple
+Gender: Male
+Music: Girl
+Items: 
+Double Battle: Yes
+AI: Check Bad Move
+
+Nidoking
+Level: 55
+CFRU IV: 120
+
+Nidoqueen
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_BIRD_KEEPER_MILO_2 ===
+Name: Milo
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Pidgeotto
+Level: 53
+CFRU IV: 120
+
+Pidgeot
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_BIRD_KEEPER_CHAZ_2 ===
+Name: Chaz
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Fearow
+Level: 53
+CFRU IV: 120
+
+Fearow
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_BIRD_KEEPER_HAROLD_2 ===
+Name: Harold
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Noctowl
+Level: 53
+CFRU IV: 120
+
+Noctowl
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_SWIMMER_FEMALE_NICOLE_2 ===
+Name: Nicole
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Marill
+Level: 54
+CFRU IV: 120
+
+=== TRAINER_PSYCHIC_JACLYN_2 ===
+Name: Jaclyn
+Class: Psychic
+Pic: Psychic F
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Natu
+Level: 52
+CFRU IV: 220
+- Psychic
+- Confuse Ray
+- Future Sight
+- Wish
+
+Slowbro
+Level: 52
+CFRU IV: 220
+- Psychic
+- Headbutt
+- Amnesia
+- Yawn
+
+Kadabra
+Level: 54
+CFRU IV: 220
+- Psychic
+- Future Sight
+- Recover
+- Reflect
+
+=== TRAINER_SWIMMER_MALE_SAMIR_2 ===
+Name: Samir
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Gyarados
+Level: 55
+CFRU IV: 120
+
+=== TRAINER_HIKER_EARL_2 ===
+Name: Earl
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 54
+CFRU IV: 120
+
+Machamp
+Level: 54
+CFRU IV: 120
+
+=== TRAINER_RUIN_MANIAC_LARRY_2 ===
+Name: Larry
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Machoke
+Level: 54
+CFRU IV: 120
+
+Machoke
+Level: 54
+CFRU IV: 120
+
+=== TRAINER_POKEMANIAC_HECTOR_2 ===
+Name: Hector
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Rhydon
+Level: 55
+CFRU IV: 150
+
+Kangaskhan
+Level: 55
+CFRU IV: 150
+
+=== TRAINER_PSYCHIC_DARIO_2 ===
+Name: Dario
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Girafarig
+Level: 56
+CFRU IV: 220
+- Crunch
+- Psybeam
+- Odor Sleuth
+- Agility
+
+=== TRAINER_PSYCHIC_RODETTE_2 ===
+Name: Rodette
+Class: Psychic
+Pic: Psychic F
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Natu
+Level: 53
+CFRU IV: 220
+- Psychic
+- Confuse Ray
+- Wish
+- Future Sight
+
+Hypno
+Level: 53
+CFRU IV: 220
+- Psychic
+- Disable
+- Psych Up
+- Future Sight
+
+Hypno
+Level: 53
+CFRU IV: 220
+- Psychic
+- Hypnosis
+- Psych Up
+- Future Sight
+
+=== TRAINER_JUGGLER_MASON_2 ===
+Name: Mason
+Class: Juggler
+Pic: Juggler
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Electrode
+Level: 52
+CFRU IV: 120
+
+Pineco
+Level: 52
+CFRU IV: 120
+
+Electrode
+Level: 52
+CFRU IV: 120
+
+Pineco
+Level: 52
+CFRU IV: 120
+
+=== TRAINER_PKMN_RANGER_NICOLAS_2 ===
+Name: Nicolas
+Class: Pkmn Ranger
+Pic: Pkmn Ranger M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Victreebel
+Level: 55
+CFRU IV: 220
+- Razor Leaf
+- Acid
+- Stun Spore
+- Wrap
+
+Victreebel
+Level: 55
+CFRU IV: 220
+- Razor Leaf
+- Acid
+- Sleep Powder
+- Slam
+
+=== TRAINER_PKMN_RANGER_MADELINE_2 ===
+Name: Madeline
+Class: Pkmn Ranger
+Pic: Pkmn Ranger F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Vileplume
+Level: 55
+CFRU IV: 220
+- Petal Dance
+- Moonlight
+- Acid
+- Sleep Powder
+
+Vileplume
+Level: 55
+CFRU IV: 220
+- Petal Dance
+- Moonlight
+- Acid
+- Stun Spore
+
+=== TRAINER_CRUSH_GIRL_CYNDY_2 ===
+Name: Cyndy
+Class: Crush Girl
+Pic: Crush Girl
+Gender: Male
+Music: Intense
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Primeape @ Black Belt
+Level: 54
+CFRU IV: 170
+
+Hitmontop @ Black Belt
+Level: 54
+CFRU IV: 170
+
+Machamp @ Black Belt
+Level: 54
+CFRU IV: 170
+
+=== TRAINER_TAMER_EVAN_2 ===
+Name: Evan
+Class: Tamer
+Pic: Tamer
+Gender: Male
+Music: Hiker
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Sandslash
+Level: 52
+CFRU IV: 160
+
+Lickitung
+Level: 52
+CFRU IV: 160
+
+Ursaring
+Level: 55
+CFRU IV: 160
+
+=== TRAINER_PKMN_RANGER_JACKSON_2 ===
+Name: Jackson
+Class: Pkmn Ranger
+Pic: Pkmn Ranger M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Tangela
+Level: 53
+CFRU IV: 220
+- Slam
+- Mega Drain
+- Bind
+- Ingrain
+
+Exeggutor
+Level: 54
+CFRU IV: 220
+- Confusion
+- Egg Bomb
+- Stun Spore
+- Reflect
+
+Exeggutor
+Level: 55
+CFRU IV: 220
+- Confusion
+- Egg Bomb
+- Sleep Powder
+- Stomp
+
+=== TRAINER_PKMN_RANGER_KATELYN_2 ===
+Name: Katelyn
+Class: Pkmn Ranger
+Pic: Pkmn Ranger F
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Chansey
+Level: 56
+CFRU IV: 220
+- Egg Bomb
+- Defense Curl
+- Minimize
+- Soft-Boiled
+
+=== TRAINER_COOLTRAINER_LEROY_2 ===
+Name: Leroy
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Rhydon
+Level: 52
+CFRU IV: 220
+- Earthquake
+- Horn Drill
+- Rock Blast
+- Scary Face
+
+Slowbro
+Level: 54
+CFRU IV: 220
+- Psychic
+- Headbutt
+- Amnesia
+- Disable
+
+Kangaskhan
+Level: 52
+CFRU IV: 220
+- Dizzy Punch
+- Bite
+- Endure
+- Reversal
+
+Machamp
+Level: 52
+CFRU IV: 220
+- Cross Chop
+- Vital Throw
+- Revenge
+- Seismic Toss
+
+Ursaring
+Level: 55
+CFRU IV: 220
+- Slash
+- Feint Attack
+- Snore
+- Rest
+
+=== TRAINER_COOLTRAINER_MICHELLE_2 ===
+Name: Michelle
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Persian
+Level: 53
+CFRU IV: 220
+- Slash
+- Screech
+- Feint Attack
+- Bite
+
+Dewgong
+Level: 53
+CFRU IV: 220
+- Ice Beam
+- Take Down
+- Icy Wind
+- Sheer Cold
+
+Ninetales
+Level: 54
+CFRU IV: 220
+- Flamethrower
+- Confuse Ray
+- Will-O-Wisp
+- Grudge
+
+Rapidash
+Level: 54
+CFRU IV: 220
+- Bounce
+- Agility
+- Fire Spin
+- Take Down
+
+Girafarig
+Level: 56
+CFRU IV: 220
+- Crunch
+- Psybeam
+- Stomp
+- Odor Sleuth
+
+=== TRAINER_COOL_COUPLE_LEX_NYA_2 ===
+Name: Lex  Nya
+Class: Cool Couple
+Pic: Cool Couple
+Gender: Male
+Music: Cool
+Items: Full Restore / Full Restore
+Double Battle: Yes
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Miltank
+Level: 57
+CFRU IV: 220
+- Body Slam
+- Milk Drink
+- Growl
+- Defense Curl
+
+Tauros
+Level: 57
+CFRU IV: 220
+- Take Down
+- Scary Face
+- Pursuit
+- Swagger
+
+=== TRAINER_BUG_CATCHER_COLTON_2 ===
+Name: Colton
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Metapod
+Level: 19
+CFRU IV: 20
+
+Weedle
+Level: 19
+CFRU IV: 20
+
+Metapod
+Level: 19
+CFRU IV: 20
+
+=== TRAINER_BUG_CATCHER_COLTON_3 ===
+Name: Colton
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Butterfree
+Level: 27
+CFRU IV: 60
+
+Kakuna
+Level: 27
+CFRU IV: 60
+
+Butterfree
+Level: 27
+CFRU IV: 60
+
+=== TRAINER_BUG_CATCHER_COLTON_4 ===
+Name: Colton
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Butterfree
+Level: 51
+CFRU IV: 120
+
+Beedrill
+Level: 54
+CFRU IV: 120
+
+Butterfree
+Level: 51
+CFRU IV: 120
+
+=== TRAINER_SWIMMER_MALE_MATTHEW_2 ===
+Name: Matthew
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwhirl
+Level: 49
+CFRU IV: 80
+
+Poliwrath
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_SWIMMER_MALE_TONY_2 ===
+Name: Tony
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Seadra
+Level: 49
+CFRU IV: 80
+
+Seadra
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_SWIMMER_FEMALE_MELISSA_2 ===
+Name: Melissa
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: 
+Double Battle: No
+AI: Check Bad Move
+
+Poliwhirl
+Level: 49
+CFRU IV: 80
+
+Seaking
+Level: 49
+CFRU IV: 80
+
+=== TRAINER_ELITE_FOUR_LORELEI_2 ===
+Name: Lorelei
+Class: Elite Four
+Pic: Lorelei
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Dewgong
+Level: 64
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Ice
+- Ice Beam
+- Surf
+- Signal Beam
+- Double Team
+
+Cloyster
+Level: 63
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Water
+- Ice Beam
+- Surf
+- Supersonic
+- Rain Dance
+
+Piloswine
+Level: 63
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Ice
+- Blizzard
+- Earthquake
+- Double-Edge
+- Rock Slide
+
+Jynx
+Level: 66
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Ice
+- Ice Beam
+- Psychic
+- Lovely Kiss
+- Attract
+
+Lapras @ Cheri Berry
+Level: 66
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Water
+- Ice Beam
+- Surf
+- Psychic
+- Thunder
+
+=== TRAINER_ELITE_FOUR_BRUNO_2 ===
+Name: Bruno
+Class: Elite Four
+Pic: Bruno
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Steelix
+Level: 65
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Steel
+- Earthquake
+- Rock Tomb
+- Iron Tail
+- Roar
+
+Hitmonchan
+Level: 65
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fighting
+- Sky Uppercut
+- Mach Punch
+- Rock Tomb
+- Counter
+
+Hitmonlee
+Level: 65
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fighting
+- Mega Kick
+- Foresight
+- Brick Break
+- Facade
+
+Steelix
+Level: 66
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Steel
+- Double-Edge
+- Earthquake
+- Iron Tail
+- Sand Tomb
+
+Machamp Giga @ Sitrus Berry
+Level: 68
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fighting
+- Cross Chop
+- Bulk Up
+- Scary Face
+- Rock Tomb
+
+=== TRAINER_ELITE_FOUR_AGATHA_2 ===
+Name: Agatha
+Class: Elite Four
+Pic: Agatha
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Gengar
+Level: 66
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Ghost
+- Shadow Ball
+- Psychic
+- Confuse Ray
+- Hypnosis
+
+Crobat
+Level: 66
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Poison
+- Sludge Bomb
+- Air Cutter
+- Shadow Ball
+- Confuse Ray
+
+Misdreavus
+Level: 65
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Ghost
+- Shadow Ball
+- Psychic
+- Thunderbolt
+- Attract
+
+Arbok
+Level: 68
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Poison
+- Sludge Bomb
+- Earthquake
+- Giga Drain
+- Double Team
+
+Gengar @ Chesto Berry
+Level: 70
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Ghost
+- Shadow Ball
+- Psychic
+- Thunderbolt
+- Sludge Bomb
+
+=== TRAINER_ELITE_FOUR_LANCE_2 ===
+Name: Lance
+Class: Elite Four
+Pic: Lance
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Gyarados
+Level: 68
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Water
+- Hyper Beam
+- Dragon Dance
+- Earthquake
+- Thunder Wave
+
+Dragonite
+Level: 66
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Dragon
+- Hyper Beam
+- Earthquake
+- Dragon Claw
+- Flamethrower
+
+Kingdra
+Level: 66
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Water
+- Hyper Beam
+- Dragon Dance
+- Surf
+- Ice Beam
+
+Aerodactyl
+Level: 70
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Jolly
+Tera Type: Rock
+- Hyper Beam
+- AncientPower
+- Aerial Ace
+- Earthquake
+
+Dragonite @ Persim Berry
+Level: 72
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Dragon
+- Hyper Beam
+- Outrage
+- Thunderbolt
+- Ice Beam
+
+=== TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
+Name: Terry
+Class: Champion
+Pic: Blue 3
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Heracross
+Level: 72
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Bug
+- Megahorn
+- Earthquake
+- Counter
+- Rock Tomb
+
+Alakazam
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Psychic
+- Psychic
+- Future Sight
+- Recover
+- Reflect
+
+Tyranitar
+Level: 72
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Rock
+- Crunch
+- Earthquake
+- Thunderbolt
+- Aerial Ace
+
+Arcanine H
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fire
+- ExtremeSpeed
+- Flamethrower
+- Roar
+- Bite
+
+Exeggutor
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Grass
+- Giga Drain
+- Egg Bomb
+- Sleep Powder
+- Light Screen
+
+Blastoise Giga @ Sitrus Berry
+Level: 75
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Water
+- Hydro Pump
+- Rain Dance
+- Skull Bash
+- Bite
+
+=== TRAINER_CHAMPION_REMATCH_BULBASAUR ===
+Name: Terry
+Class: Champion
+Pic: Blue 3
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Heracross
+Level: 72
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Bug
+- Megahorn
+- Earthquake
+- Counter
+- Rock Tomb
+
+Alakazam
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Psychic
+- Psychic
+- Shadow Ball
+- Calm Mind
+- Reflect
+
+Tyranitar
+Level: 72
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Rock
+- Crunch
+- Earthquake
+- Thunderbolt
+- Aerial Ace
+
+Gyarados
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Water
+- Hydro Pump
+- Dragon Dance
+- Earthquake
+- Hyper Beam
+
+Arcanine H
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Fire
+- ExtremeSpeed
+- Flamethrower
+- Roar
+- Bite
+
+Venusaur Giga @ Sitrus Berry
+Level: 75
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Grass
+- Solar Beam
+- Synthesis
+- Sunny Day
+- Growth
+
+=== TRAINER_CHAMPION_REMATCH_CHARMANDER ===
+Name: Terry
+Class: Champion
+Pic: Blue 3
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Check Good Move / Semi Smart
+
+Heracross
+Level: 72
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Bug
+- Megahorn
+- Earthquake
+- Counter
+- Rock Tomb
+
+Alakazam
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Psychic
+- Psychic
+- Shadow Ball
+- Calm Mind
+- Reflect
+
+Tyranitar
+Level: 72
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Rock
+- Crunch
+- Earthquake
+- Thunderbolt
+- Aerial Ace
+
+Exeggutor
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Grass
+- Giga Drain
+- Psychic
+- Sleep Powder
+- Light Screen
+
+Gyarados
+Level: 73
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Adamant
+Tera Type: Water
+- Hydro Pump
+- Dragon Dance
+- Earthquake
+- Hyper Beam
+
+Charizard @ Sitrus Berry
+Level: 75
+Ability: Random All
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Nature: Modest
+Tera Type: Fire
+- Fire Blast
+- Dragon Claw
+- Aerial Ace
+- Earthquake
+
+=== TRAINER_CUE_BALL_PAXTON ===
+Name: Paxton
+Class: Cue Ball
+Pic: Cue Ball
+Gender: Male
+Music: Male
+Items: 
+Double Battle: No
+AI: Check Bad Move / Semi Smart
+
+Weezing
+Level: 39
+
+Honchkrow
+Level: 50
+

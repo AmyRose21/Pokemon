@@ -1,0 +1,3 @@
+# Free Byte Replacements is a custom file
+# It adds specific bytes at free space in rom
+# Follower-mon graphics are now built from follower_mon_sprites/.

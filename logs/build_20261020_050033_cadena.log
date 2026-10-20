@@ -1,0 +1,40 @@
+=== CFRU Builder 1.0.3 | modo: cadena | 2026-10-20 05:00:33 ===
+[OK] Respaldo creado: C:\Users\AM\Desktop\Pokemon\backups\BPRE0_20261020_050033.gba
+[OK] DPE: OFFSET_TO_PUT actualizado a 0x1600000
+[OK] CFRU: OFFSET_TO_PUT actualizado a 0x1000000
+[INFO] Preparando BPRE0.gba del DPE (16.0 MB)...
+[OK] ROM copiada a C:\Users\AM\Desktop\Pokemon\DPE\BPRE0.gba
+[INFO] Alias 'python' de la Microsoft Store aislado (1 en el PATH) SOLO durante esta compilacion.
+[INFO] devkitARM detectado via disco (C:\devkitPro\devkitARM\bin); se inyectara en el PATH solo para esta compilacion.
+[INFO] Ejecutando en C:\Users\AM\Desktop\Pokemon\DPE:  C:\Users\AM\AppData\Local\Programs\Python\Python313\python.exe -u scripts\make.py
+Warning! Python 3.8 may not be able to build this engine.
+Please downgrade to Python 3.7.4
+Compiling ./src\generated\Base_Stats_Compat.c
+Compiling ./src\generated\Species_Abilities.c
+Built in 0:00:04.672069.
+ROM expanded from 16MB to 32MB.
+Inserting code.
+Inserted in 0:00:00.464151.
+[OK] make.py de DPE termino correctamente (codigo 0).
+[OK] DPE listo: C:\Users\AM\Desktop\Pokemon\DPE\test.gba (32.0 MB)
+[PAUSA] ===============================================
+[PAUSA] Revisa el test.gba del DPE si quieres (emulador).
+[PAUSA] Cuando estes listo, pulsa 'Continuar -> CFRU'.
+[PAUSA] ===============================================
+[INFO] Continuando hacia el CFRU...
+[OK] DPE test.gba copiado a C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\BPRE0.gba
+[INFO] Alias 'python' de la Microsoft Store aislado (1 en el PATH) SOLO durante esta compilacion.
+[INFO] devkitARM detectado via disco (C:\devkitPro\devkitARM\bin); se inyectara en el PATH solo para esta compilacion.
+[INFO] Ejecutando en C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments:  C:\Users\AM\AppData\Local\Programs\Python\Python313\python.exe -u scripts\make.py
+Built in 0:00:05.093609.
+Inserting code.
+Inserting follower-mon overworld sprites at 0x900000.
+Symbol missing: EventScript_PokedexUI
+Inserted in 0:00:04.494073.
+[OK] make.py de CFRU termino correctamente (codigo 0).
+[OK] CFRU listo: C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\test.gba (32.0 MB)
+[OK] ROM final guardada en: C:/Users/AM/Desktop/Pokemon\MiHack_CFRU.gba (32.0 MB)
+[INFO] El CFRU genero tambien offsets.ini con las direcciones insertadas (C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\offsets.ini).
+
+[OK] CADENA COMPLETA FINALIZADA.
+[OK] ROM final lista: C:/Users/AM/Desktop/Pokemon\MiHack_CFRU.gba

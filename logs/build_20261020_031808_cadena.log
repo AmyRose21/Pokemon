@@ -1,0 +1,1100 @@
+=== CFRU Builder 1.0.3 | modo: cadena | 2026-10-20 03:18:08 ===
+[OK] Respaldo creado: C:\Users\AM\Desktop\Pokemon\backups\BPRE0_20261020_031808.gba
+[OK] DPE: OFFSET_TO_PUT actualizado a 0x1600000
+[OK] CFRU: OFFSET_TO_PUT actualizado a 0x1000000
+[INFO] Preparando BPRE0.gba del DPE (16.0 MB)...
+[INFO] El archivo de origen ya estaba en el sitio de destino (C:\Users\AM\Desktop\Pokemon\DPE\BPRE0.gba);
+[INFO] no hace falta copiar nada. Continuando...
+[OK] La ROM ya estaba en su sitio: C:\Users\AM\Desktop\Pokemon\DPE\BPRE0.gba
+[INFO] Alias 'python' de la Microsoft Store aislado (1 en el PATH) SOLO durante esta compilacion.
+[INFO] devkitARM detectado via disco (C:\devkitPro\devkitARM\bin); se inyectara en el PATH solo para esta compilacion.
+[INFO] Ejecutando en C:\Users\AM\Desktop\Pokemon\DPE:  C:\Users\AM\AppData\Local\Programs\Python\Python313\python.exe -u scripts\make.py
+Warning! Python 3.8 may not be able to build this engine.
+Please downgrade to Python 3.7.4
+Processing Front Sprites.
+Processing Back Sprites.
+Processing Icon Sprites.
+Processing Castform Sprites.
+Processing TMHM Data.
+Processing Tutor Data.
+Assembling ./assembly\hooks.s
+Assembling ./assembly\pokedex_hooks.s
+Assembling ./assembly\thumb_compiler_helper.s
+Assembling ./assembly\generated\backsprites.s
+Assembling ./assembly\generated\castformsprites.s
+Assembling ./assembly\generated\frontsprites.s
+Assembling ./assembly\generated\iconsprites.s
+Assembling ./assembly\generated\tm_compatibility.s
+Assembling ./assembly\generated\tutor_compatibility.s
+Compiling ./src\Back_Pic_Coords_Table.c
+Compiling ./src\Back_Pic_Table.c
+Compiling ./src\Cry_Table.c
+Compiling ./src\Cry_Table_2.c
+Compiling ./src\Egg_Moves.c
+Compiling ./src\Enemy_Elevation_Table.c
+Compiling ./src\Evolution_Table.c
+Compiling ./src\Footprint_Table.c
+Compiling ./src\Front_Pic_Coords_Table.c
+Compiling ./src\Front_Pic_Table.c
+Compiling ./src\Habitat_Table.c
+Compiling ./src\Icon_Palette_Table.c
+Compiling ./src\Icon_Table.c
+Compiling ./src\Item_Animation_Table.c
+Compiling ./src\Learnsets.c
+Compiling ./src\Palette_Table.c
+Compiling ./src\Pokedex_Data_Table.c
+Compiling ./src\Pokedex_Orders.c
+Compiling ./src\Shiny_Palette_Table.c
+Compiling ./src\Species_To_Pokdex_Table.c
+Compiling ./src\TM_Tutor_Tables.c
+Compiling ./src\updated_code.c
+Compiling ./src\generated\Base_Stats_Compat.c
+Compiling ./src\generated\Species_Abilities.c
+Building Strings ./strings\New.string
+Building Strings ./strings\Pokedex_Data.string
+Building Strings ./strings\Pokemon_Name_Table.string
+Compiling Audio
+Assembling special_inserts.asm
+Built in 0:12:48.715432.
+ROM expanded from 16MB to 32MB.
+Inserting code.
+Inserted in 0:00:18.365328.
+[OK] make.py de DPE termino correctamente (codigo 0).
+[OK] DPE listo: C:\Users\AM\Desktop\Pokemon\DPE\test.gba (32.0 MB)
+[PAUSA] ===============================================
+[PAUSA] Revisa el test.gba del DPE si quieres (emulador).
+[PAUSA] Cuando estes listo, pulsa 'Continuar -> CFRU'.
+[PAUSA] ===============================================
+[INFO] Continuando hacia el CFRU...
+[OK] DPE test.gba copiado a C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\BPRE0.gba
+[INFO] Alias 'python' de la Microsoft Store aislado (1 en el PATH) SOLO durante esta compilacion.
+[INFO] devkitARM detectado via disco (C:\devkitPro\devkitARM\bin); se inyectara en el PATH solo para esta compilacion.
+[INFO] Ejecutando en C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments:  C:\Users\AM\AppData\Local\Programs\Python\Python313\python.exe -u scripts\make.py
+./src\ability_battle_effects.c: In function 'TryRemoveIntimidateAbilityPopUp':
+./src\ability_battle_effects.c:3509:74: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 3509 |                 gBattlescriptCurrInstr = BattleScript_AbilityPopUpRevert - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\ability_battle_effects.c:12:
+./src\../include/new/ability_battle_scripts.h:113:17: note: at offset -5 into object 'BattleScript_AbilityPopUpRevert' of size [0, 2147483647]
+  113 | extern const u8 BattleScript_AbilityPopUpRevert[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\ability_battle_effects.c: In function 'TryHideActiveAbilityPopUps':
+./src\ability_battle_effects.c:3522:82: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 3522 |                         gBattlescriptCurrInstr = BattleScript_AbilityPopUpRevert - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:113:17: note: at offset -5 into object 'BattleScript_AbilityPopUpRevert' of size [0, 2147483647]
+  113 | extern const u8 BattleScript_AbilityPopUpRevert[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\ability_battle_effects.c: In function 'TryReactiveIntimidatePopUp':
+./src\ability_battle_effects.c:3543:68: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 3543 |                 gBattlescriptCurrInstr = BattleScript_AbilityPopUp - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:112:17: note: at offset -5 into object 'BattleScript_AbilityPopUp' of size [0, 2147483647]
+  112 | extern const u8 BattleScript_AbilityPopUp[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'AtkCanceller_UnableToUseMove',
+    inlined from 'atk00_attackcanceler' at ./src\attackcanceler.c:86:6:
+./src\attackcanceler.c:848:91: warning: array subscript -2 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  848 |                                         gBattlescriptCurrInstr = BattleScript_ButItFailed - 2;
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\attackcanceler.c:2:
+./src\defines_battle.h: In function 'atk00_attackcanceler':
+./src\defines_battle.h:118:11: note: at offset -2 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+In function 'AtkCanceller_UnableToUseMove',
+    inlined from 'atk00_attackcanceler' at ./src\attackcanceler.c:86:6:
+./src\attackcanceler.c:855:91: warning: array subscript -2 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  855 |                                         gBattlescriptCurrInstr = BattleScript_ButItFailed - 2;
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h: In function 'atk00_attackcanceler':
+./src\defines_battle.h:118:11: note: at offset -2 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+In function 'AtkCanceller_UnableToUseMove',
+    inlined from 'atk00_attackcanceler' at ./src\attackcanceler.c:86:6:
+./src\attackcanceler.c:862:91: warning: array subscript -2 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  862 |                                         gBattlescriptCurrInstr = BattleScript_ButItFailed - 2;
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h: In function 'atk00_attackcanceler':
+./src\defines_battle.h:118:11: note: at offset -2 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+In function 'AtkCanceller_UnableToUseMove',
+    inlined from 'atk00_attackcanceler' at ./src\attackcanceler.c:86:6:
+./src\attackcanceler.c:835:83: warning: array subscript -2 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  835 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 2;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h: In function 'atk00_attackcanceler':
+./src\defines_battle.h:118:11: note: at offset -2 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\attackcanceler.c:97:67: warning: array subscript -2 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+   97 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 2;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -2 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_anims.c: In function 'SpriteCB_MaxFlareBallStep':
+./src\battle_anims.c:4365:21: warning: variable 'y2' set but not used [-Wunused-but-set-variable=]
+ 4365 |                 s16 y2 = sprite->pos2.y;
+      |                     ^~
+./src\battle_anims.c:4363:21: warning: variable 'x2' set but not used [-Wunused-but-set-variable=]
+ 4363 |                 s16 x2 = sprite->pos2.x;
+      |                     ^~
+./src\battle_indicators.c: In function 'SpriteCB_TeraTrigger':
+./src\battle_indicators.c:1065:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+ 1065 |     else
+      |     ^~~~
+./src\battle_indicators.c:1069:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+ 1069 |         if (PALETTE_STATE != self->data[2])
+      |         ^~
+[INFO] Continuando hacia el CFRU...
+./src\battle_script_util.c: In function 'AcupressureFunc':
+./src\battle_script_util.c:102:75: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  102 |                         gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\battle_script_util.c:2:
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:109:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  109 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:114:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  114 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'MetalBurstDamageCalculator':
+./src\battle_script_util.c:332:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  332 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:359:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  359 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryActivatePartnerSapSipper':
+./src\battle_script_util.c:378:77: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  378 |                 gBattlescriptCurrInstr = BattleScript_SapSipperAromatherapy - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\battle_script_util.c:27:
+./src\../include/new/move_battle_scripts.h:44:17: note: at offset -5 into object 'BattleScript_SapSipperAromatherapy' of size [0, 2147483647]
+   44 | extern const u8 BattleScript_SapSipperAromatherapy[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'DefogHelperFunc':
+./src\battle_script_util.c:459:101: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  459 |                         gBattlescriptCurrInstr = BattleScript_DefogAdditionalEffects_PlayAttackAnim - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:46:17: note: at offset -5 into object 'BattleScript_DefogAdditionalEffects_PlayAttackAnim' of size [0, 2147483647]
+   46 | extern const u8 BattleScript_DefogAdditionalEffects_PlayAttackAnim[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:457:86: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  457 |                         gBattlescriptCurrInstr = BattleScript_DefogAdditionalEffects - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:45:17: note: at offset -5 into object 'BattleScript_DefogAdditionalEffects' of size [0, 2147483647]
+   45 | extern const u8 BattleScript_DefogAdditionalEffects[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'ClearBeakBlastBit':
+./src\battle_script_util.c:466:74: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  466 |                 gBattlescriptCurrInstr = BattleScript_NoTargetMoveFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\battle_script_util.c:14:
+./src\../include/new/battle_start_turn_start_battle_scripts.h:29:17: note: at offset -5 into object 'BattleScript_NoTargetMoveFailed' of size [0, 2147483647]
+   29 | extern const u8 BattleScript_NoTargetMoveFailed[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'BestowItem':
+./src\battle_script_util.c:493:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  493 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'BelchFunction':
+./src\battle_script_util.c:502:71: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  502 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'CopycatFunc':
+./src\battle_script_util.c:549:71: warning: array subscript -6 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  549 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 1 - 5;      //From PP Reduce
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -6 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'MeFirstFunc':
+./src\battle_script_util.c:622:71: warning: array subscript -6 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  622 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 1; //Start from PP Reduce
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -6 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'LoadPledgeScript':
+./src\battle_script_util.c:702:67: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  702 |                 gBattlescriptCurrInstr = BattleScript_PledgeReady - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:48:17: note: at offset -5 into object 'BattleScript_PledgeReady' of size [0, 2147483647]
+   48 | extern const u8 BattleScript_PledgeReady[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:667:70: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  667 |                 gBattlescriptCurrInstr = BattleScript_PledgeCombined - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:47:17: note: at offset -5 into object 'BattleScript_PledgeCombined' of size [0, 2147483647]
+   47 | extern const u8 BattleScript_PledgeCombined[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'DoBattleFieldEffect':
+./src\battle_script_util.c:868:84: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  868 |                                  gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:832:84: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  832 |                                  gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:847:84: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  847 |                                  gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:817:84: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  817 |                                  gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'BringDownMons':
+./src\battle_script_util.c:928:81: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  928 |                         gBattlescriptCurrInstr = BattleScript_PrintCustomString - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:49:17: note: at offset -5 into object 'BattleScript_PrintCustomString' of size [0, 2147483647]
+   49 | extern const u8 BattleScript_PrintCustomString[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryFling':
+./src\battle_script_util.c:939:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  939 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'CheckTelekinesisFail':
+./src\battle_script_util.c:957:71: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  957 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'ChangeTargetTypeFunc':
+./src\battle_script_util.c:994:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  994 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1021:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1021 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1006:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1006 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:971:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  971 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'HealTargetFunc':
+./src\battle_script_util.c:1041:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1041 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TopsyTurvyFunc':
+./src\battle_script_util.c:1083:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1083 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'FailMoveIfAura':
+./src\battle_script_util.c:1121:72: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 1121 |                 gBattlescriptCurrInstr = BattleScript_MoveFailedOnAura - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:70:17: note: at offset -5 into object 'BattleScript_MoveFailedOnAura' of size [0, 2147483647]
+   70 | extern const u8 BattleScript_MoveFailedOnAura[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'DoFairyLockHappyHourFunc':
+./src\battle_script_util.c:1157:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1157 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1129:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1129 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'AfterYouFunc':
+./src\battle_script_util.c:1212:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1212 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'QuashFunc':
+./src\battle_script_util.c:1245:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1245 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryExecuteInstruct':
+./src\battle_script_util.c:1266:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1266 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TrySetMagnetRise':
+./src\battle_script_util.c:1307:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1307 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TailwindLuckyChantFunc':
+./src\battle_script_util.c:1329:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1329 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1320:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1320 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryActivateWindRiderFromTailwind':
+./src\battle_script_util.c:1356:86: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 1356 |                         gBattlescriptCurrInstr = BattleScript_TargetAbilityStatRaise - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\battle_script_util.c:10:
+./src\../include/new/ability_battle_scripts.h:61:17: note: at offset -5 into object 'BattleScript_TargetAbilityStatRaise' of size [0, 2147483647]
+   61 | extern const u8 BattleScript_TargetAbilityStatRaise[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1367:82: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 1367 |                         gBattlescriptCurrInstr = BattleScript_WindPowerActivates - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:174:17: note: at offset -5 into object 'BattleScript_WindPowerActivates' of size [0, 2147483647]
+  174 | extern const u8 BattleScript_WindPowerActivates[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'AbilityChangeBSFunc':
+./src\battle_script_util.c:1547:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1547 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1525:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1525 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1508:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1508 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1487:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1487 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1472:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1472 |                                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1574:64: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1574 |         if (gBattlescriptCurrInstr != BattleScript_ButItFailed - 5)
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'LoadStatustoPsychoShiftTransfer':
+./src\battle_script_util.c:1614:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1614 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'LastResortFunc':
+./src\battle_script_util.c:1678:71: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1678 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 2 - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'GigatonHammerFunc':
+./src\battle_script_util.c:1710:63: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1710 |         gBattlescriptCurrInstr = BattleScript_ButItFailed - 2 - 5;
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:1707:63: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1707 |         gBattlescriptCurrInstr = BattleScript_ButItFailed - 2 - 5;
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'FailTransformIfAura':
+./src\battle_script_util.c:1803:77: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 1803 |                 gBattlescriptCurrInstr = BattleScript_TransformFailedOnAura - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:69:17: note: at offset -5 into object 'BattleScript_TransformFailedOnAura' of size [0, 2147483647]
+   69 | extern const u8 BattleScript_TransformFailedOnAura[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryLaunchShellTrap':
+./src\battle_script_util.c:1846:71: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1846 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TrySuckerPunch':
+./src\battle_script_util.c:1855:63: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 1855 |         gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2;
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryToStopNewMonFromSwitchingInAfterSRHurt':
+./src\battle_script_util.c:1983:78: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 1983 |                 gBattlescriptCurrInstr = BattleScript_EntryHazardsHurtReturn - 5; //Continue the switch in effects
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:221:17: note: at offset -5 into object 'BattleScript_EntryHazardsHurtReturn' of size [0, 2147483647]
+  221 | extern const u8 BattleScript_EntryHazardsHurtReturn[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'ClearSwitchInEffectsState':
+./src\battle_script_util.c:1993:94: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 1993 |                 gBattlescriptCurrInstr = BattleScript_HandleFaintedMonDoublesSwitchInEffects - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\battle_script_util.c:21:
+./src\../include/new/end_turn_battle_scripts.h:86:17: note: at offset -5 into object 'BattleScript_HandleFaintedMonDoublesSwitchInEffects' of size [0, 2147483647]
+   86 | extern const u8 BattleScript_HandleFaintedMonDoublesSwitchInEffects[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'UndoAbilityEffectsForNeutralizingGas':
+./src\battle_script_util.c:2067:81: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2067 |                         gBattlescriptCurrInstr = BattleScript_TryRemoveIllusion - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:108:17: note: at offset -5 into object 'BattleScript_TryRemoveIllusion' of size [0, 2147483647]
+  108 | extern const u8 BattleScript_TryRemoveIllusion[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:2057:72: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2057 |                 gBattlescriptCurrInstr = BattleScript_PrimalWeatherEnd - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:110:17: note: at offset -5 into object 'BattleScript_PrimalWeatherEnd' of size [0, 2147483647]
+  110 | extern const u8 BattleScript_PrimalWeatherEnd[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryLoadSecondFriskTargetDoubles':
+./src\battle_script_util.c:2084:56: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2084 |         gBattlescriptCurrInstr = BattleScript_FriskEnd - 5;
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:21:17: note: at offset -5 into object 'BattleScript_FriskEnd' of size [0, 2147483647]
+   21 | extern const u8 BattleScript_FriskEnd[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'FailIfAttackerIsntHoldingEdibleBerry':
+./src\battle_script_util.c:2291:79: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2291 |                 gBattlescriptCurrInstr = BattleScript_ButItFailedAttackstring - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:59:17: note: at offset -5 into object 'BattleScript_ButItFailedAttackstring' of size [0, 2147483647]
+   59 | extern const u8 BattleScript_ButItFailedAttackstring[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'FailIfTrappedByNoRetreat':
+./src\battle_script_util.c:2307:79: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2307 |                 gBattlescriptCurrInstr = BattleScript_ButItFailedAttackstring - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:59:17: note: at offset -5 into object 'BattleScript_ButItFailedAttackstring' of size [0, 2147483647]
+   59 | extern const u8 BattleScript_ButItFailedAttackstring[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryFailLifeDew':
+./src\battle_script_util.c:2332:67: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2332 |                 gBattlescriptCurrInstr = BattleScript_LifeDewFail - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:63:17: note: at offset -5 into object 'BattleScript_LifeDewFail' of size [0, 2147483647]
+   63 | extern const u8 BattleScript_LifeDewFail[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:2330:52: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2330 |                 gBattlescriptCurrInstr = RecoverBS - 5;
+      |                                          ~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:62:17: note: at offset -5 into object 'RecoverBS' of size [0, 2147483647]
+   62 | extern const u8 RecoverBS[];
+      |                 ^~~~~~~~~
+./src\battle_script_util.c: In function 'TryFailJungleHealing':
+./src\battle_script_util.c:2354:67: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2354 |                 gBattlescriptCurrInstr = BattleScript_LifeDewFail - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:63:17: note: at offset -5 into object 'BattleScript_LifeDewFail' of size [0, 2147483647]
+   63 | extern const u8 BattleScript_LifeDewFail[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryFailLunarBlessing':
+./src\battle_script_util.c:2371:73: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2371 |                 gBattlescriptCurrInstr = BattleScript_LunarBlessingFail - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:64:17: note: at offset -5 into object 'BattleScript_LunarBlessingFail' of size [0, 2147483647]
+   64 | extern const u8 BattleScript_LunarBlessingFail[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'ActivatePerishBody':
+./src\battle_script_util.c:2503:72: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2503 |                 gBattlescriptCurrInstr = BattleScript_PerishBodyReturn - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:74:17: note: at offset -5 into object 'BattleScript_PerishBodyReturn' of size [0, 2147483647]
+   74 | extern const u8 BattleScript_PerishBodyReturn[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'FailClangorousSoulIfLowHP':
+./src\battle_script_util.c:2509:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2509 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'FailShedTailIfLowHP':
+./src\battle_script_util.c:2515:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2515 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'SetCorrectTeleportBattleScript':
+./src\battle_script_util.c:2576:76: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2576 |                         gBattlescriptCurrInstr = BattleScript_TeleportFlee - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:67:17: note: at offset -5 into object 'BattleScript_TeleportFlee' of size [0, 2147483647]
+   67 | extern const u8 BattleScript_TeleportFlee[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:2574:78: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2574 |                         gBattlescriptCurrInstr = BattleScript_TeleportSwitch - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:66:17: note: at offset -5 into object 'BattleScript_TeleportSwitch' of size [0, 2147483647]
+   66 | extern const u8 BattleScript_TeleportSwitch[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c:2569:70: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2569 |                 gBattlescriptCurrInstr = BattleScript_TeleportSwitch - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:66:17: note: at offset -5 into object 'BattleScript_TeleportSwitch' of size [0, 2147483647]
+   66 | extern const u8 BattleScript_TeleportSwitch[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryFailPoltergeist':
+./src\battle_script_util.c:2597:71: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2597 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2; //From attackstring
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'WakeUpSleepingPokemon':
+./src\battle_script_util.c:2615:76: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2615 |                         gBattlescriptCurrInstr = BattleScript_UproarWokeUp - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:68:17: note: at offset -5 into object 'BattleScript_UproarWokeUp' of size [0, 2147483647]
+   68 | extern const u8 BattleScript_UproarWokeUp[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryFailSteelRoller':
+./src\battle_script_util.c:2655:71: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2655 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2; //From attackstring
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'PrintElectromagnetismFloatingStrings':
+./src\battle_script_util.c:2669:89: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2669 |                                 gBattlescriptCurrInstr = BattleScript_PrintCustomString - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:49:17: note: at offset -5 into object 'BattleScript_PrintCustomString' of size [0, 2147483647]
+   49 | extern const u8 BattleScript_PrintCustomString[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'FailSubstituteInShadowShieldBattle':
+./src\battle_script_util.c:2744:84: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2744 |                 gBattlescriptCurrInstr = BattleScript_ShadowShieldBlocksSubstitute - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:71:17: note: at offset -5 into object 'BattleScript_ShadowShieldBlocksSubstitute' of size [0, 2147483647]
+   71 | extern const u8 BattleScript_ShadowShieldBlocksSubstitute[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryFailAuraWheel':
+./src\battle_script_util.c:2751:71: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2751 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2; //From attackstring
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'SkipUseNextPkmnPromptIfCantRun':
+./src\battle_script_util.c:2758:82: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2758 |                 gBattlescriptCurrInstr = BattleScript_FaintedMonTryChooseAnother - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/end_turn_battle_scripts.h:88:17: note: at offset -5 into object 'BattleScript_FaintedMonTryChooseAnother' of size [0, 2147483647]
+   88 | extern const u8 BattleScript_FaintedMonTryChooseAnother[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryRaiseHigherDefensesOverOffenses':
+./src\battle_script_util.c:2764:72: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2764 |                 gBattlescriptCurrInstr = BattleScript_HigherDefensesUp - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/move_battle_scripts.h:83:17: note: at offset -5 into object 'BattleScript_HigherDefensesUp' of size [0, 2147483647]
+   83 | extern const u8 BattleScript_HigherDefensesUp[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryActivateQuarkDrive':
+./src\battle_script_util.c:2819:72: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2819 |             gBattlescriptCurrInstr = BattleScript_QuarkDriveActivates2 - 5;
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:166:17: note: at offset -5 into object 'BattleScript_QuarkDriveActivates2' of size [0, 2147483647]
+  166 | extern const u8 BattleScript_QuarkDriveActivates2[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryActivateProtosynthesis':
+./src\battle_script_util.c:2838:76: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2838 |             gBattlescriptCurrInstr = BattleScript_ProtosynthesisActivates2 - 5;
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:168:17: note: at offset -5 into object 'BattleScript_ProtosynthesisActivates2' of size [0, 2147483647]
+  168 | extern const u8 BattleScript_ProtosynthesisActivates2[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryUpperHand':
+./src\battle_script_util.c:2848:63: warning: array subscript -7 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2848 |         gBattlescriptCurrInstr = BattleScript_ButItFailed - 5 - 2;
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -7 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TrySetDragonCheer':
+./src\battle_script_util.c:2855:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2855 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\battle_script_util.c: In function 'TryRevivalBlessing':
+./src\battle_script_util.c:2880:67: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+ 2880 |                 gBattlescriptCurrInstr = BattleScript_ButItFailed - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\defines_battle.h:118:11: note: at offset -5 into object 'BattleScript_ButItFailed' of size [0, 2147483647]
+  118 | extern u8 BattleScript_ButItFailed[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./src\defines.h:9,
+                 from ./src\dexnav.c:1:
+./src\dexnav.c: In function 'GetEncounterLevel':
+./src\../include/global.h:19:33: warning: division 'sizeof (const struct WildPokemon * const) / sizeof (const struct WildPokemon)' does not compute the number of array elements [-Wsizeof-pointer-div]
+   19 | #define NELEMS(arr) (sizeof(arr)/sizeof(*(arr)))
+      |                                 ^
+./src\dexnav.c:1251:66: note: in expansion of macro 'NELEMS'
+ 1251 |                                                 i = RandRange(0, NELEMS(landMonsInfo->wildPokemon));
+      |                                                                  ^~~~~~
+./src\../include/global.h:19:33: warning: division 'sizeof (const struct WildPokemon * const) / sizeof (const struct WildPokemon)' does not compute the number of array elements [-Wsizeof-pointer-div]
+   19 | #define NELEMS(arr) (sizeof(arr)/sizeof(*(arr)))
+      |                                 ^
+./src\dexnav.c:1282:58: note: in expansion of macro 'NELEMS'
+ 1282 |                                         i = RandRange(0, NELEMS(waterMonsInfo->wildPokemon));
+      |                                                          ^~~~~~
+./src\../include/global.h:19:33: warning: division 'sizeof (const struct WildPokemon * const) / sizeof (const struct WildPokemon)' does not compute the number of array elements [-Wsizeof-pointer-div]
+   19 | #define NELEMS(arr) (sizeof(arr)/sizeof(*(arr)))
+      |                                 ^
+./src\dexnav.c:1308:58: note: in expansion of macro 'NELEMS'
+ 1308 |                                         i = RandRange(0, NELEMS(fishingMonsInfo->wildPokemon));
+      |                                                          ^~~~~~
+./src\exp.c: In function 'atk23_getexp':
+./src\exp.c:116:30: warning: variable 'viaSentIn' set but not used [-Wunused-but-set-variable=]
+  116 |         u32 viaExpShare = 0, viaSentIn = 0;
+      |                              ^~~~~~~~~
+./src\exp.c:116:13: warning: variable 'viaExpShare' set but not used [-Wunused-but-set-variable=]
+  116 |         u32 viaExpShare = 0, viaSentIn = 0;
+      |             ^~~~~~~~~~~
+In function 'TryActivateWeakenessBerry',
+    inlined from 'TryActivateWeakenessBerry' at ./src\general_bs_commands.c:331:14:
+./src\general_bs_commands.c:343:85: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  343 |                         gBattlescriptCurrInstr = BattleScript_WeaknessBerryActivate - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\general_bs_commands.c:31:
+./src\../include/new/item_battle_scripts.h: In function 'TryActivateWeakenessBerry':
+./src\../include/new/item_battle_scripts.h:9:17: note: at offset -5 into object 'BattleScript_WeaknessBerryActivate' of size [0, 2147483647]
+    9 | extern const u8 BattleScript_WeaknessBerryActivate[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\general_bs_commands.c: In function 'atk0C_datahpupdate':
+./src\general_bs_commands.c:866:99: warning: array subscript -2 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  866 |                                         gBattlescriptCurrInstr = BattleScript_IllusionBrokenFaint - 2;
+      |                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\general_bs_commands.c:14:
+./src\../include/new/ability_battle_scripts.h:87:17: note: at offset -2 into object 'BattleScript_IllusionBrokenFaint' of size [0, 2147483647]
+   87 | extern const u8 BattleScript_IllusionBrokenFaint[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\item.c: In function 'ReformatItemDescription':
+./src\item.c:322:12: warning: variable 'count' set but not used [-Wunused-but-set-variable=]
+  322 |         u8 count = 0;
+      |            ^~~~~
+./src\item.c: In function 'CheckIsHmMove':
+./src\item.c:759:25: warning: parameter 'move' set but not used [-Wunused-but-set-parameter=]
+  759 | bool8 CheckIsHmMove(u16 move)
+      |                     ~~~~^~~~
+./src\scripting.c: In function 'Task_OakSpeech_IsInhabitedFarAndWide':
+./src\scripting.c:3269:13: warning: comparison between two arrays [-Warray-compare]
+ 3269 |     if (str != gStringVar4)                                                                                                                                  \
+      |             ^~
+./src\scripting.c:3296:13: note: in expansion of macro 'OakSpeechPrintMessage'
+ 3296 |             OakSpeechPrintMessage(gOakSpeech_Text_IsInhabitedFarAndWide, sOakSpeechResources->textSpeed);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+./src\scripting.c:3269:13: note: use '&gOakSpeech_Text_IsInhabitedFarAndWide[0] != &gStringVar4[0]' to compare the addresses
+./src\scripting.c:3296:13: note: in expansion of macro 'OakSpeechPrintMessage'
+ 3296 |             OakSpeechPrintMessage(gOakSpeech_Text_IsInhabitedFarAndWide, sOakSpeechResources->textSpeed);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c: In function 'SetZEffect':
+./src\set_z_effect.c:182:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  182 |                                 gBattlescriptCurrInstr = BattleScript_StatUpZMove - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\set_z_effect.c:15:
+./src\../include/new/z_move_battle_scripts.h:15:11: note: at offset -5 into object 'BattleScript_StatUpZMove' of size [0, 2147483647]
+   15 | extern u8 BattleScript_StatUpZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:166:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  166 |                                 gBattlescriptCurrInstr = BattleScript_StatUpZMove - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:15:11: note: at offset -5 into object 'BattleScript_StatUpZMove' of size [0, 2147483647]
+   15 | extern u8 BattleScript_StatUpZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:150:83: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  150 |                                 gBattlescriptCurrInstr = BattleScript_StatUpZMove - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:15:11: note: at offset -5 into object 'BattleScript_StatUpZMove' of size [0, 2147483647]
+   15 | extern u8 BattleScript_StatUpZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:135:89: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  135 |                         gBattlescriptCurrInstr = BattleScript_SetUpHealReplacementZMove - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:16:11: note: at offset -5 into object 'BattleScript_SetUpHealReplacementZMove' of size [0, 2147483647]
+   16 | extern u8 BattleScript_SetUpHealReplacementZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:128:86: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  128 |                                 gBattlescriptCurrInstr = BattleScript_RecoverHPZMove - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:14:11: note: at offset -5 into object 'BattleScript_RecoverHPZMove' of size [0, 2147483647]
+   14 | extern u8 BattleScript_RecoverHPZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:120:77: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  120 |                         gBattlescriptCurrInstr = BattleScript_FollowMeZMove - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:13:11: note: at offset -5 into object 'BattleScript_FollowMeZMove' of size [0, 2147483647]
+   13 | extern u8 BattleScript_FollowMeZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:112:87: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  112 |                                 gBattlescriptCurrInstr = BattleScript_BoostCritsZMove - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:12:11: note: at offset -5 into object 'BattleScript_BoostCritsZMove' of size [0, 2147483647]
+   12 | extern u8 BattleScript_BoostCritsZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:103:87: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+  103 |                                 gBattlescriptCurrInstr = BattleScript_AllStatsUpZMove - 5;
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:11:11: note: at offset -5 into object 'BattleScript_AllStatsUpZMove' of size [0, 2147483647]
+   11 | extern u8 BattleScript_AllStatsUpZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\set_z_effect.c:90:79: warning: array subscript -5 is outside array bounds of 'u8[2147483647]' {aka 'unsigned char[2147483647]'} [-Warray-bounds=]
+   90 |                         gBattlescriptCurrInstr = BattleScript_StatsResetZMove - 5;
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/z_move_battle_scripts.h:10:11: note: at offset -5 into object 'BattleScript_StatsResetZMove' of size [0, 2147483647]
+   10 | extern u8 BattleScript_StatsResetZMove[];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\terastallization.c: In function 'TryActivateTeraFormAbility':
+./src\terastallization.c:361:77: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  361 |                 gBattlescriptCurrInstr = BattleScript_TeraformZeroActivates - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\terastallization.c:25:
+./src\../include/new/ability_battle_scripts.h:173:17: note: at offset -5 into object 'BattleScript_TeraformZeroActivates' of size [0, 2147483647]
+  173 | extern const u8 BattleScript_TeraformZeroActivates[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\terastallization.c:370:78: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  370 |                 gBattlescriptCurrInstr = BattleScript_TargetAbilityStatRaise - 5;
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./src\../include/new/ability_battle_scripts.h:61:17: note: at offset -5 into object 'BattleScript_TargetAbilityStatRaise' of size [0, 2147483647]
+   61 | extern const u8 BattleScript_TargetAbilityStatRaise[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\trainer_sliding.c: In function 'TryDoDynamaxTrainerSlide':
+./src\trainer_sliding.c:343:66: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+  343 |         gBattlescriptCurrInstr = BattleScript_TrainerSlideMsgRet - 5;
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\trainer_sliding.c:9:
+./src\../include/new/trainer_sliding_data.h:11:17: note: at offset -5 into object 'BattleScript_TrainerSlideMsgRet' of size [0, 2147483647]
+   11 | extern const u8 BattleScript_TrainerSlideMsgRet[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src\Battle_AI\ai_advanced.c:1110:21: warning: conflicting types for 'ShouldProtect' due to enum/integer mismatch; have 'enum ProtectQueries(u8,  u8,  u16)' {aka 'enum ProtectQueries(unsigned char,  unsigned char,  short unsigned int)'} [-Wenum-int-mismatch]
+ 1110 | enum ProtectQueries ShouldProtect(u8 bankAtk, u8 bankDef, u16 move)
+      |                     ^~~~~~~~~~~~~
+In file included from ./src\Battle_AI\ai_advanced.c:7:
+./src\Battle_AI\../../include/new/ai_advanced.h:45:4: note: previous declaration of 'ShouldProtect' with type 'u8(u8,  u8,  u16)' {aka 'unsigned char(unsigned char,  unsigned char,  short unsigned int)'}
+   45 | u8 ShouldProtect(u8 bankAtk, u8 bankDef, u16 move);
+      |    ^~~~~~~~~~~~~
+./src\Battle_AI\ai_switching.c: In function 'ShouldDoAIShiftSwitch':
+./src\Battle_AI\ai_switching.c:2669:77: warning: array subscript -5 is outside array bounds of 'const u8[2147483647]' {aka 'const unsigned char[2147483647]'} [-Warray-bounds=]
+ 2669 |         gBattlescriptCurrInstr = BattleScript_FaintedMonChooseAnotherRejoin - 5;
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from ./src\Battle_AI\ai_switching.c:12:
+./src\Battle_AI\../../include/new/end_turn_battle_scripts.h:87:17: note: at offset -5 into object 'BattleScript_FaintedMonChooseAnotherRejoin' of size [0, 2147483647]
+   87 | extern const u8 BattleScript_FaintedMonChooseAnotherRejoin[];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compiling follower-mon overworld sprites
+Assembling ./assembly\bw_pss_graphics.s
+Assembling ./assembly\Egg_hatcher.s
+Assembling ./assembly\followingmon_normal_pals.s
+Assembling ./assembly\followingmon_shiny_pals.s
+Assembling ./assembly\hq_mixer.s
+Assembling ./assembly\instruments_274_280.s
+Assembling ./assembly\main.s
+Assembling ./assembly\mon_icons.s
+Assembling ./assembly\pokedex_screen_stats.s
+Assembling ./assembly\thumb_compiler_helper.s
+Assembling ./assembly\triple_layer_blocks.s
+Assembling ./assembly\voicegroups_274_280.s
+Assembling ./assembly\battle_scripts\ability_battle_scripts.s
+Assembling ./assembly\battle_scripts\attackcanceler_battle_scripts.s
+Assembling ./assembly\battle_scripts\battle_start_turn_start_battle_scripts.s
+Assembling ./assembly\battle_scripts\cmd49_battle_scripts.s
+Assembling ./assembly\battle_scripts\end_battle_battle_scripts.s
+Assembling ./assembly\battle_scripts\et_battle_scripts.s
+Assembling ./assembly\battle_scripts\fainting_battle_scripts.s
+Assembling ./assembly\battle_scripts\general_attack_battle_scripts.s
+Assembling ./assembly\battle_scripts\item_battle_scripts.s
+Assembling ./assembly\battle_scripts\mega_battle_script.s
+Assembling ./assembly\battle_scripts\move_menu_battle_scripts.s
+Assembling ./assembly\battle_scripts\set_effect_battle_scripts.s
+Assembling ./assembly\battle_scripts\standard_damage_battle_script.s
+Assembling ./assembly\battle_scripts\switch_battle_scripts.s
+Assembling ./assembly\battle_scripts\tera_battle_script.s
+Assembling ./assembly\battle_scripts\trainer_sliding_battle_scripts.s
+Assembling ./assembly\battle_scripts\z_effect_battle_scripts.s
+Assembling ./assembly\data\ability_description_table.s
+Assembling ./assembly\data\anim_backgrounds_graphics_defines.s
+Assembling ./assembly\data\anim_background_table.s
+Assembling ./assembly\data\anim_particle_graphics_defines.s
+Assembling ./assembly\data\anim_particle_table.s
+Assembling ./assembly\data\attack_anim_table.s
+Assembling ./assembly\data\attack_description_table.s
+Assembling ./assembly\data\battle_script_commands_table.s
+Assembling ./assembly\data\item_tables.s
+Assembling ./assembly\data\move_effect_table.s
+Assembling ./assembly\data\special_battle_anim_table.s
+Assembling ./assembly\data\type_tables.s
+Assembling ./assembly\data\z_move_name_table.s
+Assembling ./assembly\hooks\bag_expansion_hooks.s
+Assembling ./assembly\hooks\character_customization_hooks.s
+Assembling ./assembly\hooks\dynamic_ow_pal_hooks.s
+Assembling ./assembly\hooks\follow_me_hooks.s
+Assembling ./assembly\hooks\general_hooks.s
+Assembling ./assembly\hooks\illusion_hooks.s
+Assembling ./assembly\hooks\instant_text_hooks.s
+Assembling ./assembly\hooks\mega_hooks.s
+Assembling ./assembly\hooks\move_reminder_hooks.s
+Assembling ./assembly\hooks\multi_hooks.s
+Assembling ./assembly\hooks\multi_partner_hooks.s
+Assembling ./assembly\hooks\pc_select_hooks.s
+Assembling ./assembly\hooks\pokemon_data_hooks.s
+Assembling ./assembly\hooks\tmhm_hooks.s
+Assembling ./assembly\overworld_scripts\berry_tree_script.s
+Assembling ./assembly\overworld_scripts\Egg_Hatcher_script.s
+Assembling ./assembly\overworld_scripts\follower_mon.s
+Assembling ./assembly\overworld_scripts\mystery_gift.s
+Assembling ./assembly\overworld_scripts\nameminibox.s
+Assembling ./assembly\overworld_scripts\Pallet_town.s
+Assembling ./assembly\overworld_scripts\premium_rewards.s
+Assembling ./assembly\overworld_scripts\sideway_stairs.s
+Assembling ./assembly\overworld_scripts\system_scripts.s
+Assembling ./assembly\overworld_scripts\trainer_battle_scripts.s
+Assembling ./assembly\overworld_scripts\viridian_city.s
+Assembling ./assembly\overworld_scripts\Wonder_Trades.s
+Compiling ./src\ability_battle_effects.c
+Compiling ./src\ability_util.c
+Compiling ./src\accuracy_calc.c
+Compiling ./src\attackcanceler.c
+Compiling ./src\battle_anims.c
+Compiling ./src\battle_controller_opponent.c
+Compiling ./src\battle_indicators.c
+Compiling ./src\battle_script_util.c
+Compiling ./src\battle_start_turn_start.c
+Compiling ./src\battle_strings.c
+Compiling ./src\battle_terrain.c
+Compiling ./src\battle_transition.c
+Compiling ./src\battle_util.c
+Compiling ./src\berry_tree.c
+Compiling ./src\build_pokemon.c
+Compiling ./src\bw_summary_screen.c
+Compiling ./src\catching.c
+Compiling ./src\character_customization.c
+Compiling ./src\cmd49.c
+Compiling ./src\damage_calc.c
+Compiling ./src\daycare.c
+Compiling ./src\debug_menu.c
+Compiling ./src\dexnav.c
+Compiling ./src\dns.c
+Compiling ./src\dynamax.c
+Compiling ./src\dynamic_ow_pals.c
+Compiling ./src\em_mining.c
+Compiling ./src\end_battle.c
+Compiling ./src\end_turn.c
+Compiling ./src\evolution.c
+Compiling ./src\exp.c
+Compiling ./src\field_effects.c
+Compiling ./src\follower_mon.c
+Compiling ./src\follower_mon_messages.c
+Compiling ./src\follow_me.c
+Compiling ./src\form_change.c
+Compiling ./src\frontier.c
+Compiling ./src\frontier_records.c
+Compiling ./src\general_bs_commands.c
+Compiling ./src\hall_of_fame.c
+Compiling ./src\item.c
+Compiling ./src\item_battle_effects.c
+Compiling ./src\learn_move.c
+Compiling ./src\link.c
+Compiling ./src\MainEvIv.c
+Compiling ./src\main_menu.c
+Compiling ./src\mega.c
+Compiling ./src\mgba.c
+Compiling ./src\mid_battle_evo.c
+Compiling ./src\mini_printf.c
+Compiling ./src\move_menu.c
+Compiling ./src\multi.c
+Compiling ./src\mystery_gift.c
+Compiling ./src\mystery_gift_gfx.c
+Compiling ./src\new_bag.c
+Compiling ./src\new_bs_commands.c
+Compiling ./src\option_menu.c
+Compiling ./src\overworld.c
+Compiling ./src\ow_shadows.c
+Compiling ./src\party_menu.c
+Compiling ./src\pokemon_storage_system.c
+Compiling ./src\pokemon_summary_screen.c
+Compiling ./src\quest_menu.c
+Compiling ./src\quest_menu_data.c
+Compiling ./src\raid_intro.c
+Compiling ./src\read_keys.c
+Compiling ./src\roamer.c
+Compiling ./src\rtc.c
+Compiling ./src\save.c
+Compiling ./src\scripting.c
+Compiling ./src\set_effect.c
+Compiling ./src\set_z_effect.c
+Compiling ./src\siirtc.c
+Compiling ./src\start_menu.c
+Compiling ./src\stat_buffs.c
+Compiling ./src\switching.c
+Compiling ./src\TaskEvIvInit.c
+Compiling ./src\terastallization.c
+Compiling ./src\text_printer.c
+Compiling ./src\tm_case.c
+Compiling ./src\trainer_sliding.c
+Compiling ./src\util.c
+Compiling ./src\wild_encounter.c
+Compiling ./src\Battle_AI\ai_advanced.c
+Compiling ./src\Battle_AI\ai_master.c
+Compiling ./src\Battle_AI\ai_negatives.c
+Compiling ./src\Battle_AI\ai_partner.c
+Compiling ./src\Battle_AI\ai_positives.c
+Compiling ./src\Battle_AI\ai_switching.c
+Compiling ./src\Battle_AI\ai_util.c
+Compiling ./src\Tables\back_pic_tables.c
+Compiling ./src\Tables\ball_graphics_tables.c
+Compiling ./src\Tables\battle_background_tables.c
+Compiling ./src\Tables\battle_frontier_trainers.c
+Compiling ./src\Tables\battle_moves.c
+Compiling ./src\Tables\class_based_pokeball_table.c
+Compiling ./src\Tables\experience_tables.c
+Compiling ./src\Tables\follower_mon_sprites.c
+Compiling ./src\Tables\item_tables.c
+Compiling ./src\Tables\level_up_learnsets.c
+Compiling ./src\Tables\movement_action.tables.c
+Compiling ./src\Tables\mugshot_tables.c
+Compiling ./src\Tables\music_tables.c
+Compiling ./src\Tables\pokemon_tables.c
+Compiling ./src\Tables\terrain_tables.c
+Compiling ./src\Tables\trainer_data.c
+Compiling ./src\Tables\wild_encounter_tables.c
+Compiling ./assembly\data\ability_tables.c
+Compiling ./assembly\data\move_tables.c
+Compiling ./assembly\data\species_tables.c
+Building Strings ./strings\ability_descriptions.string
+Building Strings ./strings\ability_name_table.string
+Building Strings ./strings\ability_strings.string
+Building Strings ./strings\attack_descriptions.string
+Building Strings ./strings\attack_name_table.string
+Building Strings ./strings\bw_summary_screen.string
+Building Strings ./strings\debug_strings.string
+Building Strings ./strings\dexnav.string
+Building Strings ./strings\entry_hazards_strings.string
+Building Strings ./strings\ev_iv.string
+Building Strings ./strings\follower_mon.string
+Building Strings ./strings\frontier_records.string
+Building Strings ./strings\frontier_trainer_names.string
+Building Strings ./strings\frontier_trainer_text.string
+Building Strings ./strings\general_battle_script_strings.string
+Building Strings ./strings\general_battle_strings.string
+Building Strings ./strings\instant_text.string
+Building Strings ./strings\item_descriptions.string
+Building Strings ./strings\mining_em.string
+Building Strings ./strings\move_menu_strings.string
+Building Strings ./strings\mystery_gift.string
+Building Strings ./strings\new_bag.string
+Building Strings ./strings\option_menu.string
+Building Strings ./strings\overworld_strings.string
+Building Strings ./strings\party_menu.string
+Building Strings ./strings\Pokevial.string
+Building Strings ./strings\quest_menu.string
+Building Strings ./strings\raid_battle.string
+Building Strings ./strings\scrolling_multichoice.string
+Building Strings ./strings\start_menu.string
+Building Strings ./strings\tera_strings.string
+Building Strings ./strings\timebox.string
+Building Strings ./strings\trainer_sliding_strings.string
+Building Strings ./strings\type_names.string
+Building Strings ./strings\Wonder_Trades.string
+Building Strings ./strings\z_move_names.string
+Building Strings ./strings\Scripts\berry_tree_strings.string
+Building Strings ./strings\Scripts\Egg_hatcher.string
+Building Strings ./strings\Scripts\Pallet_town.string
+Building Strings ./strings\Scripts\viridian_city.string
+Compiling Images
+Compiling Audio
+Compiling Music
+Assembling special_inserts.asm
+Built in 0:05:17.281020.
+Inserting code.
+Inserting follower-mon overworld sprites at 0x900000.
+Symbol missing: EventScript_PokedexUI
+Inserted in 0:00:24.466811.
+[OK] make.py de CFRU termino correctamente (codigo 0).
+[OK] CFRU listo: C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\test.gba (32.0 MB)
+[OK] ROM final guardada en: C:/Users/AM/Desktop/Pokemon/DPE\MiHack_CFRU.gba (32.0 MB)
+[INFO] El CFRU genero tambien offsets.ini con las direcciones insertadas (C:\Users\AM\Desktop\Pokemon\CFRU-expansion-Experiments\offsets.ini).
+
+[OK] CADENA COMPLETA FINALIZADA.
+[OK] ROM final lista: C:/Users/AM/Desktop/Pokemon/DPE\MiHack_CFRU.gba

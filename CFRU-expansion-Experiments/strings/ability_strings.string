@@ -1,0 +1,185 @@
+#org @gText_AirLockActivate
+The effects of weather\ndisappeared.
+
+#org @gText_TraceActivate
+[SCRIPTING_BANK] traced\n[BUFFER][00]'s [LAST_ABILITY]!
+
+#org @gText_PressureActivate
+[SCRIPTING_BANK] is exerting\nits pressure!
+
+#org @gText_MoldBreakerActivate
+[SCRIPTING_BANK] breaks\nthe mold!
+
+#org @gText_TeravoltActivate
+[SCRIPTING_BANK] is radiating\na bursting aura!
+
+#org @gText_TurboblazeActivate
+[SCRIPTING_BANK] is radiating\na blazing aura!
+
+#org @gText_SlowStartActivate
+[SCRIPTING_BANK] couldn't get\ngoing!
+
+#org @gText_UnnerveActivate
+[FD][37] team is too\nnervous to eat Berries!
+
+#org @gText_DarkAuraActivate
+[SCRIPTING_BANK] is radiating\na dark aura!
+
+#org @gText_FairyAuraActivate
+[SCRIPTING_BANK] is radiating\na fairy aura!
+
+#org @gText_AuraBreakActivate
+[SCRIPTING_BANK] reversed all\nother Pok\emon's auras!
+
+#org @gText_ComatoseActivate
+[SCRIPTING_BANK] is drowsing!
+
+#org @gText_AnticipationActivate
+[SCRIPTING_BANK] shuddered!
+
+#org @gText_ForewarnActivate
+It was alerted to\n[EFFECT_BANK]'s\l[BUFFER][00]!
+
+#org @gText_FriskActivate
+[SCRIPTING_BANK] frisked\n[EFFECT_BANK] and found\lits [LAST_ITEM]!
+
+#org @gText_ItIsHailing
+It is hailing.
+
+#org @gText_FogIsDeep
+The fog is deep[.]
+
+#org @gText_PrimordialSeaActivate
+A heavy rain began to fall!
+
+#org @gText_DesolateLandActivate
+The sunlight turned extremely harsh!
+
+#org @gText_DeltaStream
+Mysterious strong winds are protecting\nFlying-type Pok\emon!
+
+#org @gText_StrongWindsWeakenedAttack
+The mysterious strong winds\nweakened the attack!
+
+#org @gText_HarshSunStopsWeatherChange
+But the extremely harsh sunlight\nwas not lessened at all!
+
+#org @gText_HeavyRainStopsWeatherChange
+But there is no relief from the\nheavy rain!
+
+#org @gText_AirCurrentStopsWeatherChange
+But the mysterious strong winds\nblow on regardless!
+
+#org @gText_ViciousSandstormStopsWeatherChange
+But the vicious sandstorm refuses\nto let up!
+
+#org @gText_SlowStartEnd
+[SCRIPTING_BANK] got its\nact together!
+
+#org @gText_FlashFirePowerUp
+The power of [SCRIPTING_BANK]'s\nFire-type moves rose!
+
+#org @gText_AbilityCuredStatusProblem
+[SCRIPTING_BANK] was cured of\nits [BUFFER][00] problem!
+
+#org @gText_HealerCuredStatusProblem
+[EFFECT_BANK] was cured of\nits [BUFFER][00] problem!
+
+#org @gText_MagicBounce
+[SCRIPTING_BANK] bounced the\n[CURRENT_MOVE] back!
+
+#org @gText_StartedSchooling
+[SCRIPTING_BANK] formed\na school!
+
+#org @gText_StoppedSchooling
+[SCRIPTING_BANK] stopped\nschooling!
+
+#org @gText_GorillaTacticsMoveMenuBlockage
+[LAST_ABILITY] allows only\n[CURRENT_MOVE] to be used!\p
+
+#org @gText_IceFaceTookDamage
+The Ice Face took damage for\n[TARGET]!
+
+#org @gText_IceFaceBusted
+[TARGET]'s Ice Face\nshattered!
+
+#org @gText_ScreenCleanerActivate
+All screens on the field were\ncleansed!
+
+#org @gText_NeutralizingGasActivate
+Neutralizing Gas fills the area!
+
+#org @gText_NeutralizingGasEnd
+The effects of Neutralizing Gas\nwore off!
+
+#org @gText_CuriousMedicineActivate
+[TARGET]'s stat changes\nwere removed!
+
+#org @gText_PkmnHurtsWith
+[ATTACKER] was hurt!
+
+#org @gText_SymbiosisTransfer
+[SCRIPTING_BANK] shared its\n[LAST_ITEM] with [EFFECT_BANK]!
+
+#org @gText_AbilityEvaporatedAttack
+But [TARGET] evaporated\nthe attack!
+
+#org @gText_AbilityEvaporatedRain
+[SCRIPTING_BANK] evaporated\nthe rain!
+
+#org @gText_ButAbilityEvaporatesRain
+But [SCRIPTING_BANK] evaporates\nrain!
+
+#org @GigatonHammerNotAllowedString
+[CURRENT_MOVE] can't be used twice\nin a row!\p
+
+#org @gText_BeadsofRuin
+[SCRIPTING_BANK]'s Beads of Ruin weakened\nthe Sp.Def of around all Pokémon.
+
+#org @gText_TabletsofRuin
+[SCRIPTING_BANK]'s Tablets of Ruin weakened\nthe Attack of around all Pokémon.
+
+#org @gText_SwordofRuin
+[SCRIPTING_BANK]'s Sword of Ruin weakened\nthe Defense of around all Pokémon.
+
+#org @gText_VesselofRuin
+[SCRIPTING_BANK]'s Vessel of Ruin weakened\nthe Sp.Attack of around all Pokémon.
+
+#org @gText_CostarActivate
+[SCRIPTING_BANK] copied [TARGET]\nstat changes!
+
+#org @gText_GoodAsGoldActivate
+It doesn't affect [SCRIPTING_BANK][.]
+
+#org @sText_ElectricTerrainActivatedAbility
+The Electric Terrain activated\n[SCRIPTING_BANK]'s [LAST_ABILITY]!
+
+#org @sText_StatWasHeightened
+[SCRIPTING_BANK]'s [BUFFER][00] was\nheightened!
+
+#org @sText_SunlightActivatedAbility
+The harsh sunlight activated\n[SCRIPTING_BANK]'s [LAST_ABILITY]!
+
+#org @gText_SupremeOverlordActivate
+[SCRIPTING_BANK] gained strength from\nthe fallen!
+
+#org @gText_GrassySurgeGrew
+Grass grew to cover the\nbattlefield!\p
+
+#org @gText_ZerotoHeroActivate
+[SCRIPTING_BANK] underwent a heroic\ntranformation!
+
+#org @gText_VientreDivinoReflejo
+¡El vientre divino de [TARGET]\nreflejó el ataque!
+
+#org @gText_VientreDivinoBurbuja
+¡[TARGET] quedó atrapada\ndentro de una burbuja!
+
+#org @gText_VientreDivinoBurbujaFin
+¡La burbuja estalló y\n[TARGET] quedó libre!
+
+#org @gText_VientreDivinoAplanadaGolpe
+¡El ataque dejó a [TARGET]\ncompletamente aplanada!
+
+#org @gText_VientreDivinoAplanadaTurno
+¡[TARGET] está aplanada\ny no puede moverse!
