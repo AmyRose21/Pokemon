@@ -23,10 +23,6 @@
 #include "../include/new/item.h"
 #include "../include/new/move_tables.h"
 #include "../include/new/util.h"
-
-// SHELLY MODULE: pasiva Vientre Divino
-extern bool8 ShellyTryAplanada(u8 bank);
-
 /*
 attackcanceler.c
 	Handles any logic for discerning if a move can be used or is effective, eg. mold breaker, flinch status, truant, etc.
@@ -320,14 +316,7 @@ static u8 AtkCanceller_UnableToUseMove(void)
 			break;
 
 		case CANCELLER_FLINCH: // flinch
-			if (ShellyTryAplanada(gBankAttacker)) // SHELLY: aplanada pierde el turno
-			{
-				gProtectStructs[gBankAttacker].flinchImmobility = 1;
-				CancelMultiTurnMoves(gBankAttacker);
-				gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
-				effect = 1;
-			}
-			else if (gBattleMons[gBankAttacker].status2 & STATUS2_FLINCHED && !IsDynamaxed(gBankAttacker))
+			if (gBattleMons[gBankAttacker].status2 & STATUS2_FLINCHED && !IsDynamaxed(gBankAttacker))
 			{
 				gProtectStructs[gBankAttacker].flinchImmobility = 1;
 				CancelMultiTurnMoves(gBankAttacker);

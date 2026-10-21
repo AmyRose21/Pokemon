@@ -552,13 +552,6 @@ static u32 AccuracyCalcPassDefAbilityItemEffect(u16 move, u8 bankAtk, u8 bankDef
 			calc = (calc * 12) / 10; // 1.2 Micle Berry Boost
 	}
 
-	{ // SHELLY MODULE: Vientre Divino esquiva el 65% de TODOS los
-	  // movimientos, incluidos los de estado (Hipnosis, Rayo, Toxic...).
-		extern bool8 ShellyEsPirataDivina(u8 bank);
-		if (ShellyEsPirataDivina(bankDef))
-			calc = udivsi((calc * 35), 100);
-	}
-
 	if (gBattleMoves[move].accuracy == 0) //Always hit
 		calc = 0xFFFF;
 

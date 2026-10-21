@@ -1667,12 +1667,6 @@ bool8 TryRunOnFrameMapScript(void)
 {
 	TryUpdateSwarm();
 
-	// SHELLY MODULE v1.4: Shelly llega a tu cuarto la primera vez
-	// (flag 0x2AE + EventScript_ShellyArrival; ver src/shelly_module.c).
-	extern bool8 ShellyTryArrival(void);
-	if (ShellyTryArrival())
-		return TRUE;
-
 	//if (gQuestLogMode != 3)
 	{
 		const u8* ptr;

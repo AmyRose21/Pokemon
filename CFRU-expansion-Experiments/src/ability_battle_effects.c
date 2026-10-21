@@ -26,24 +26,6 @@
 #include "../include/new/util.h"
 #include "../include/new/terastallization.h"
 
-// SHELLY MODULE: externs de la pasiva Vientre Divino (ability 317)
-extern const u8 gText_VientreDivinoReflejo[];
-extern const u8 gText_VientreDivinoBurbuja[];
-extern const u8 gText_VientreDivinoBurbujaFin[];
-extern const u8 gText_VientreDivinoAplanadaGolpe[];
-extern const u8 gText_VientreDivinoAplanadaTurno[];
-extern const u8 BattleScript_ShellyRefleja[];
-extern const u8 BattleScript_ShellyAplanada[];
-extern const u8 BattleScript_PrintCustomString[];
-// (v1.2) BattleScript_WrapEnds no va aquí: es una macro a
-// una dirección fija de la ROM (end_turn_battle_scripts.h).
-bool8 ShellyEsPirataDivina(u8 bank);
-bool8 ShellyEsBurbuja(u8 bank);
-const u8* ShellyBurbujaFinScript(u8 bank);
-bool8 ShellyTryAplanada(u8 bank);
-void ShellyVientreDivinoAlSerGolpeada(u8 bank, u16 move);
-
-
 /*
 ability_battle_effects.c
 	-functions that introduce or moodify battle effects via abilities or otherwise.
@@ -253,7 +235,6 @@ const s8 gAbilityRatings[ABILITIES_COUNT] =
 	[ABILITY_SCHOOLING] = 6,
 	[ABILITY_SCRAPPY] = 6,
 	[ABILITY_SERENEGRACE] = 8,
-	[ABILITY_VIENTRE_DIVINO] = 10,
 	[ABILITY_SHADOWSHIELD] = 8,
 	[ABILITY_SHADOWTAG] = 10,
 	[ABILITY_SHEDSKIN] = 7,
@@ -2468,12 +2449,6 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, ability_t ability, ability_t special
 				}
 				break;
 
-			case ABILITY_VIENTRE_DIVINO: // SHELLY: Vientre Divino
-				if (MOVE_HAD_EFFECT
-				&& TOOK_DAMAGE(bank))
-					ShellyVientreDivinoAlSerGolpeada(bank, move);
-				break;
-
 			case ABILITY_STAMINA:
 				if (MOVE_HAD_EFFECT
 				&& TOOK_DAMAGE(bank)
@@ -3592,126 +3567,4 @@ void SetSkipCertainSwitchInAbilities(void)
 
 	//Only set the bit if no enemies are alive on the field
 	gNewBS->skipCertainSwitchInAbilities = TRUE;
-}
-
-
-// ================================================================
-// SHELLY:HELPERS VIENTRE DIVINO - efecto exclusivo de SPECIES_SHELLY.
-//  - Esquiva el 65% de TODOS los movimientos (tambien los de estado).
-//  - Refleja el 45% del dano recibido de vuelta al atacante.
-//  - Congelada: un 25% de los danos contra ella se anulan por completo.
-//  - Burbuja/Burbuja Lente/Rayo Hielo y familia: 25% de atraparla en una
-//    burbuja 3-6 turnos (sin dano por turnos; no puede huir ni cambiar).
-//  - Placaje/Pisoton/Golpe Cuerpo y familia: 25% de aplanarla 3-5 turnos
-//    (pierde esos turnos; no puede moverse mientras siga aplanada).
-// ================================================================
-
-bool8 ShellyEsPirataDivina(u8 bank)
-{
-	return SPECIES(bank) == SPECIES_SHELLY
-	    && ABILITY(bank) == ABILITY_VIENTRE_DIVINO;
-}
-
-static bool8 ShellyEsMovimientoBurbuja(u16 move)
-{
-	switch (move) {
-		case MOVE_BUBBLE:
-		case MOVE_BUBBLEBEAM:
-		case MOVE_ICEBEAM:
-		case MOVE_POWDERSNOW:
-		case MOVE_ICYWIND:
-		case MOVE_AVALANCHE:
-		case MOVE_ICESHARD:
-			return TRUE;
-	}
-	return FALSE;
-}
-
-static bool8 ShellyEsMovimientoAplanador(u16 move)
-{
-	switch (move) {
-		case MOVE_SLAM:
-		case MOVE_STOMP:
-		case MOVE_BODYSLAM:
-		case MOVE_STEAMROLLER:
-		case MOVE_HEAVYSLAM:
-		case MOVE_HEATCRASH:
-		case MOVE_DRAGONRUSH:
-			return TRUE;
-	}
-	return FALSE;
-}
-
-bool8 ShellyEsBurbuja(u8 bank)
-{
-	if (!ShellyEsPirataDivina(bank))
-		return FALSE;
-	if (!(gBattleMons[bank].status2 & STATUS2_WRAPPED))
-		return FALSE;
-	return ShellyEsMovimientoBurbuja(gBattleStruct->wrappedMove[bank]);
-}
-
-const u8* ShellyBurbujaFinScript(u8 bank)
-{
-	// v1.2: solo se invoca cuando ShellyEsBurbuja(bank) ya es
-	// cierto (la decisión vive en end_turn.c, donde la macro
-	// BattleScript_WrapEnds sí existe; aquí no es un símbolo).
-	(void)bank;
-	gBattleStringLoader = gText_VientreDivinoBurbujaFin;
-	return BattleScript_PrintCustomString;
-}
-
-bool8 ShellyTryAplanada(u8 bank)
-{
-	if (!ShellyEsPirataDivina(bank) || gNewBS->shellyAplanada[bank] == 0)
-		return FALSE;
-
-	gNewBS->shellyAplanada[bank]--;
-	gBattleStringLoader = gText_VientreDivinoAplanadaTurno;
-	gBattlescriptCurrInstr = BattleScript_ShellyAplanada;
-	return TRUE;
-}
-
-void ShellyVientreDivinoAlSerGolpeada(u8 bank, u16 move)
-{
-	// 45%: el vientre divino refleja TODO el dano de este movimiento
-	// de vuelta hacia el atacante.
-	if (BATTLER_ALIVE(gBankAttacker)
-	&& gBankAttacker != bank
-	&& ABILITY(gBankAttacker) != ABILITY_MAGICGUARD
-	&& Random() % 100 < 45
-	&& gNewBS->turnDamageTaken[bank] > 0)
-	{
-		gBattleMoveDamage = gNewBS->turnDamageTaken[bank];
-		BattleScriptPushCursor();
-		gBattlescriptCurrInstr = BattleScript_ShellyRefleja;
-		return; // el reflejo eclipsa al resto de efectos este golpe
-	}
-
-	// 25%: la burbuja o el hielo la atrapan 3-6 turnos (sin dano por turnos).
-	if (ShellyEsMovimientoBurbuja(move)
-	&& !(gBattleMons[bank].status2 & STATUS2_WRAPPED)
-	&& Random() % 100 < 25)
-	{
-		u8 turnos = 3 + (Random() % 4); // 3..6 turnos
-		gBattleMons[bank].status2 &= ~STATUS2_WRAPPED;
-		gBattleMons[bank].status2 |= (STATUS2_WRAPPED / 7) * turnos;
-		gBattleStruct->wrappedMove[bank] = move;
-		gBattleStruct->wrappedBy[bank] = gBankAttacker;
-		gBattleStringLoader = gText_VientreDivinoBurbuja;
-		BattleScriptPushCursor();
-		gBattlescriptCurrInstr = BattleScript_PrintCustomString;
-		return;
-	}
-
-	// 25%: el golpe aplastante la deja aplanada 3-5 turnos.
-	if (ShellyEsMovimientoAplanador(move)
-	&& gNewBS->shellyAplanada[bank] == 0
-	&& Random() % 100 < 25)
-	{
-		gNewBS->shellyAplanada[bank] = 3 + (Random() % 3); // 3..5 turnos
-		gBattleStringLoader = gText_VientreDivinoAplanadaGolpe;
-		BattleScriptPushCursor();
-		gBattlescriptCurrInstr = BattleScript_PrintCustomString;
-	}
 }

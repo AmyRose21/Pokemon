@@ -2109,14 +2109,6 @@ void AdjustDamage(bool8 checkFalseSwipe)
 		u8 itemQuality = ITEM_QUALITY(bankDef);
 		ability_t defAbility = ABILITY(bankDef);
 
-		// SHELLY MODULE: mientras Shelly está congelada, un 25% de los
-		// daños que recibe se anulan por completo (vientre divino).
-		if (defAbility == ABILITY_VIENTRE_DIVINO
-		&& (gBattleMons[bankDef].status1 & STATUS1_FREEZE)
-		&& damage > 0
-		&& Random() % 100 < 25)
-			damage = 0;
-
 		if ((gNewBS->zMoveData.active || IsAnyMaxMove(gCurrentMove))
 		&& !IsDynamaxed(bankDef)
 		&& ProtectsAgainstZMoves(gCurrentMove, gBankAttacker, bankDef))

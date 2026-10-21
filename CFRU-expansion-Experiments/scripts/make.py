@@ -73,17 +73,21 @@ def EditInsert(offset: int):
     ChangeFileLine("./scripts/insert.py", 12, 'SOURCE_ROM = "' + ROM_NAME + '"\n')
 
 
-# SHELLY_FIX_PYTHON: usa el interprete actual (evita el stub de
-# la Microsoft Store, que responde "no se encontro Python").
 def BuildCode():
-    result = os.system('"' + sys.executable + '" scripts/build.py')
+    if shutil.which('python3') is not None:
+        result = os.system("python3 scripts/build.py")
+    else:
+        result = os.system("python scripts/build.py")
 
     if result != 0:  # Build wasn't sucessful
         sys.exit(1)
 
 
 def InsertCode():
-    os.system('"' + sys.executable + '" scripts/insert.py')
+    if shutil.which('python3') is not None:
+        os.system("python3 scripts/insert.py")
+    else:
+        os.system("python scripts/insert.py")
 
 
 def ClearFromTo(rom, from_: int, to_: int):

@@ -19,11 +19,6 @@
 #include "../include/new/switching.h"
 #include "../include/new/util.h"
 
-// SHELLY MODULE: pasiva Vientre Divino
-extern bool8 ShellyEsBurbuja(u8 bank);
-extern const u8* ShellyBurbujaFinScript(u8 bank);
-
-
 /*
 end_turn.c
 	handles all effects that happen at the end of each turn
@@ -791,27 +786,7 @@ u8 TurnBasedEffects(u16 move, u8 bank, struct Pokemon* monAtk)
 					gBattleTextBuff1[2] = gBattleStruct->wrappedMove[gActiveBattler];
 					gBattleTextBuff1[3] = gBattleStruct->wrappedMove[gActiveBattler] >> 8;
 					gBattleTextBuff1[4] = EOS;
-					// SHELLY v1.2: mensaje propio al romperse la burbuja;
-					// los wraps normales siguen con la macro local.
-					if (ShellyEsBurbuja(gActiveBattler))
-						// SHELLY v1.2: mensaje propio al romperse la burbuja;
-					// los wraps normales siguen con la macro local.
-					if (ShellyEsBurbuja(gActiveBattler))
-						// SHELLY v1.2: mensaje propio al romperse la burbuja;
-					// los wraps normales siguen con la macro local.
-					if (ShellyEsBurbuja(gActiveBattler))
-						// SHELLY v1.2: mensaje propio al romperse la burbuja;
-					// los wraps normales siguen con la macro local.
-					if (ShellyEsBurbuja(gActiveBattler))
-						gBattlescriptCurrInstr = ShellyBurbujaFinScript(gActiveBattler);
-					else
-						gBattlescriptCurrInstr = BattleScript_WrapEnds;
-					else
-						gBattlescriptCurrInstr = BattleScript_WrapEnds;
-					else
-						gBattlescriptCurrInstr = BattleScript_WrapEnds;
-					else
-						gBattlescriptCurrInstr = BattleScript_WrapEnds;
+					gBattlescriptCurrInstr = BattleScript_WrapEnds;
 					BattleScriptExecute(gBattlescriptCurrInstr);
 					effect++;
 				}
@@ -827,8 +802,7 @@ u8 TurnBasedEffects(u16 move, u8 bank, struct Pokemon* monAtk)
 						setBrokeFreeMessage = TRUE; //Will play next turn
 					}
 
-					if (ABILITY(gActiveBattler) != ABILITY_MAGICGUARD
-					&& !ShellyEsBurbuja(gActiveBattler)) // SHELLY: burbuja sin dano
+					if (ABILITY(gActiveBattler) != ABILITY_MAGICGUARD)
 					{
 						//Damaged by wrap
 						gBattleScripting.animArg1 = gBattleStruct->wrappedMove[gActiveBattler];

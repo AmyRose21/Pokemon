@@ -1111,10 +1111,6 @@ struct NewBattleStruct
         u8 savedCommunication[BATTLE_COMMUNICATION_ENTRIES_COUNT];
         u16 originalMoves[MAX_MON_MOVES];
     } midBattleEvolution;
-
-    // SHELLY MODULE: turnos restantes de aplanada
-    // (pasiva Vientre Divino, solo SPECIES_SHELLY)
-    u8 shellyAplanada[MAX_BATTLERS_COUNT];
 };
 
 extern struct NewBattleStruct* gNewBS; //0x203E038

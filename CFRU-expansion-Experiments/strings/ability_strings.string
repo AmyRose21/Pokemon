@@ -168,18 +168,3 @@ Grass grew to cover the\nbattlefield!\p
 
 #org @gText_ZerotoHeroActivate
 [SCRIPTING_BANK] underwent a heroic\ntranformation!
-
-#org @gText_VientreDivinoReflejo
-¡El vientre divino de [TARGET]\nreflejó el ataque!
-
-#org @gText_VientreDivinoBurbuja
-¡[TARGET] quedó atrapada\ndentro de una burbuja!
-
-#org @gText_VientreDivinoBurbujaFin
-¡La burbuja estalló y\n[TARGET] quedó libre!
-
-#org @gText_VientreDivinoAplanadaGolpe
-¡El ataque dejó a [TARGET]\ncompletamente aplanada!
-
-#org @gText_VientreDivinoAplanadaTurno
-¡[TARGET] está aplanada\ny no puede moverse!

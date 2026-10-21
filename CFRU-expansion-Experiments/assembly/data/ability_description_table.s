@@ -325,4 +325,3 @@ gAbilityDescriptions:
 .word DESC_MEGA_SOL                              @ 314 ABILITY_MEGA_SOL
 .word DESC_FIRE_MANE                             @ 315 ABILITY_FIRE_MANE
 .word DESC_SPICY_SPRAY                           @ 316 ABILITY_SPICY_SPRAY
-.word DESC_VIENTRE_DIVINO                           @ 317 ABILITY_VIENTRE_DIVINO

@@ -320,6 +320,5 @@
 #define ABILITY_MEGA_SOL                             314
 #define ABILITY_FIRE_MANE                            315
 #define ABILITY_SPICY_SPRAY                          316
-#define ABILITY_VIENTRE_DIVINO                      317
 
-#define ABILITIES_COUNT                              318
+#define ABILITIES_COUNT                              317

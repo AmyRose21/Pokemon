@@ -4475,5 +4475,3 @@
 .equ IS_SHINY, 1
 
 .equ NULL, 0x00000000
-
-.equ SPECIES_SHELLY, 0x5d1

@@ -12,26 +12,6 @@ static const struct LevelUpMove sEmptyMoveset[] = {
 	LEVEL_UP_END,
 };
 
-static const struct LevelUpMove sShellyLevelUpLearnset[] = {
-	LEVEL_UP_MOVE( 1, MOVE_POUND),
-	LEVEL_UP_MOVE( 1, MOVE_GROWL),
-	LEVEL_UP_MOVE( 5, MOVE_DOUBLESLAP),
-	LEVEL_UP_MOVE( 9, MOVE_SWEETKISS),
-	LEVEL_UP_MOVE(13, MOVE_ENCORE),
-	LEVEL_UP_MOVE(17, MOVE_METRONOME),
-	LEVEL_UP_MOVE(21, MOVE_ATTRACT),
-	LEVEL_UP_MOVE(25, MOVE_BATONPASS),
-	LEVEL_UP_MOVE(29, MOVE_SWIFT),
-	LEVEL_UP_MOVE(33, MOVE_TRUMPCARD),
-	LEVEL_UP_MOVE(37, MOVE_ROLEPLAY),
-	LEVEL_UP_MOVE(41, MOVE_PSYCHIC),
-	LEVEL_UP_MOVE(45, MOVE_CALMMIND),
-	LEVEL_UP_MOVE(49, MOVE_LASTRESORT),
-	LEVEL_UP_MOVE(53, MOVE_RECOVER),
-	LEVEL_UP_MOVE(57, MOVE_HYPERVOICE),
-	LEVEL_UP_END
-};
-
 static const struct LevelUpMove sBulbasaurLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 3, MOVE_GROWL),
@@ -23753,5 +23733,4 @@ const struct LevelUpMove* const gLevelUpLearnsets[] =
 	[SPECIES_DECIDUEYE_H] = sDecidueyeHLevelUpLearnset,
 	[SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexShadowRiderLevelUpLearnset,
 	[SPECIES_CALYREX_ICE_RIDER] = sCalyrexIceRiderLevelUpLearnset,
-	[SPECIES_SHELLY] = sShellyLevelUpLearnset,
 };
